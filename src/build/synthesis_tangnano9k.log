@@ -1,0 +1,163 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+1 (git sha1 b1a011138, x86_64-w64-mingw32-g++ 9.2.1 -Os)
+
+
+-- Running command `read_verilog -sv ../design/module_7_segments.v ../design/module_bin_to_bcd.v ../design/module_booth.v ../design/module_col_shift_register.v ../design/module_debouncer.v ../design/module_freq_divider.v ../design/module_input_control.v ../design/module_row_scanner.v ../design/module_top.v ; synth_gowin -top module_top -json demo.json' --
+
+1. Executing Verilog-2005 frontend: ../design/module_7_segments.v
+Parsing SystemVerilog input from `../design/module_7_segments.v' to AST representation.
+Generating RTLIL representation for module `\module_7_segments'.
+Note: Assuming pure combinatorial block at ../design/module_7_segments.v:52.5-78.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at ../design/module_7_segments.v:81.5-97.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: ../design/module_bin_to_bcd.v
+Parsing SystemVerilog input from `../design/module_bin_to_bcd.v' to AST representation.
+Generating RTLIL representation for module `\bin_to_bcd'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ../design/module_booth.v
+Parsing SystemVerilog input from `../design/module_booth.v' to AST representation.
+Generating RTLIL representation for module `\mult_with_no_fsm'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: ../design/module_col_shift_register.v
+Parsing SystemVerilog input from `../design/module_col_shift_register.v' to AST representation.
+Generating RTLIL representation for module `\col_shift_register'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: ../design/module_debouncer.v
+Parsing SystemVerilog input from `../design/module_debouncer.v' to AST representation.
+Generating RTLIL representation for module `\debouncer'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: ../design/module_freq_divider.v
+Parsing SystemVerilog input from `../design/module_freq_divider.v' to AST representation.
+Generating RTLIL representation for module `\freq_divider'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: ../design/module_input_control.v
+Parsing SystemVerilog input from `../design/module_input_control.v' to AST representation.
+Generating RTLIL representation for module `\input_control'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: ../design/module_row_scanner.v
+Parsing SystemVerilog input from `../design/module_row_scanner.v' to AST representation.
+Generating RTLIL representation for module `\row_scanner'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: ../design/module_top.v
+Parsing SystemVerilog input from `../design/module_top.v' to AST representation.
+Generating RTLIL representation for module `\module_top'.
+Successfully finished Verilog frontend.
+
+10. Executing SYNTH_GOWIN pass.
+
+10.1. Executing Verilog-2005 frontend: C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v
+Parsing Verilog input from `C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\__APICULA_LUT5'.
+Generating RTLIL representation for module `\__APICULA_LUT6'.
+Generating RTLIL representation for module `\__APICULA_LUT7'.
+Generating RTLIL representation for module `\__APICULA_LUT8'.
+Generating RTLIL representation for module `\MUX2'.
+Generating RTLIL representation for module `\MUX2_LUT5'.
+Generating RTLIL representation for module `\MUX2_LUT6'.
+Generating RTLIL representation for module `\MUX2_LUT7'.
+Generating RTLIL representation for module `\MUX2_LUT8'.
+Generating RTLIL representation for module `\DFF'.
+Generating RTLIL representation for module `\DFFE'.
+Generating RTLIL representation for module `\DFFS'.
+Generating RTLIL representation for module `\DFFSE'.
+Generating RTLIL representation for module `\DFFR'.
+Generating RTLIL representation for module `\DFFRE'.
+Generating RTLIL representation for module `\DFFP'.
+Generating RTLIL representation for module `\DFFPE'.
+Generating RTLIL representation for module `\DFFC'.
+Generating RTLIL representation for module `\DFFCE'.
+Generating RTLIL representation for module `\DFFN'.
+Generating RTLIL representation for module `\DFFNE'.
+Generating RTLIL representation for module `\DFFNS'.
+Generating RTLIL representation for module `\DFFNSE'.
+Generating RTLIL representation for module `\DFFNR'.
+Generating RTLIL representation for module `\DFFNRE'.
+Generating RTLIL representation for module `\DFFNP'.
+Generating RTLIL representation for module `\DFFNPE'.
+Generating RTLIL representation for module `\DFFNC'.
+Generating RTLIL representation for module `\DFFNCE'.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\IBUF'.
+Generating RTLIL representation for module `\OBUF'.
+Generating RTLIL representation for module `\TBUF'.
+Generating RTLIL representation for module `\IOBUF'.
+Generating RTLIL representation for module `\TLVDS_OBUF'.
+Generating RTLIL representation for module `\ODDR'.
+Generating RTLIL representation for module `\ODDRC'.
+Generating RTLIL representation for module `\GSR'.
+Generating RTLIL representation for module `\ALU'.
+Generating RTLIL representation for module `\RAM16S1'.
+Generating RTLIL representation for module `\RAM16S2'.
+Generating RTLIL representation for module `\RAM16S4'.
+Generating RTLIL representation for module `\RAM16SDP1'.
+Generating RTLIL representation for module `\RAM16SDP2'.
+Generating RTLIL representation for module `\RAM16SDP4'.
+Generating RTLIL representation for module `\SP'.
+Generating RTLIL representation for module `\SPX9'.
+Generating RTLIL representation for module `\SDP'.
+Generating RTLIL representation for module `\SDPX9'.
+Generating RTLIL representation for module `\DP'.
+Generating RTLIL representation for module `\DPX9'.
+Generating RTLIL representation for module `\rPLL'.
+Generating RTLIL representation for module `\PLLVR'.
+Generating RTLIL representation for module `\OSC'.
+Generating RTLIL representation for module `\OSCZ'.
+Generating RTLIL representation for module `\OSCF'.
+Generating RTLIL representation for module `\OSCH'.
+Successfully finished Verilog frontend.
+
+10.2. Executing HIERARCHY pass (managing design hierarchy).
+
+10.2.1. Analyzing design hierarchy..
+Top module:  \module_top
+Used module:     \debouncer
+Used module:     \module_7_segments
+Used module:     \mult_with_no_fsm
+Used module:     \bin_to_bcd
+Used module:     \input_control
+Used module:     \row_scanner
+Used module:     \col_shift_register
+Used module:     \freq_divider
+Parameter \N = 8
+
+10.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\mult_with_no_fsm'.
+ERROR: Module `input_control' referenced in module `module_top' in cell `control_inst' does not have a port named 'add_sub'.
+Parameter \N = 8
+Generating RTLIL representation for module `$paramod\mult_with_no_fsm\N=s32'00000000000000000000000000001000'.
