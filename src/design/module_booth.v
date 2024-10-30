@@ -22,8 +22,8 @@ logic [N-1:0] LQ;
 logic Q_1;
 
 // Registro de M
-always_ff @(posedge clk or posedge rst) begin
-    if (rst)
+always_ff @(posedge clk or negedge rst) begin
+    if (!rst)
         M <= 'b0;
     else if (load_A)
         M <= A;
@@ -46,8 +46,8 @@ always_comb begin
     Q_LSB = {LQ[0], Q_1};
 end
 
-always_ff @(posedge clk or posedge rst) begin
-    if (rst)
+always_ff @(posedge clk or negedge rst) begin
+    if (!rst)
         shift <= 'b0;
     else if (shift_HQ_LQ_Q_1)
         // Desplazamiento aritmético
