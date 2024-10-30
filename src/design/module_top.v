@@ -18,7 +18,11 @@ module module_top (
     logic load_value;
     logic clear_input;
     logic start_sum;
-    
+
+    logic is_sign_key;
+    logic [7:0] opt_A;
+    logic [7:0] opt_B;
+    logic [3:0] signo;
 
 
 
@@ -61,9 +65,10 @@ module module_top (
         .col_shift_reg(col_out),
         .row_in(clean_rows),
         .key_value(key_value),
-        .key_pressed(key_pressed)
+        .key_pressed(key_pressed),
+        .is_sign_key(is_sign_key)
     );
-
+    /*
     // Instancia del módulo input_control para gestionar la entrada
     input_control control_inst (
         .clk(clk),
@@ -74,6 +79,18 @@ module module_top (
         .load_value(load_value),
         .clear_input(clear_input)
     );
+    */
+    
+    ingreso_digitos ingreso_digitos_inst (
+        .clk(clk),
+        .rst(rst),
+        .key_pressed(key_pressed),
+        .key_value(key_value),
+        .is_sign_key(is_sign_key)
+        .A(opt_A),
+        .B(opt_B),
+        .opt(signo)
+    )
 
     // Conversión de `display_data` a BCD
     bin_to_bcd converter_inst (
@@ -89,6 +106,8 @@ module module_top (
         .anodo_o(anodo_po),
         .catodo_o(catodo_po)
     );
+
+
 
 endmodule
 

@@ -4,13 +4,15 @@ module row_scanner (
     input logic [3:0] col_shift_reg,
     input logic [3:0] row_in,
     output logic [3:0] key_value,
-    output logic key_pressed
+    output logic key_pressed,
+    output is_sign_key
 );
 
     always_comb begin
         // Inicializacion de variables
         key_value = 4'b0000;
         key_pressed = 0;
+        is_sign_key = 0;
             // Posibles combinaciones
             case (col_shift_reg)
                 4'b0001 :  case (row_in) // cuarta columna activa
@@ -37,6 +39,7 @@ module row_scanner (
                                 4'b0010 : key_value = 4'b1100;  // "C"
                                 4'b0001 : key_value = 4'b0000;  // "D"
                            endcase
+                           is_sign_key = 1;
             endcase
             if (row_in != 4'b0000) begin
                 key_pressed = 1;
