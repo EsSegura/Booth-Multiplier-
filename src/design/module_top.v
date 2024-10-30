@@ -12,21 +12,15 @@ module module_top (
     logic [3:0] key_value;
     logic [3:0] clean_rows;
     logic key_pressed;
-    logic [3:0] col_shift_reg;
-    logic [15:0] bcd;                      // Señal BCD para los displays
-    logic [11:0] acumulador;               // Acumulador de 12 bits
-    logic [7:0] multiplicador_A;           // A para el multiplicador
-    logic [7:0] multiplicador_B;           // B para el multiplicador
-    logic [15:0] resultado_multiplicacion; // Resultado de la multiplicación
-    logic [1:0] Q_LSB;
-    logic [15:0] display_data;             // Datos a mostrar en el display
+    logic [15:0] bcd;
+    logic [3:0] col_shift_reg;                   // Señal BCD para los displays
+    logic [11:0] stored_value;               // Acumulador de 12 bits
+    logic load_value;
+    logic clear_input;
+    logic start_sum;
+    
 
-    // Señales de control
-    logic load_A;
-    logic load_B;
-    logic load_add; // Control de carga de adición
-    logic shift_HQ_LQ_Q_1; // Control de desplazamiento
-    logic add_sub; // Control de suma/resta
+
 
     // Registro de desplazamiento de columnas
     assign col_shift_reg = col_out;
@@ -70,56 +64,36 @@ module module_top (
         .key_pressed(key_pressed)
     );
 
-    // Controlador de entrada para ingresar los números en orden
+    // Instancia del módulo input_control para gestionar la entrada
     input_control control_inst (
         .clk(clk),
         .rst(rst),
         .key_value(key_value),
         .key_pressed(key_pressed),
-        .acumulador(acumulador),
-        .multiplicador_A(multiplicador_A),
-        .multiplicador_B(multiplicador_B),
-        .load_A(load_A),
-        .load_B(load_B),
-        .shift_HQ_LQ_Q_1(shift_HQ_LQ_Q_1),
-        .add_sub(add_sub)
+        .stored_value(stored_value),
+        .load_value(load_value),
+        .clear_input(clear_input)
     );
 
-    // Muestra el resultado de acumulador o multiplicación en BCD
-    assign display_data = (key_value == 4'b1010) ? resultado_multiplicacion : acumulador;
-    
+    // Conversión de `display_data` a BCD
     bin_to_bcd converter_inst (
-        .binario(acumulador),
+        .binario(stored_value), // `display_data` contiene el valor de acumulador o multiplicación
         .bcd(bcd)
-    );
-
-    // Instancia del multiplicador de Booth
-    mult_with_no_fsm #(
-        .N(8)
-    ) multiplier_inst (
-        .clk(clk),
-        .rst(rst),
-        .A(multiplicador_A),
-        .B(multiplicador_B),
-        .load_A(load_A),               // Carga A cuando se activa
-        .load_B(load_B),               // Carga B cuando se activa
-        .load_add(1'b0),               // Carga de adición (ajustar según la lógica)
-        .shift_HQ_LQ_Q_1(shift_HQ_LQ_Q_1), // Control de desplazamiento
-        .add_sub(add_sub),             // Control de suma/resta (ajustar según la lógica)
-        .Q_LSB(Q_LSB),
-        .Y(resultado_multiplicacion)
     );
 
     // Controlador del display de 7 segmentos
     module_7_segments display_inst (
         .clk_i(clk),
         .rst_i(rst),
-        .bcd_i(bcd),
+        .bcd_i(bcd),          // Conexión de la salida BCD al display
         .anodo_o(anodo_po),
         .catodo_o(catodo_po)
     );
 
 endmodule
+
+
+
 
 
 
