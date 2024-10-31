@@ -5,7 +5,7 @@ module row_scanner (
     input logic [3:0] row_in,
     output logic [3:0] key_value,
     output logic key_pressed,
-    output is_sign_key
+    output logic is_sign_key
 );
 
     always_comb begin
@@ -33,13 +33,17 @@ module row_scanner (
                                 4'b0010 : key_value = 4'b1001;  // "9"
                                 4'b0001 : key_value = 4'b0000;  // "#"
                            endcase
-                4'b1000 :  case (row_in) // primera columna activa
-                                4'b1000 : key_value = 4'b1010;  // "A"
+                4'b1000 :  begin
+                            case (row_in) // primera columna activa
+                                4'b1000 : key_value = 4'b1010;  // "A" 
                                 4'b0100 : key_value = 4'b1011;  // "B"
                                 4'b0010 : key_value = 4'b1100;  // "C"
                                 4'b0001 : key_value = 4'b0000;  // "D"
+                                
                            endcase
-                           is_sign_key = 1;
+                    is_sign_key = 1;           
+
+                end
             endcase
             if (row_in != 4'b0000) begin
                 key_pressed = 1;

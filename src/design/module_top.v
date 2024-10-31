@@ -14,10 +14,11 @@ module module_top (
     logic key_pressed;
     logic [15:0] bcd;
     logic [3:0] col_shift_reg;                   // Señal BCD para los displays
-    logic [11:0] stored_value;               // Acumulador de 12 bits
-    logic load_value;
-    logic clear_input;
-    logic start_sum;
+
+    logic state_enableA;
+    logic state_enableB;
+    logic ready_operandos;
+
 
     logic is_sign_key;
     logic [7:0] opt_A;
@@ -68,33 +69,32 @@ module module_top (
         .key_pressed(key_pressed),
         .is_sign_key(is_sign_key)
     );
-    /*
+
     // Instancia del módulo input_control para gestionar la entrada
-    input_control control_inst (
+input_module input_inst (
         .clk(clk),
-        .rst(rst),
-        .key_value(key_value),
+        .rst(rst),                  // Invertir el reset si es necesario
         .key_pressed(key_pressed),
-        .stored_value(stored_value),
-        .load_value(load_value),
-        .clear_input(clear_input)
+        .key_value(key_value),
+        .is_sign_key(is_sign_key),
+        .state_enableA(state_enableA),
+        .state_enableB(state_enableB),
+        .stored_A(stored_A),          // Salida para el valor almacenado en A
+        .stored_B(stored_B)           // Salida para el valor almacenado en B
     );
-    */
-    
-    ingreso_digitos ingreso_digitos_inst (
+
+    output_control ocontrol_inst (
         .clk(clk),
         .rst(rst),
-        .key_pressed(key_pressed),
-        .key_value(key_value),
-        .is_sign_key(is_sign_key)
-        .A(opt_A),
-        .B(opt_B),
-        .opt(signo)
-    )
+        .state_enableA(state_enableA),
+        .state_enableB(state_enableB),
+        .ready(ready_operandos)
+    );
+
 
     // Conversión de `display_data` a BCD
     bin_to_bcd converter_inst (
-        .binario(stored_value), // `display_data` contiene el valor de acumulador o multiplicación
+        .binario(state_enableB), // `display_data` contiene el valor de acumulador o multiplicación
         .bcd(bcd)
     );
 
