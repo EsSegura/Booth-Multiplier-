@@ -14,10 +14,11 @@ module module_top (
     logic key_pressed;
     logic [15:0] bcd;
     logic [3:0] col_shift_reg;                   // Señal BCD para los displays
-    logic [11:0] stored_value;               // Acumulador de 12 bits
-    logic load_value;
-    logic clear_input;
-    logic start_sum;
+
+    logic state_enableA;
+    logic state_enableB;
+    logic ready_operandos;
+
 
     logic state_enableA;
     logic state_enableB;
@@ -98,7 +99,7 @@ input_module input_inst (
 
     // Conversión de `display_data` a BCD
     bin_to_bcd converter_inst (
-        .binario(stored_value), // `display_data` contiene el valor de acumulador o multiplicación
+        .binario(state_enableB), // `display_data` contiene el valor de acumulador o multiplicación
         .bcd(bcd)
     );
 
