@@ -9,7 +9,7 @@ module tb_module_top;
     logic [3:0] col_out;
     logic [6:0] catodo_po;
     logic [3:0] anodo_po;
-    logic [12:0] acumulador;
+    logic [12:0] stored_A;
 
     // Instanciar el módulo a probar
     module_top uut (
@@ -18,8 +18,7 @@ module tb_module_top;
         .row_in(row_in),
         .col_out(col_out),
         .catodo_po(catodo_po),
-        .anodo_po(anodo_po),
-        .acumulador(acumulador)
+        .anodo_po(anodo_po)
     );
 
     // Generación del reloj
@@ -39,11 +38,15 @@ module tb_module_top;
 
         // Esperar un ciclo para estabilizar
         #10;
-
         // Simular el ingreso de números del 0 al 9
-        simulate_key_presses();
-        
+        row_in = 4'b1000; // Fila de entrada inicial
+        #10;
         // Finaliza la simulación
+        row_in = 4'b0000; // Fila de entrada inicial
+        #10;
+        // Finaliza la simulación
+        row_in = 4'b0010; // Fila de entrada inicial
+        
         #10;
         $finish;
     end
@@ -55,10 +58,15 @@ module tb_module_top;
             row_in = 4'b0000; // Asegúrate de que no haya ruido
             #10; // Esperar un ciclo
             row_in = 4'b0001 << i; // Simula presionar la tecla correspondiente
-            $display("Tecla presionada: %d | Acumulador: %b", i, acumulador);
+            $display("Tecla presionada: %d | Acumulador: %b", i, stored_A);
             #10; // Esperar para observar el efecto
         end
     endtask
+
+    initial begin
+        $dumpfile("teclado.vcd");
+        $dumpvars(0, tb_module_top);
+    end
 
 endmodule
 

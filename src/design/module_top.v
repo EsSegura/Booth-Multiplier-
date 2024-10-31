@@ -8,7 +8,7 @@ module module_top (
 );
 
     logic slow_clk;
-    logic [3:0] column_index;
+    logic [1:0] column_index;
     logic [3:0] key_value;
     logic [3:0] clean_rows;
     logic key_pressed;
@@ -20,14 +20,9 @@ module module_top (
     logic ready_operandos;
 
 
-    logic state_enableA;
-    logic state_enableB;
-    logic ready_operandos;
-
-
     logic is_sign_key;
-    logic [7:0] opt_A;
-    logic [7:0] opt_B;
+    logic [11:0] stored_A;
+    logic [11:0] stored_B;
     logic [3:0] signo;
 
 
@@ -99,7 +94,7 @@ input_module input_inst (
 
     // Conversión de `display_data` a BCD
     bin_to_bcd converter_inst (
-        .binario(state_enableB), // `display_data` contiene el valor de acumulador o multiplicación
+        .binario(stored_A), // `display_data` contiene el valor de acumulador o multiplicación
         .bcd(bcd)
     );
 

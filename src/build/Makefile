@@ -35,7 +35,7 @@ TOP_TB     = tb_module_top
 #nombre del vcd que va a generar el tb
 #VCD_FILE = tb_freq_divider
 #VCD_FILE = col_shift.vcd
-VCD_FILE = fsm_controller.vcd
+VCD_FILE = teclado.vcd
 
 
 all: synth pnr bitstream load
