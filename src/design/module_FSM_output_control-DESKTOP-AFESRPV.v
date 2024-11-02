@@ -30,14 +30,13 @@ module output_control (
         end else begin
             // Actualización del estado actual
             current_state <= next_state;
+
             // Lógica para manejar la señal de key_pressed
             key_pressed_prev <= key_pressed;
 
             // Contador
             case (current_state)
                 IDLE: begin
-                    //state_enableA <= 0; // Habilitar entrada A
-                    //state_enableB <= 0; // Habilitar entrada B
                     if (key_pressed && !key_pressed_prev) begin // Detección de flanco ascendente
                         next_state <= OPERANDO_A;
                         count <= 0; // Reiniciar el contador
@@ -46,14 +45,11 @@ module output_control (
 
                 OPERANDO_A: begin
                     state_enableA <= 1; // Habilitar entrada A
-                    //state_enableB <= 0; // Habilitar entrada A
-
                     if (key_pressed && !key_pressed_prev) begin // Detección de flanco ascendente
                         if (count < 2) begin
                             count <= count + 1; // Incrementar el contador para A
-                            next_state <= OPERANDO_A;
-
-                        end else if (count == 2) begin
+                        end
+                        if (count == 2) begin
                             next_state <= OPERANDO_B;
                         end
                     end
@@ -61,21 +57,18 @@ module output_control (
 
                 OPERANDO_B: begin
                     state_enableB <= 1; // Habilitar entrada B
-                    //state_enableA <= 0; // Habilitar entrada A
-
                     if (key_pressed && !key_pressed_prev) begin // Detección de flanco ascendente
                         if (count < 4) begin
                             count <= count + 1; // Incrementar el contador total
-                            next_state <= OPERANDO_B;
-                        end else if (count == 4) begin
-                        
+                        end
+                        if (count == 4) begin
                             next_state <= DONE;
                         end
                     end
                 end
 
                 DONE: begin
-                    ready <= 1; // Señal lista 
+                    ready <= 1; // Señal lista
                     next_state <= IDLE; // Volver a IDLE
                     // No reiniciar el contador aquí
                 end

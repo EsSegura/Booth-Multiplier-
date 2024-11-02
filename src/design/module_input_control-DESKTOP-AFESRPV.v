@@ -6,20 +6,20 @@ module input_module (
     input logic is_sign_key,          // Indica si la tecla es un signo (por ejemplo, '+', '-')
     input logic state_enableA,        // Habilita almacenamiento en A
     input logic state_enableB,        // Habilita almacenamiento en B
-    output logic [11:0] stored_A,      // Valor almacenado en A
-    output logic [11:0] stored_B,       // Valor almacenado en B
+    output logic [7:0] stored_A,      // Valor almacenado en A
+    output logic [7:0] stored_B       // Valor almacenado en B
 );
 
     logic key_pressed_prev;              // Para detectar flancos ascendentes
-    logic [11:0] temp_value;              // Almacena temporalmente el valor ingresado
+    logic [7:0] temp_value;              // Almacena temporalmente el valor ingresado
     logic load_value;                     // Señal para cargar el valor
 
     // Inicialización y lógica de entrada
     always_ff @(posedge clk or negedge rst) begin
         if (!rst) begin
-            stored_A <= 12'b0;            // Reiniciar el valor almacenado en A
-            stored_B <= 12'b0;            // Reiniciar el valor almacenado en B
-            temp_value <= 12'b0;           // Reiniciar el valor temporal
+            stored_A <= 8'b0;            // Reiniciar el valor almacenado en A
+            stored_B <= 8'b0;            // Reiniciar el valor almacenado en B
+            temp_value <= 8'b0;           // Reiniciar el valor temporal
             key_pressed_prev <= 1'b0;
             load_value <= 1'b0;
         end else begin
@@ -29,25 +29,11 @@ module input_module (
                     // Agregar el nuevo dígito al valor temporal
                     temp_value <= (temp_value << 3) + (temp_value << 1) + key_value; // Desplazamientos para multiplicar por 10
                     load_value <= 1'b1; // Señal para cargar el valor
-                end else begin
-                    if (key_value == 4'b1100) begin
-
-
-                    end
-                    if (key_value == 4'b1011) begin
-                    // Al presionar 'B', borra los valores
-                    stored_A <= 12'b0;      // Borrar el valor almacenado en A
-                    temp_value <= 12'b0;    // Reiniciar el valor temporal
-
-                    stored_A <= result;
-                    end
-
-                    if (key_value == 4'b1100) begin // Suponiendo que 'C' clear result
-                    stored_A <= 12'b0;
-                    stored_B <= 12'b0;
-                    temp_value <= 12'b0;
-                    end
-
+                end else if (key_value == 4'b1010) begin // Suponiendo que 'A' es 4'b1010
+                    // Al presionar 'A', borra los valores
+                    stored_A <= 8'b0;      // Borrar el valor almacenado en A
+                    stored_B <= 8'b0;      // Borrar el valor almacenado en B
+                    temp_value <= 8'b0;    // Reiniciar el valor temporal
                 end
             end else begin
                 load_value <= 1'b0; // Resetear la señal de carga
@@ -61,9 +47,6 @@ module input_module (
                     stored_B <= temp_value; // Almacenar el valor temporal en B
                 end
             end
-            //if (load_value == 1'b1;) begin 
-
-
         end
     end
 
