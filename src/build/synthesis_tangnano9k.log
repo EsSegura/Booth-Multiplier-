@@ -87,8 +87,8 @@ Successfully finished Verilog frontend.
 
 12. Executing SYNTH_GOWIN pass.
 
-12.1. Executing Verilog-2005 frontend: c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v
-Parsing Verilog input from `c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v' to AST representation.
+12.1. Executing Verilog-2005 frontend: C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v
+Parsing Verilog input from `C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v' to AST representation.
 Generating RTLIL representation for module `\LUT1'.
 Generating RTLIL representation for module `\LUT2'.
 Generating RTLIL representation for module `\LUT3'.
@@ -183,26 +183,26 @@ Removed 2 unused modules.
 12.3. Executing PROC pass (convert processes to netlists).
 
 12.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\ALU.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
+Found and cleaned up 1 empty switch in `\ALU.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
 Cleaned up 1 empty switch.
 
 12.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473 in module DFFNCE.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471 in module DFFNC.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469 in module DFFNPE.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467 in module DFFNP.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465 in module DFFNRE.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463 in module DFFNR.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461 in module DFFNSE.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459 in module DFFNS.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453 in module DFFCE.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451 in module DFFC.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449 in module DFFPE.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447 in module DFFP.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445 in module DFFRE.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443 in module DFFR.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441 in module DFFSE.
-Marked 1 switch rules as full_case in process $proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439 in module DFFS.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473 in module DFFNCE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471 in module DFFNC.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469 in module DFFNPE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467 in module DFFNP.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465 in module DFFNRE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463 in module DFFNR.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461 in module DFFNSE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459 in module DFFNS.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453 in module DFFCE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451 in module DFFC.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449 in module DFFPE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447 in module DFFP.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445 in module DFFRE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443 in module DFFR.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441 in module DFFSE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439 in module DFFS.
 Marked 6 switch rules as full_case in process $proc$../design/module_row_scanner.v:0$250 in module row_scanner.
 Marked 4 switch rules as full_case in process $proc$../design/module_input_control.v:19$147 in module input_module.
 Removed 1 dead cases from process $proc$../design/module_FSM_output_control.v:24$133 in module output_control.
@@ -223,58 +223,58 @@ Removed 15 redundant assignments.
 Promoted 35 assignments to connections.
 
 12.3.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\DFFNCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$474'.
+Found init rule in `\DFFNCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$474'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFNC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$472'.
+Found init rule in `\DFFNC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$472'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFNPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$470'.
+Found init rule in `\DFFNPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$470'.
   Set init value: \Q = 1'1
-Found init rule in `\DFFNP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$468'.
+Found init rule in `\DFFNP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$468'.
   Set init value: \Q = 1'1
-Found init rule in `\DFFNRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$466'.
+Found init rule in `\DFFNRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$466'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFNR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$464'.
+Found init rule in `\DFFNR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$464'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFNSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$462'.
+Found init rule in `\DFFNSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$462'.
   Set init value: \Q = 1'1
-Found init rule in `\DFFNS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$460'.
+Found init rule in `\DFFNS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$460'.
   Set init value: \Q = 1'1
-Found init rule in `\DFFNE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$458'.
+Found init rule in `\DFFNE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$458'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFN.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$456'.
+Found init rule in `\DFFN.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$456'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$454'.
+Found init rule in `\DFFCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$454'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$452'.
+Found init rule in `\DFFC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$452'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$450'.
+Found init rule in `\DFFPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$450'.
   Set init value: \Q = 1'1
-Found init rule in `\DFFP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$448'.
+Found init rule in `\DFFP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$448'.
   Set init value: \Q = 1'1
-Found init rule in `\DFFRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$446'.
+Found init rule in `\DFFRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$446'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$444'.
+Found init rule in `\DFFR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$444'.
   Set init value: \Q = 1'0
-Found init rule in `\DFFSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$442'.
+Found init rule in `\DFFSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$442'.
   Set init value: \Q = 1'1
-Found init rule in `\DFFS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$440'.
+Found init rule in `\DFFS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$440'.
   Set init value: \Q = 1'1
-Found init rule in `\DFFE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$438'.
+Found init rule in `\DFFE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$438'.
   Set init value: \Q = 1'0
-Found init rule in `\DFF.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$436'.
+Found init rule in `\DFF.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$436'.
   Set init value: \Q = 1'0
 Found init rule in `\freq_divider.$proc$../design/module_freq_divider.v:0$132'.
   Set init value: \slow_clk = 1'0
 
 12.3.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \CLEAR in `\DFFNCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
-Found async reset \CLEAR in `\DFFNC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471'.
-Found async reset \PRESET in `\DFFNPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
-Found async reset \PRESET in `\DFFNP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467'.
-Found async reset \CLEAR in `\DFFCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
-Found async reset \CLEAR in `\DFFC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451'.
-Found async reset \PRESET in `\DFFPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
-Found async reset \PRESET in `\DFFP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447'.
+Found async reset \CLEAR in `\DFFNCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
+Found async reset \CLEAR in `\DFFNC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471'.
+Found async reset \PRESET in `\DFFNPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
+Found async reset \PRESET in `\DFFNP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467'.
+Found async reset \CLEAR in `\DFFCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
+Found async reset \CLEAR in `\DFFC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451'.
+Found async reset \PRESET in `\DFFPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
+Found async reset \PRESET in `\DFFP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447'.
 Found async reset \rst in `\input_module.$proc$../design/module_input_control.v:19$147'.
 Found async reset \rst in `\output_control.$proc$../design/module_FSM_output_control.v:24$133'.
 Found async reset \rst in `\debouncer.$proc$../design/module_debouncer.v:11$122'.
@@ -284,65 +284,65 @@ Converted 1 switch.
 <suppressed ~98 debug messages>
 
 12.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\ALU.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
-Creating decoders for process `\DFFNCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$474'.
-Creating decoders for process `\DFFNCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
+Creating decoders for process `\ALU.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
+Creating decoders for process `\DFFNCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$474'.
+Creating decoders for process `\DFFNCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFNC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$472'.
-Creating decoders for process `\DFFNC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471'.
+Creating decoders for process `\DFFNC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$472'.
+Creating decoders for process `\DFFNC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFNPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$470'.
-Creating decoders for process `\DFFNPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
+Creating decoders for process `\DFFNPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$470'.
+Creating decoders for process `\DFFNPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFNP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$468'.
-Creating decoders for process `\DFFNP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467'.
+Creating decoders for process `\DFFNP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$468'.
+Creating decoders for process `\DFFNP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFNRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$466'.
-Creating decoders for process `\DFFNRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465'.
+Creating decoders for process `\DFFNRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$466'.
+Creating decoders for process `\DFFNRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFNR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$464'.
-Creating decoders for process `\DFFNR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463'.
+Creating decoders for process `\DFFNR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$464'.
+Creating decoders for process `\DFFNR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFNSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$462'.
-Creating decoders for process `\DFFNSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461'.
+Creating decoders for process `\DFFNSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$462'.
+Creating decoders for process `\DFFNSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFNS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$460'.
-Creating decoders for process `\DFFNS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459'.
+Creating decoders for process `\DFFNS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$460'.
+Creating decoders for process `\DFFNS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFNE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$458'.
-Creating decoders for process `\DFFNE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$457'.
+Creating decoders for process `\DFFNE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$458'.
+Creating decoders for process `\DFFNE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$457'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFN.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$456'.
-Creating decoders for process `\DFFN.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:366$455'.
-Creating decoders for process `\DFFCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$454'.
-Creating decoders for process `\DFFCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
+Creating decoders for process `\DFFN.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$456'.
+Creating decoders for process `\DFFN.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:366$455'.
+Creating decoders for process `\DFFCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$454'.
+Creating decoders for process `\DFFCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$452'.
-Creating decoders for process `\DFFC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451'.
+Creating decoders for process `\DFFC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$452'.
+Creating decoders for process `\DFFC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$450'.
-Creating decoders for process `\DFFPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
+Creating decoders for process `\DFFPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$450'.
+Creating decoders for process `\DFFPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$448'.
-Creating decoders for process `\DFFP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447'.
+Creating decoders for process `\DFFP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$448'.
+Creating decoders for process `\DFFP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$446'.
-Creating decoders for process `\DFFRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445'.
+Creating decoders for process `\DFFRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$446'.
+Creating decoders for process `\DFFRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$444'.
-Creating decoders for process `\DFFR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443'.
+Creating decoders for process `\DFFR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$444'.
+Creating decoders for process `\DFFR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$442'.
-Creating decoders for process `\DFFSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441'.
+Creating decoders for process `\DFFSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$442'.
+Creating decoders for process `\DFFSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$440'.
-Creating decoders for process `\DFFS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439'.
+Creating decoders for process `\DFFS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$440'.
+Creating decoders for process `\DFFS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFFE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$438'.
-Creating decoders for process `\DFFE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$437'.
+Creating decoders for process `\DFFE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$438'.
+Creating decoders for process `\DFFE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$437'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DFF.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$436'.
-Creating decoders for process `\DFF.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:179$435'.
+Creating decoders for process `\DFF.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$436'.
+Creating decoders for process `\DFF.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:179$435'.
 Creating decoders for process `\row_scanner.$proc$../design/module_row_scanner.v:0$250'.
      1/7: $1\key_pressed[0:0]
      2/7: $5\key_value[3:0]
@@ -448,49 +448,49 @@ No latch inferred for signal `\module_7_segments.\anodo_o' from process `\module
 No latch inferred for signal `\module_7_segments.\digito_o' from process `\module_7_segments.$proc$../design/module_7_segments.v:52$9'.
 
 12.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\ALU.\C' using process `\ALU.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
+Creating register for signal `\ALU.\C' using process `\ALU.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
   created direct connection (no actual register cell created).
-Creating register for signal `\ALU.\S' using process `\ALU.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
+Creating register for signal `\ALU.\S' using process `\ALU.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DFFNCE.\Q' using process `\DFFNCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
+Creating register for signal `\DFFNCE.\Q' using process `\DFFNCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
   created $adff cell `$procdff$918' with negative edge clock and positive level reset.
-Creating register for signal `\DFFNC.\Q' using process `\DFFNC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471'.
+Creating register for signal `\DFFNC.\Q' using process `\DFFNC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471'.
   created $adff cell `$procdff$919' with negative edge clock and positive level reset.
-Creating register for signal `\DFFNPE.\Q' using process `\DFFNPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
+Creating register for signal `\DFFNPE.\Q' using process `\DFFNPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
   created $adff cell `$procdff$920' with negative edge clock and positive level reset.
-Creating register for signal `\DFFNP.\Q' using process `\DFFNP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467'.
+Creating register for signal `\DFFNP.\Q' using process `\DFFNP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467'.
   created $adff cell `$procdff$921' with negative edge clock and positive level reset.
-Creating register for signal `\DFFNRE.\Q' using process `\DFFNRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465'.
+Creating register for signal `\DFFNRE.\Q' using process `\DFFNRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465'.
   created $dff cell `$procdff$922' with negative edge clock.
-Creating register for signal `\DFFNR.\Q' using process `\DFFNR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463'.
+Creating register for signal `\DFFNR.\Q' using process `\DFFNR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463'.
   created $dff cell `$procdff$923' with negative edge clock.
-Creating register for signal `\DFFNSE.\Q' using process `\DFFNSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461'.
+Creating register for signal `\DFFNSE.\Q' using process `\DFFNSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461'.
   created $dff cell `$procdff$924' with negative edge clock.
-Creating register for signal `\DFFNS.\Q' using process `\DFFNS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459'.
+Creating register for signal `\DFFNS.\Q' using process `\DFFNS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459'.
   created $dff cell `$procdff$925' with negative edge clock.
-Creating register for signal `\DFFNE.\Q' using process `\DFFNE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$457'.
+Creating register for signal `\DFFNE.\Q' using process `\DFFNE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$457'.
   created $dff cell `$procdff$926' with negative edge clock.
-Creating register for signal `\DFFN.\Q' using process `\DFFN.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:366$455'.
+Creating register for signal `\DFFN.\Q' using process `\DFFN.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:366$455'.
   created $dff cell `$procdff$927' with negative edge clock.
-Creating register for signal `\DFFCE.\Q' using process `\DFFCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
+Creating register for signal `\DFFCE.\Q' using process `\DFFCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
   created $adff cell `$procdff$928' with positive edge clock and positive level reset.
-Creating register for signal `\DFFC.\Q' using process `\DFFC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451'.
+Creating register for signal `\DFFC.\Q' using process `\DFFC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451'.
   created $adff cell `$procdff$929' with positive edge clock and positive level reset.
-Creating register for signal `\DFFPE.\Q' using process `\DFFPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
+Creating register for signal `\DFFPE.\Q' using process `\DFFPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
   created $adff cell `$procdff$930' with positive edge clock and positive level reset.
-Creating register for signal `\DFFP.\Q' using process `\DFFP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447'.
+Creating register for signal `\DFFP.\Q' using process `\DFFP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447'.
   created $adff cell `$procdff$931' with positive edge clock and positive level reset.
-Creating register for signal `\DFFRE.\Q' using process `\DFFRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445'.
+Creating register for signal `\DFFRE.\Q' using process `\DFFRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445'.
   created $dff cell `$procdff$932' with positive edge clock.
-Creating register for signal `\DFFR.\Q' using process `\DFFR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443'.
+Creating register for signal `\DFFR.\Q' using process `\DFFR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443'.
   created $dff cell `$procdff$933' with positive edge clock.
-Creating register for signal `\DFFSE.\Q' using process `\DFFSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441'.
+Creating register for signal `\DFFSE.\Q' using process `\DFFSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441'.
   created $dff cell `$procdff$934' with positive edge clock.
-Creating register for signal `\DFFS.\Q' using process `\DFFS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439'.
+Creating register for signal `\DFFS.\Q' using process `\DFFS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439'.
   created $dff cell `$procdff$935' with positive edge clock.
-Creating register for signal `\DFFE.\Q' using process `\DFFE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$437'.
+Creating register for signal `\DFFE.\Q' using process `\DFFE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$437'.
   created $dff cell `$procdff$936' with positive edge clock.
-Creating register for signal `\DFF.\Q' using process `\DFF.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:179$435'.
+Creating register for signal `\DFF.\Q' using process `\DFF.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:179$435'.
   created $dff cell `$procdff$937' with positive edge clock.
 Creating register for signal `\input_module.\key_pressed_prev' using process `\input_module.$proc$../design/module_input_control.v:19$147'.
   created $adff cell `$procdff$938' with positive edge clock and negative level reset.
@@ -542,61 +542,61 @@ Creating register for signal `\module_7_segments.\en_conmutador' using process `
 12.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 12.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `ALU.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
-Removing empty process `DFFNCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$474'.
-Found and cleaned up 1 empty switch in `\DFFNCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
-Removing empty process `DFFNCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
-Removing empty process `DFFNC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$472'.
-Removing empty process `DFFNC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471'.
-Removing empty process `DFFNPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$470'.
-Found and cleaned up 1 empty switch in `\DFFNPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
-Removing empty process `DFFNPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
-Removing empty process `DFFNP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$468'.
-Removing empty process `DFFNP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467'.
-Removing empty process `DFFNRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$466'.
-Found and cleaned up 2 empty switches in `\DFFNRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465'.
-Removing empty process `DFFNRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465'.
-Removing empty process `DFFNR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$464'.
-Found and cleaned up 1 empty switch in `\DFFNR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463'.
-Removing empty process `DFFNR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463'.
-Removing empty process `DFFNSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$462'.
-Found and cleaned up 2 empty switches in `\DFFNSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461'.
-Removing empty process `DFFNSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461'.
-Removing empty process `DFFNS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$460'.
-Found and cleaned up 1 empty switch in `\DFFNS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459'.
-Removing empty process `DFFNS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459'.
-Removing empty process `DFFNE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$458'.
-Found and cleaned up 1 empty switch in `\DFFNE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$457'.
-Removing empty process `DFFNE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$457'.
-Removing empty process `DFFN.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$456'.
-Removing empty process `DFFN.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:366$455'.
-Removing empty process `DFFCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$454'.
-Found and cleaned up 1 empty switch in `\DFFCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
-Removing empty process `DFFCE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
-Removing empty process `DFFC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$452'.
-Removing empty process `DFFC.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451'.
-Removing empty process `DFFPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$450'.
-Found and cleaned up 1 empty switch in `\DFFPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
-Removing empty process `DFFPE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
-Removing empty process `DFFP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$448'.
-Removing empty process `DFFP.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447'.
-Removing empty process `DFFRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$446'.
-Found and cleaned up 2 empty switches in `\DFFRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445'.
-Removing empty process `DFFRE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445'.
-Removing empty process `DFFR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$444'.
-Found and cleaned up 1 empty switch in `\DFFR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443'.
-Removing empty process `DFFR.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443'.
-Removing empty process `DFFSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$442'.
-Found and cleaned up 2 empty switches in `\DFFSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441'.
-Removing empty process `DFFSE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441'.
-Removing empty process `DFFS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$440'.
-Found and cleaned up 1 empty switch in `\DFFS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439'.
-Removing empty process `DFFS.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439'.
-Removing empty process `DFFE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$438'.
-Found and cleaned up 1 empty switch in `\DFFE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$437'.
-Removing empty process `DFFE.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$437'.
-Removing empty process `DFF.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$436'.
-Removing empty process `DFF.$proc$c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:179$435'.
+Removing empty process `ALU.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$477'.
+Removing empty process `DFFNCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$474'.
+Found and cleaned up 1 empty switch in `\DFFNCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
+Removing empty process `DFFNCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$473'.
+Removing empty process `DFFNC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$472'.
+Removing empty process `DFFNC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$471'.
+Removing empty process `DFFNPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$470'.
+Found and cleaned up 1 empty switch in `\DFFNPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
+Removing empty process `DFFNPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$469'.
+Removing empty process `DFFNP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$468'.
+Removing empty process `DFFNP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$467'.
+Removing empty process `DFFNRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$466'.
+Found and cleaned up 2 empty switches in `\DFFNRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465'.
+Removing empty process `DFFNRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$465'.
+Removing empty process `DFFNR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$464'.
+Found and cleaned up 1 empty switch in `\DFFNR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463'.
+Removing empty process `DFFNR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$463'.
+Removing empty process `DFFNSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$462'.
+Found and cleaned up 2 empty switches in `\DFFNSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461'.
+Removing empty process `DFFNSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$461'.
+Removing empty process `DFFNS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$460'.
+Found and cleaned up 1 empty switch in `\DFFNS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459'.
+Removing empty process `DFFNS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$459'.
+Removing empty process `DFFNE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$458'.
+Found and cleaned up 1 empty switch in `\DFFNE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$457'.
+Removing empty process `DFFNE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$457'.
+Removing empty process `DFFN.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$456'.
+Removing empty process `DFFN.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:366$455'.
+Removing empty process `DFFCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$454'.
+Found and cleaned up 1 empty switch in `\DFFCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
+Removing empty process `DFFCE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$453'.
+Removing empty process `DFFC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$452'.
+Removing empty process `DFFC.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$451'.
+Removing empty process `DFFPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$450'.
+Found and cleaned up 1 empty switch in `\DFFPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
+Removing empty process `DFFPE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$449'.
+Removing empty process `DFFP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$448'.
+Removing empty process `DFFP.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$447'.
+Removing empty process `DFFRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$446'.
+Found and cleaned up 2 empty switches in `\DFFRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445'.
+Removing empty process `DFFRE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$445'.
+Removing empty process `DFFR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$444'.
+Found and cleaned up 1 empty switch in `\DFFR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443'.
+Removing empty process `DFFR.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$443'.
+Removing empty process `DFFSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$442'.
+Found and cleaned up 2 empty switches in `\DFFSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441'.
+Removing empty process `DFFSE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$441'.
+Removing empty process `DFFS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$440'.
+Found and cleaned up 1 empty switch in `\DFFS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439'.
+Removing empty process `DFFS.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$439'.
+Removing empty process `DFFE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$438'.
+Found and cleaned up 1 empty switch in `\DFFE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$437'.
+Removing empty process `DFFE.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$437'.
+Removing empty process `DFF.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$436'.
+Removing empty process `DFF.$proc$C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:179$435'.
 Found and cleaned up 6 empty switches in `\row_scanner.$proc$../design/module_row_scanner.v:0$250'.
 Removing empty process `row_scanner.$proc$../design/module_row_scanner.v:0$250'.
 Found and cleaned up 7 empty switches in `\input_module.$proc$../design/module_input_control.v:19$147'.
@@ -1446,13 +1446,13 @@ using FF mapping for memory module_top.$flatten\display_inst.$auto$proc_rom.cc:1
 
 12.9. Executing TECHMAP pass (map to technology primitives).
 
-12.9.1. Executing Verilog-2005 frontend: c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/lutrams_map.v
-Parsing Verilog input from `c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/lutrams_map.v' to AST representation.
+12.9.1. Executing Verilog-2005 frontend: C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/lutrams_map.v
+Parsing Verilog input from `C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/lutrams_map.v' to AST representation.
 Generating RTLIL representation for module `\$__GOWIN_LUTRAM_'.
 Successfully finished Verilog frontend.
 
-12.9.2. Executing Verilog-2005 frontend: c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/brams_map.v
-Parsing Verilog input from `c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/brams_map.v' to AST representation.
+12.9.2. Executing Verilog-2005 frontend: C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/brams_map.v
+Parsing Verilog input from `C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/brams_map.v' to AST representation.
 Generating RTLIL representation for module `\$__GOWIN_SP_'.
 Generating RTLIL representation for module `\$__GOWIN_DP_'.
 Generating RTLIL representation for module `\$__GOWIN_SDP_'.
@@ -1668,8 +1668,8 @@ Optimizing module module_top.
 
 12.13. Executing TECHMAP pass (map to technology primitives).
 
-12.13.1. Executing Verilog-2005 frontend: c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/techmap.v
-Parsing Verilog input from `c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/techmap.v' to AST representation.
+12.13.1. Executing Verilog-2005 frontend: C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/techmap.v
+Parsing Verilog input from `C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -1696,8 +1696,8 @@ Generating RTLIL representation for module `\_90_demux'.
 Generating RTLIL representation for module `\_90_lut'.
 Successfully finished Verilog frontend.
 
-12.13.2. Executing Verilog-2005 frontend: c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v
-Parsing Verilog input from `c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v' to AST representation.
+12.13.2. Executing Verilog-2005 frontend: C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v
+Parsing Verilog input from `C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v' to AST representation.
 Generating RTLIL representation for module `\_80_gw1n_alu'.
 Successfully finished Verilog frontend.
 
@@ -1780,8 +1780,8 @@ Removed 0 unused cells and 6 unused wires.
 
 12.18. Executing TECHMAP pass (map to technology primitives).
 
-12.18.1. Executing Verilog-2005 frontend: c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v
-Parsing Verilog input from `c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v' to AST representation.
+12.18.1. Executing Verilog-2005 frontend: C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v
+Parsing Verilog input from `C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DFF_N_'.
 Generating RTLIL representation for module `\$_DFF_P_'.
 Generating RTLIL representation for module `\$_DFFE_PP_'.
@@ -1855,8 +1855,8 @@ Removed 0 unused cells and 2339 unused wires.
 
 12.22. Executing TECHMAP pass (map to technology primitives).
 
-12.22.1. Executing Verilog-2005 frontend: c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v
-Parsing Verilog input from `c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v' to AST representation.
+12.22.1. Executing Verilog-2005 frontend: C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v
+Parsing Verilog input from `C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DFF_N_'.
 Generating RTLIL representation for module `\$_DFF_P_'.
 Generating RTLIL representation for module `\$_DFFE_PP_'.
@@ -2565,6 +2565,6 @@ Found and reported 0 problems.
 12.30. Executing JSON backend.
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: c9be708002
+End of script. Logfile hash: e175d1dd33
 Yosys 0.26+1 (git sha1 b1a011138, x86_64-w64-mingw32-g++ 9.2.1 -Os)
 Time spent: 1% 24x opt_expr (0 sec), 1% 22x opt_clean (0 sec), ...

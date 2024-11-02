@@ -19,8 +19,8 @@ SOURCES := $(wildcard ../design/*.v ../design/*.sv) #Todas las fuentes .v o .sv 
 #TESTBENCH = ../sim/module_keyboard_tb.v
 #TESTBENCH = ../sim/module_divider_tb.v     # prueba de slow clock
 #TESTBENCH = ../sim/module_col_shift_tb.v
-TESTBENCH = ../sim/module_tb_input_control.v
-
+#TESTBENCH = ../sim/module_tb_input_control.v
+TESTBENCH = ../sim/module_booth_tb.v
 
 # Constraints para el proyecto
 #aca va el archivo de constraints del proyecto
@@ -30,12 +30,13 @@ CONSTRAINTS = ../constr/sumador.cst
 TOP_DESIGN = module_top
 #TOP_TB     = tb_freq_divider
 #TOP_TB     = tb_col_shift_register
-TOP_TB     = tb_module_top
-
+#TOP_TB     = tb_module_top
+TOP_TB     = tb_mult_with_no_fsm
 #nombre del vcd que va a generar el tb
 #VCD_FILE = tb_freq_divider
 #VCD_FILE = col_shift.vcd
-VCD_FILE = teclado.vcd
+#VCD_FILE = teclado.vcd
+VCD_FILE = tb_mult_with_no_fsm.vcd
 
 
 all: synth pnr bitstream load
