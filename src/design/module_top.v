@@ -15,14 +15,16 @@ module module_top (
     logic [15:0] bcd;
     logic [3:0] col_shift_reg;                   // Señal BCD para los displays
 
-    logic state_enableA;
-    logic state_enableB;
+    logic enable_A;
+    logic enable_B;
+    logic enable_sign;
     logic ready_operandos;
 
 
     logic is_sign_key;
-    logic [11:0] stored_A;
-    logic [11:0] stored_B;
+    logic [7:0] stored_A;
+    logic [7:0] stored_B;
+    logic [7:0] temp_value;
     logic [3:0] signo;
 
 
@@ -69,15 +71,42 @@ module module_top (
         .is_sign_key(is_sign_key)
     );
 
+        // Instancia del módulo fsm_control
+    fsm_control fsm_input_inst (
+        .clk(clk),
+        .rst(rst),
+        .key_pressed(key_pressed),
+        .is_sign_key(is_sign_key),
+        .enable_A(enable_A),
+        .enable_B(enable_B),
+        .enable_sign(enable_sign)
+    );
+
+    // Instancia del módulo operand_storage
+    operand_storage storage_inst (
+        .clk(clk),
+        .rst(rst),
+        .key_value(key_value),    // Entrada de valor de tecla
+        .key_pressed(key_pressed),
+        .is_sign_key(is_sign_key),        
+        .enable_A(enable_A),      // Habilitación para almacenar A
+        .enable_B(enable_B),      // Habilitación para almacenar B
+        .enable_sign(enable_sign), // Habilitación para almacenamiento temporal (signo o valor actual)
+        .A(stored_A),                // Salida de operando A
+        .B(stored_B),                // Salida de operando B
+        .temp_value(temp_value)   // Salida temporal para visualización en display
+    );
+
+
     // Instancia del módulo input_control para gestionar la entrada
-input_module input_inst (
+/*    input_module input_inst (
         .clk(clk),
         .rst(rst),                  // Invertir el reset si es necesario
         .key_pressed(key_pressed),
         .key_value(key_value),
         .is_sign_key(is_sign_key),
-        .state_enableA(state_enableA),
-        .state_enableB(state_enableB),
+        .state_enableA(enableA),
+        .state_enableB(enableB),
         .stored_A(stored_A),          // Salida para el valor almacenado en A
         .stored_B(stored_B)           // Salida para el valor almacenado en B
     );
@@ -85,15 +114,17 @@ input_module input_inst (
     output_control ocontrol_inst (
         .clk(clk),
         .rst(rst),
-        .state_enableA(state_enableA),
-        .state_enableB(state_enableB),
+        .state_enableA(enableA),
+        .state_enableB(enableB),
         .ready(ready_operandos)
     );
+
+*/
 
 
     // Conversión de `display_data` a BCD
     bin_to_bcd converter_inst (
-        .binario(stored_A), // `display_data` contiene el valor de acumulador o multiplicación
+        .binario(temp_value), // `display_data` contiene el valor de acumulador o multiplicación
         .bcd(bcd)
     );
 
