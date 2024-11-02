@@ -27,10 +27,17 @@ Info: Packing ALUs..
 Info: Packing LUT-FFs..
 Info: Packing non-LUT FFs..
 Info: Packing PLLs..
+<<<<<<< HEAD
 Info: Checksum: 0x0362aa9c
 
 Info: Annotating ports with timing budgets for target frequency 27.00 MHz
 Info: Checksum: 0x0362aa9c
+=======
+Info: Checksum: 0x316f773d
+
+Info: Annotating ports with timing budgets for target frequency 27.00 MHz
+Info: Checksum: 0x316f773d
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 
 Info: Device utilisation:
 Info: 	                 VCC:     1/    1   100%
@@ -48,6 +55,7 @@ Info: 	                 OSC:     0/    1     0%
 Info: 	                rPLL:     0/    2     0%
 
 Info: Placed 21 cells based on constraints.
+<<<<<<< HEAD
 Info: Creating initial analytic placement for 677 cells, random placement wirelen = 31009.
 Info:     at initial placer iter 0, wirelen = 939
 Info:     at initial placer iter 1, wirelen = 958
@@ -156,6 +164,235 @@ Info:   at iteration #10: temp = 0.000000, timing cost = 35, wirelen = 2589
 Info:   at iteration #15: temp = 0.000000, timing cost = 33, wirelen = 2476
 Info:   at iteration #19: temp = 0.000000, timing cost = 34, wirelen = 2469 
 Info: SA placement time 1.83s
+=======
+Info: Creating initial analytic placement for 705 cells, random placement wirelen = 33399.
+Info:     at initial placer iter 0, wirelen = 1301
+Info:     at initial placer iter 1, wirelen = 859
+Info:     at initial placer iter 2, wirelen = 814
+Info:     at initial placer iter 3, wirelen = 770
+Info: Running main analytical placer, max placement attempts per cell = 549152.
+Info:     at iteration #1, type SLICE: wirelen solved = 909, spread = 9042, legal = 9063; time = 0.04s
+Info:     at iteration #1, type MUX2_LUT6: wirelen solved = 8649, spread = 9163, legal = 9209; time = 0.02s
+Info:     at iteration #1, type MUX2_LUT7: wirelen solved = 8908, spread = 8989, legal = 9058; time = 0.02s
+Info:     at iteration #1, type MUX2_LUT5: wirelen solved = 8817, spread = 8905, legal = 8916; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT8: wirelen solved = 8665, spread = 8665, legal = 8789; time = 0.02s
+Info:     at iteration #1, type VCC: wirelen solved = 8789, spread = 8789, legal = 8789; time = 0.01s
+Info:     at iteration #1, type GND: wirelen solved = 8789, spread = 8789, legal = 8789; time = 0.01s
+Info:     at iteration #1, type GSR: wirelen solved = 8789, spread = 8789, legal = 8789; time = 0.02s
+Info:     at iteration #1, type ALL: wirelen solved = 1006, spread = 9927, legal = 10139; time = 0.05s
+Info:     at iteration #2, type SLICE: wirelen solved = 2360, spread = 6852, legal = 7471; time = 0.04s
+Info:     at iteration #2, type MUX2_LUT6: wirelen solved = 7194, spread = 7249, legal = 7282; time = 0.02s
+Info:     at iteration #2, type MUX2_LUT7: wirelen solved = 6969, spread = 6999, legal = 7075; time = 0.02s
+Info:     at iteration #2, type MUX2_LUT5: wirelen solved = 6873, spread = 6894, legal = 6913; time = 0.02s
+Info:     at iteration #2, type MUX2_LUT8: wirelen solved = 6739, spread = 6739, legal = 6805; time = 0.02s
+Info:     at iteration #2, type VCC: wirelen solved = 6805, spread = 6805, legal = 6805; time = 0.02s
+Info:     at iteration #2, type GND: wirelen solved = 6805, spread = 6805, legal = 6805; time = 0.02s
+Info:     at iteration #2, type GSR: wirelen solved = 6805, spread = 6805, legal = 6805; time = 0.01s
+Info:     at iteration #2, type ALL: wirelen solved = 1078, spread = 6761, legal = 7146; time = 0.05s
+Info:     at iteration #3, type SLICE: wirelen solved = 2345, spread = 6069, legal = 6398; time = 0.04s
+Info:     at iteration #3, type MUX2_LUT6: wirelen solved = 6115, spread = 6291, legal = 6333; time = 0.02s
+Info:     at iteration #3, type MUX2_LUT7: wirelen solved = 6057, spread = 6088, legal = 6138; time = 0.02s
+Info:     at iteration #3, type MUX2_LUT5: wirelen solved = 5987, spread = 6095, legal = 6120; time = 0.02s
+Info:     at iteration #3, type MUX2_LUT8: wirelen solved = 6031, spread = 6035, legal = 6149; time = 0.02s
+Info:     at iteration #3, type VCC: wirelen solved = 6149, spread = 6149, legal = 6149; time = 0.02s
+Info:     at iteration #3, type GND: wirelen solved = 6149, spread = 6149, legal = 6149; time = 0.01s
+Info:     at iteration #3, type GSR: wirelen solved = 6149, spread = 6149, legal = 6149; time = 0.01s
+Info:     at iteration #3, type ALL: wirelen solved = 1218, spread = 5933, legal = 6308; time = 0.05s
+Info:     at iteration #4, type SLICE: wirelen solved = 2304, spread = 5605, legal = 5945; time = 0.04s
+Info:     at iteration #4, type MUX2_LUT6: wirelen solved = 5666, spread = 5867, legal = 5917; time = 0.02s
+Info:     at iteration #4, type MUX2_LUT7: wirelen solved = 5693, spread = 5732, legal = 5809; time = 0.02s
+Info:     at iteration #4, type MUX2_LUT5: wirelen solved = 5666, spread = 5669, legal = 5694; time = 0.02s
+Info:     at iteration #4, type MUX2_LUT8: wirelen solved = 5603, spread = 5608, legal = 5712; time = 0.02s
+Info:     at iteration #4, type VCC: wirelen solved = 5712, spread = 5712, legal = 5712; time = 0.02s
+Info:     at iteration #4, type GND: wirelen solved = 5712, spread = 5712, legal = 5712; time = 0.02s
+Info:     at iteration #4, type GSR: wirelen solved = 5712, spread = 5712, legal = 5712; time = 0.01s
+Info:     at iteration #4, type ALL: wirelen solved = 1357, spread = 5335, legal = 5589; time = 0.05s
+Info:     at iteration #5, type SLICE: wirelen solved = 2341, spread = 5401, legal = 5656; time = 0.05s
+Info:     at iteration #5, type MUX2_LUT6: wirelen solved = 5329, spread = 5414, legal = 5492; time = 0.02s
+Info:     at iteration #5, type MUX2_LUT7: wirelen solved = 5246, spread = 5263, legal = 5373; time = 0.02s
+Info:     at iteration #5, type MUX2_LUT5: wirelen solved = 5224, spread = 5292, legal = 5301; time = 0.02s
+Info:     at iteration #5, type MUX2_LUT8: wirelen solved = 5221, spread = 5221, legal = 5337; time = 0.02s
+Info:     at iteration #5, type VCC: wirelen solved = 5337, spread = 5337, legal = 5337; time = 0.01s
+Info:     at iteration #5, type GND: wirelen solved = 5337, spread = 5337, legal = 5337; time = 0.02s
+Info:     at iteration #5, type GSR: wirelen solved = 5337, spread = 5337, legal = 5337; time = 0.02s
+Info:     at iteration #5, type ALL: wirelen solved = 1491, spread = 5232, legal = 5583; time = 0.04s
+Info:     at iteration #6, type SLICE: wirelen solved = 2381, spread = 5393, legal = 5628; time = 0.04s
+Info:     at iteration #6, type MUX2_LUT6: wirelen solved = 5382, spread = 5448, legal = 5510; time = 0.02s
+Info:     at iteration #6, type MUX2_LUT7: wirelen solved = 5341, spread = 5369, legal = 5420; time = 0.02s
+Info:     at iteration #6, type MUX2_LUT5: wirelen solved = 5297, spread = 5352, legal = 5357; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT8: wirelen solved = 5277, spread = 5277, legal = 5348; time = 0.02s
+Info:     at iteration #6, type VCC: wirelen solved = 5348, spread = 5348, legal = 5348; time = 0.02s
+Info:     at iteration #6, type GND: wirelen solved = 5348, spread = 5348, legal = 5348; time = 0.01s
+Info:     at iteration #6, type GSR: wirelen solved = 5348, spread = 5348, legal = 5348; time = 0.02s
+Info:     at iteration #6, type ALL: wirelen solved = 1495, spread = 5511, legal = 5877; time = 0.06s
+Info:     at iteration #7, type SLICE: wirelen solved = 2393, spread = 5280, legal = 5724; time = 0.05s
+Info:     at iteration #7, type MUX2_LUT6: wirelen solved = 5481, spread = 5549, legal = 5611; time = 0.02s
+Info:     at iteration #7, type MUX2_LUT7: wirelen solved = 5420, spread = 5541, legal = 5630; time = 0.02s
+Info:     at iteration #7, type MUX2_LUT5: wirelen solved = 5487, spread = 5507, legal = 5538; time = 0.02s
+Info:     at iteration #7, type MUX2_LUT8: wirelen solved = 5431, spread = 5431, legal = 5478; time = 0.02s
+Info:     at iteration #7, type VCC: wirelen solved = 5478, spread = 5478, legal = 5478; time = 0.01s
+Info:     at iteration #7, type GND: wirelen solved = 5478, spread = 5478, legal = 5478; time = 0.02s
+Info:     at iteration #7, type GSR: wirelen solved = 5478, spread = 5478, legal = 5478; time = 0.02s
+Info:     at iteration #7, type ALL: wirelen solved = 1695, spread = 5162, legal = 5502; time = 0.05s
+Info:     at iteration #8, type SLICE: wirelen solved = 2302, spread = 5227, legal = 5524; time = 0.04s
+Info:     at iteration #8, type MUX2_LUT6: wirelen solved = 5323, spread = 5508, legal = 5576; time = 0.02s
+Info:     at iteration #8, type MUX2_LUT7: wirelen solved = 5484, spread = 5602, legal = 5623; time = 0.02s
+Info:     at iteration #8, type MUX2_LUT5: wirelen solved = 5484, spread = 5485, legal = 5491; time = 0.02s
+Info:     at iteration #8, type MUX2_LUT8: wirelen solved = 5435, spread = 5436, legal = 5488; time = 0.02s
+Info:     at iteration #8, type VCC: wirelen solved = 5488, spread = 5488, legal = 5488; time = 0.01s
+Info:     at iteration #8, type GND: wirelen solved = 5488, spread = 5488, legal = 5488; time = 0.01s
+Info:     at iteration #8, type GSR: wirelen solved = 5488, spread = 5488, legal = 5488; time = 0.01s
+Info:     at iteration #8, type ALL: wirelen solved = 1840, spread = 4671, legal = 4899; time = 0.05s
+Info:     at iteration #9, type SLICE: wirelen solved = 2554, spread = 4824, legal = 5123; time = 0.04s
+Info:     at iteration #9, type MUX2_LUT6: wirelen solved = 4879, spread = 5017, legal = 5077; time = 0.02s
+Info:     at iteration #9, type MUX2_LUT7: wirelen solved = 4984, spread = 5050, legal = 5130; time = 0.03s
+Info:     at iteration #9, type MUX2_LUT5: wirelen solved = 4980, spread = 5022, legal = 5050; time = 0.02s
+Info:     at iteration #9, type MUX2_LUT8: wirelen solved = 5002, spread = 5002, legal = 5078; time = 0.02s
+Info:     at iteration #9, type VCC: wirelen solved = 5078, spread = 5078, legal = 5078; time = 0.01s
+Info:     at iteration #9, type GND: wirelen solved = 5078, spread = 5078, legal = 5078; time = 0.02s
+Info:     at iteration #9, type GSR: wirelen solved = 5078, spread = 5078, legal = 5078; time = 0.02s
+Info:     at iteration #9, type ALL: wirelen solved = 1964, spread = 4951, legal = 5232; time = 0.05s
+Info:     at iteration #10, type SLICE: wirelen solved = 2701, spread = 5216, legal = 5325; time = 0.03s
+Info:     at iteration #10, type MUX2_LUT6: wirelen solved = 4988, spread = 5097, legal = 5147; time = 0.03s
+Info:     at iteration #10, type MUX2_LUT7: wirelen solved = 4973, spread = 4991, legal = 5017; time = 0.02s
+Info:     at iteration #10, type MUX2_LUT5: wirelen solved = 4881, spread = 4894, legal = 4921; time = 0.02s
+Info:     at iteration #10, type MUX2_LUT8: wirelen solved = 4835, spread = 4835, legal = 4896; time = 0.01s
+Info:     at iteration #10, type VCC: wirelen solved = 4896, spread = 4896, legal = 4896; time = 0.01s
+Info:     at iteration #10, type GND: wirelen solved = 4896, spread = 4896, legal = 4896; time = 0.01s
+Info:     at iteration #10, type GSR: wirelen solved = 4896, spread = 4896, legal = 4896; time = 0.02s
+Info:     at iteration #10, type ALL: wirelen solved = 1899, spread = 5007, legal = 5199; time = 0.05s
+Info:     at iteration #11, type SLICE: wirelen solved = 2600, spread = 4699, legal = 4880; time = 0.04s
+Info:     at iteration #11, type MUX2_LUT6: wirelen solved = 4706, spread = 4897, legal = 4973; time = 0.02s
+Info:     at iteration #11, type MUX2_LUT7: wirelen solved = 4869, spread = 4912, legal = 4978; time = 0.02s
+Info:     at iteration #11, type MUX2_LUT5: wirelen solved = 4873, spread = 4872, legal = 4891; time = 0.02s
+Info:     at iteration #11, type MUX2_LUT8: wirelen solved = 4854, spread = 4854, legal = 4914; time = 0.02s
+Info:     at iteration #11, type VCC: wirelen solved = 4914, spread = 4914, legal = 4914; time = 0.01s
+Info:     at iteration #11, type GND: wirelen solved = 4914, spread = 4914, legal = 4914; time = 0.02s
+Info:     at iteration #11, type GSR: wirelen solved = 4914, spread = 4914, legal = 4914; time = 0.01s
+Info:     at iteration #11, type ALL: wirelen solved = 2087, spread = 4918, legal = 5078; time = 0.05s
+Info:     at iteration #12, type SLICE: wirelen solved = 2758, spread = 5019, legal = 5166; time = 0.03s
+Info:     at iteration #12, type MUX2_LUT6: wirelen solved = 4992, spread = 5118, legal = 5173; time = 0.01s
+Info:     at iteration #12, type MUX2_LUT7: wirelen solved = 5096, spread = 5227, legal = 5271; time = 0.02s
+Info:     at iteration #12, type MUX2_LUT5: wirelen solved = 5132, spread = 5145, legal = 5144; time = 0.02s
+Info:     at iteration #12, type MUX2_LUT8: wirelen solved = 5123, spread = 5123, legal = 5144; time = 0.02s
+Info:     at iteration #12, type VCC: wirelen solved = 5144, spread = 5144, legal = 5144; time = 0.01s
+Info:     at iteration #12, type GND: wirelen solved = 5144, spread = 5144, legal = 5144; time = 0.01s
+Info:     at iteration #12, type GSR: wirelen solved = 5144, spread = 5144, legal = 5144; time = 0.02s
+Info:     at iteration #12, type ALL: wirelen solved = 2157, spread = 5199, legal = 5387; time = 0.04s
+Info:     at iteration #13, type SLICE: wirelen solved = 2988, spread = 4827, legal = 5173; time = 0.04s
+Info:     at iteration #13, type MUX2_LUT6: wirelen solved = 5045, spread = 5131, legal = 5191; time = 0.02s
+Info:     at iteration #13, type MUX2_LUT7: wirelen solved = 5143, spread = 5150, legal = 5204; time = 0.01s
+Info:     at iteration #13, type MUX2_LUT5: wirelen solved = 5045, spread = 5046, legal = 5055; time = 0.01s
+Info:     at iteration #13, type MUX2_LUT8: wirelen solved = 5042, spread = 5043, legal = 5071; time = 0.01s
+Info:     at iteration #13, type VCC: wirelen solved = 5071, spread = 5071, legal = 5071; time = 0.02s
+Info:     at iteration #13, type GND: wirelen solved = 5071, spread = 5071, legal = 5071; time = 0.01s
+Info:     at iteration #13, type GSR: wirelen solved = 5071, spread = 5071, legal = 5071; time = 0.01s
+Info:     at iteration #13, type ALL: wirelen solved = 2298, spread = 4689, legal = 4872; time = 0.04s
+Info:     at iteration #14, type SLICE: wirelen solved = 3151, spread = 5063, legal = 5221; time = 0.03s
+Info:     at iteration #14, type MUX2_LUT6: wirelen solved = 4900, spread = 5164, legal = 5217; time = 0.02s
+Info:     at iteration #14, type MUX2_LUT7: wirelen solved = 5128, spread = 5163, legal = 5212; time = 0.02s
+Info:     at iteration #14, type MUX2_LUT5: wirelen solved = 5054, spread = 5069, legal = 5068; time = 0.02s
+Info:     at iteration #14, type MUX2_LUT8: wirelen solved = 5061, spread = 5063, legal = 5076; time = 0.01s
+Info:     at iteration #14, type VCC: wirelen solved = 5076, spread = 5076, legal = 5076; time = 0.02s
+Info:     at iteration #14, type GND: wirelen solved = 5076, spread = 5076, legal = 5076; time = 0.01s
+Info:     at iteration #14, type GSR: wirelen solved = 5076, spread = 5076, legal = 5076; time = 0.01s
+Info:     at iteration #14, type ALL: wirelen solved = 2338, spread = 4482, legal = 4754; time = 0.05s
+Info:     at iteration #15, type SLICE: wirelen solved = 3039, spread = 4795, legal = 4949; time = 0.04s
+Info:     at iteration #15, type MUX2_LUT6: wirelen solved = 4735, spread = 4923, legal = 5004; time = 0.02s
+Info:     at iteration #15, type MUX2_LUT7: wirelen solved = 4910, spread = 4978, legal = 4993; time = 0.01s
+Info:     at iteration #15, type MUX2_LUT5: wirelen solved = 4838, spread = 4947, legal = 4955; time = 0.02s
+Info:     at iteration #15, type MUX2_LUT8: wirelen solved = 4945, spread = 4945, legal = 4968; time = 0.02s
+Info:     at iteration #15, type VCC: wirelen solved = 4968, spread = 4968, legal = 4968; time = 0.02s
+Info:     at iteration #15, type GND: wirelen solved = 4968, spread = 4968, legal = 4968; time = 0.01s
+Info:     at iteration #15, type GSR: wirelen solved = 4968, spread = 4968, legal = 4968; time = 0.02s
+Info:     at iteration #15, type ALL: wirelen solved = 2404, spread = 4527, legal = 4781; time = 0.04s
+Info:     at iteration #16, type SLICE: wirelen solved = 3025, spread = 4577, legal = 4766; time = 0.04s
+Info:     at iteration #16, type MUX2_LUT6: wirelen solved = 4596, spread = 4690, legal = 4730; time = 0.02s
+Info:     at iteration #16, type MUX2_LUT7: wirelen solved = 4627, spread = 4633, legal = 4666; time = 0.02s
+Info:     at iteration #16, type MUX2_LUT5: wirelen solved = 4560, spread = 4574, legal = 4579; time = 0.01s
+Info:     at iteration #16, type MUX2_LUT8: wirelen solved = 4570, spread = 4570, legal = 4586; time = 0.02s
+Info:     at iteration #16, type VCC: wirelen solved = 4586, spread = 4586, legal = 4586; time = 0.01s
+Info:     at iteration #16, type GND: wirelen solved = 4586, spread = 4586, legal = 4586; time = 0.01s
+Info:     at iteration #16, type GSR: wirelen solved = 4586, spread = 4586, legal = 4586; time = 0.01s
+Info:     at iteration #16, type ALL: wirelen solved = 2446, spread = 4444, legal = 4753; time = 0.05s
+Info:     at iteration #17, type SLICE: wirelen solved = 3004, spread = 4968, legal = 5199; time = 0.04s
+Info:     at iteration #17, type MUX2_LUT6: wirelen solved = 5048, spread = 5148, legal = 5236; time = 0.02s
+Info:     at iteration #17, type MUX2_LUT7: wirelen solved = 5170, spread = 5224, legal = 5286; time = 0.02s
+Info:     at iteration #17, type MUX2_LUT5: wirelen solved = 5127, spread = 5147, legal = 5153; time = 0.02s
+Info:     at iteration #17, type MUX2_LUT8: wirelen solved = 5146, spread = 5146, legal = 5163; time = 0.02s
+Info:     at iteration #17, type VCC: wirelen solved = 5163, spread = 5163, legal = 5163; time = 0.02s
+Info:     at iteration #17, type GND: wirelen solved = 5163, spread = 5163, legal = 5163; time = 0.02s
+Info:     at iteration #17, type GSR: wirelen solved = 5163, spread = 5163, legal = 5163; time = 0.01s
+Info:     at iteration #17, type ALL: wirelen solved = 2566, spread = 4957, legal = 5360; time = 0.04s
+Info:     at iteration #18, type SLICE: wirelen solved = 3126, spread = 4804, legal = 5176; time = 0.04s
+Info:     at iteration #18, type MUX2_LUT6: wirelen solved = 4997, spread = 5051, legal = 5117; time = 0.02s
+Info:     at iteration #18, type MUX2_LUT7: wirelen solved = 5063, spread = 5117, legal = 5134; time = 0.02s
+Info:     at iteration #18, type MUX2_LUT5: wirelen solved = 4982, spread = 5053, legal = 5053; time = 0.01s
+Info:     at iteration #18, type MUX2_LUT8: wirelen solved = 5042, spread = 5048, legal = 5056; time = 0.02s
+Info:     at iteration #18, type VCC: wirelen solved = 5056, spread = 5056, legal = 5056; time = 0.01s
+Info:     at iteration #18, type GND: wirelen solved = 5056, spread = 5056, legal = 5056; time = 0.02s
+Info:     at iteration #18, type GSR: wirelen solved = 5056, spread = 5056, legal = 5056; time = 0.02s
+Info:     at iteration #18, type ALL: wirelen solved = 2494, spread = 4411, legal = 4720; time = 0.05s
+Info:     at iteration #19, type SLICE: wirelen solved = 3145, spread = 4672, legal = 4961; time = 0.04s
+Info:     at iteration #19, type MUX2_LUT6: wirelen solved = 4808, spread = 4883, legal = 5006; time = 0.02s
+Info:     at iteration #19, type MUX2_LUT7: wirelen solved = 4933, spread = 4974, legal = 5050; time = 0.02s
+Info:     at iteration #19, type MUX2_LUT5: wirelen solved = 4978, spread = 4997, legal = 4998; time = 0.02s
+Info:     at iteration #19, type MUX2_LUT8: wirelen solved = 4984, spread = 4984, legal = 5004; time = 0.02s
+Info:     at iteration #19, type VCC: wirelen solved = 5004, spread = 5004, legal = 5004; time = 0.02s
+Info:     at iteration #19, type GND: wirelen solved = 5004, spread = 5004, legal = 5004; time = 0.01s
+Info:     at iteration #19, type GSR: wirelen solved = 5004, spread = 5004, legal = 5004; time = 0.01s
+Info:     at iteration #19, type ALL: wirelen solved = 2690, spread = 4557, legal = 4907; time = 0.04s
+Info:     at iteration #20, type SLICE: wirelen solved = 3146, spread = 4607, legal = 5065; time = 0.03s
+Info:     at iteration #20, type MUX2_LUT6: wirelen solved = 4936, spread = 5039, legal = 5092; time = 0.02s
+Info:     at iteration #20, type MUX2_LUT7: wirelen solved = 5027, spread = 5079, legal = 5123; time = 0.02s
+Info:     at iteration #20, type MUX2_LUT5: wirelen solved = 4988, spread = 5049, legal = 5057; time = 0.02s
+Info:     at iteration #20, type MUX2_LUT8: wirelen solved = 5055, spread = 5055, legal = 5065; time = 0.02s
+Info:     at iteration #20, type VCC: wirelen solved = 5065, spread = 5065, legal = 5065; time = 0.01s
+Info:     at iteration #20, type GND: wirelen solved = 5065, spread = 5065, legal = 5065; time = 0.02s
+Info:     at iteration #20, type GSR: wirelen solved = 5065, spread = 5065, legal = 5065; time = 0.02s
+Info:     at iteration #20, type ALL: wirelen solved = 2743, spread = 4853, legal = 5197; time = 0.04s
+Info:     at iteration #21, type SLICE: wirelen solved = 3358, spread = 4926, legal = 5224; time = 0.04s
+Info:     at iteration #21, type MUX2_LUT6: wirelen solved = 5053, spread = 5130, legal = 5200; time = 0.03s
+Info:     at iteration #21, type MUX2_LUT7: wirelen solved = 5142, spread = 5212, legal = 5316; time = 0.02s
+Info:     at iteration #21, type MUX2_LUT5: wirelen solved = 5197, spread = 5196, legal = 5217; time = 0.01s
+Info:     at iteration #21, type MUX2_LUT8: wirelen solved = 5216, spread = 5216, legal = 5216; time = 0.02s
+Info:     at iteration #21, type VCC: wirelen solved = 5216, spread = 5216, legal = 5216; time = 0.01s
+Info:     at iteration #21, type GND: wirelen solved = 5216, spread = 5216, legal = 5216; time = 0.01s
+Info:     at iteration #21, type GSR: wirelen solved = 5216, spread = 5216, legal = 5216; time = 0.02s
+Info:     at iteration #21, type ALL: wirelen solved = 2871, spread = 4847, legal = 5161; time = 0.05s
+Info:     at iteration #22, type SLICE: wirelen solved = 3351, spread = 5261, legal = 5663; time = 0.03s
+Info:     at iteration #22, type MUX2_LUT6: wirelen solved = 5556, spread = 5687, legal = 5745; time = 0.02s
+Info:     at iteration #22, type MUX2_LUT7: wirelen solved = 5685, spread = 5698, legal = 5714; time = 0.02s
+Info:     at iteration #22, type MUX2_LUT5: wirelen solved = 5648, spread = 5670, legal = 5670; time = 0.01s
+Info:     at iteration #22, type MUX2_LUT8: wirelen solved = 5665, spread = 5667, legal = 5670; time = 0.02s
+Info:     at iteration #22, type VCC: wirelen solved = 5670, spread = 5670, legal = 5670; time = 0.01s
+Info:     at iteration #22, type GND: wirelen solved = 5670, spread = 5670, legal = 5670; time = 0.01s
+Info:     at iteration #22, type GSR: wirelen solved = 5670, spread = 5670, legal = 5670; time = 0.01s
+Info:     at iteration #22, type ALL: wirelen solved = 3027, spread = 4620, legal = 4905; time = 0.04s
+Info:     at iteration #23, type SLICE: wirelen solved = 3416, spread = 4458, legal = 4811; time = 0.04s
+Info:     at iteration #23, type MUX2_LUT6: wirelen solved = 4714, spread = 4799, legal = 4838; time = 0.03s
+Info:     at iteration #23, type MUX2_LUT7: wirelen solved = 4786, spread = 4873, legal = 4931; time = 0.01s
+Info:     at iteration #23, type MUX2_LUT5: wirelen solved = 4830, spread = 4875, legal = 4896; time = 0.01s
+Info:     at iteration #23, type MUX2_LUT8: wirelen solved = 4881, spread = 4885, legal = 4911; time = 0.01s
+Info:     at iteration #23, type VCC: wirelen solved = 4911, spread = 4911, legal = 4911; time = 0.01s
+Info:     at iteration #23, type GND: wirelen solved = 4911, spread = 4911, legal = 4911; time = 0.01s
+Info:     at iteration #23, type GSR: wirelen solved = 4911, spread = 4911, legal = 4911; time = 0.01s
+Info:     at iteration #23, type ALL: wirelen solved = 3027, spread = 5831, legal = 6003; time = 0.04s
+Info: HeAP Placer Time: 4.98s
+Info:   of which solving equations: 3.62s
+Info:   of which spreading cells: 0.39s
+Info:   of which strict legalisation: 0.51s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 43, wirelen = 4720
+Info:   at iteration #5: temp = 0.000000, timing cost = 31, wirelen = 3194
+Info:   at iteration #10: temp = 0.000000, timing cost = 34, wirelen = 2930
+Info:   at iteration #15: temp = 0.000000, timing cost = 31, wirelen = 2838
+Info:   at iteration #20: temp = 0.000000, timing cost = 30, wirelen = 2772
+Info:   at iteration #25: temp = 0.000000, timing cost = 27, wirelen = 2703
+Info:   at iteration #29: temp = 0.000000, timing cost = 28, wirelen = 2687 
+Info: SA placement time 4.97s
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 
 Info: Max frequency for clock 'display_inst.clk_i': 91.50 MHz (PASS at 27.00 MHz)
 Info: Max frequency for clock           'slow_clk': 794.91 MHz (PASS at 27.00 MHz)
@@ -169,6 +406,7 @@ Info: Max delay posedge slow_clk           -> posedge display_inst.clk_i: 10.91 
 Info: Slack histogram:
 Info:  legend: * represents 16 endpoint(s)
 Info:          + represents [1,16) endpoint(s)
+<<<<<<< HEAD
 Info: [-37450, -33768) |+
 Info: [-33768, -30086) |*+
 Info: [-30086, -26404) | 
@@ -190,6 +428,29 @@ Info: [ 25144,  28826) |**********
 Info: [ 28826,  32508) |************+
 Info: [ 32508,  36190) |************************************************************ 
 Info: Checksum: 0x86e23573
+=======
+Info: [-41047, -37185) |+
+Info: [-37185, -33323) |+
+Info: [-33323, -29461) |*+
+Info: [-29461, -25599) |+
+Info: [-25599, -21737) |*+
+Info: [-21737, -17875) |+
+Info: [-17875, -14013) |***+
+Info: [-14013, -10151) |***+
+Info: [-10151,  -6289) |***+
+Info: [ -6289,  -2427) |***+
+Info: [ -2427,   1435) |***+
+Info: [  1435,   5297) |****+
+Info: [  5297,   9159) |*+
+Info: [  9159,  13021) |*+
+Info: [ 13021,  16883) |******+
+Info: [ 16883,  20745) |**+
+Info: [ 20745,  24607) |******+
+Info: [ 24607,  28469) |******+
+Info: [ 28469,  32331) |*****************+
+Info: [ 32331,  36193) |************************************************************ 
+Info: Checksum: 0x5bdfe6c9
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 Info: Find global nets...
 Info:  Non clock source, skip slow_clk.
 Info: Routing globals...
@@ -201,6 +462,7 @@ Info: Setting up routing queue.
 Info: Routing 5083 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+<<<<<<< HEAD
 Info:       1000 |       86        913 |   86   913 |      4179|       2.33       2.33|
 Info:       2000 |      111       1888 |   25   975 |      3207|       6.91       9.24|
 Info:       3000 |      159       2840 |   48   952 |      2263|       6.82      16.06|
@@ -210,6 +472,17 @@ Info:       5593 |      383       5210 |   47   547 |         0|       3.76     
 Info: Routing complete.
 Info: Router1 time 33.14s
 Info: Checksum: 0x1dc064ac
+=======
+Info:       1000 |       86        913 |   86   913 |      4284|       2.41       2.41|
+Info:       2000 |      106       1893 |   20   980 |      3307|       9.70      12.11|
+Info:       3000 |      149       2850 |   43   957 |      2367|       9.65      21.75|
+Info:       4000 |      198       3801 |   49   951 |      1451|       8.28      30.04|
+Info:       5000 |      295       4704 |   97   903 |       620|      10.44      40.48|
+Info:       5694 |      343       5351 |   48   647 |         0|       6.26      46.74|
+Info: Routing complete.
+Info: Router1 time 46.74s
+Info: Checksum: 0x28974d15
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 
 Info: Critical path report for clock 'display_inst.clk_i' (posedge -> posedge):
 Info: curr total
@@ -223,6 +496,7 @@ Info:  1.1  2.0  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_L
 Info:  0.9  2.9    Net input_inst.key_value_LUT4_F_I1[1] budget 17.740519 ns (18,21) -> (19,23)
 Info:                Sink input_inst.key_value_LUT4_F_I3_LUT3_F_I2_LUT4_I3_LC.C
 Info:                Defined in:
+<<<<<<< HEAD
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
 Info:  0.8  3.7  Source input_inst.key_value_LUT4_F_I3_LUT3_F_I2_LUT4_I3_LC.F
 Info:  0.9  4.6    Net input_inst.key_value_LUT4_F_I3_LUT3_F_I2_LUT4_I3_F[2] budget 8.551509 ns (19,23) -> (20,24)
@@ -246,6 +520,36 @@ Info:                Defined in:
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
 Info:  0.0  8.7  Setup input_inst.temp_value_DFFCE_Q_9_D_LUT2_F_LC.B
 Info: 5.3 ns logic, 3.4 ns routing
+=======
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8  3.1  Source debouncer_loop[0].debounce_inst.clean_signal_LUT4_I2_F_LUT3_F_LC.F
+Info:  0.5  3.6    Net input_inst.key_value_LUT4_I0_I1_LUT3_F_I2[1] budget 11.553013 ns (18,12) -> (18,14)
+Info:                Sink input_inst.key_value_LUT4_I0_I1_LUT3_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  4.7  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_LC.F
+Info:  1.0  5.7    Net input_inst.key_value_LUT4_I0_I1[0] budget 8.390259 ns (18,14) -> (22,14)
+Info:                Sink input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_I0_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  6.7  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_I0_LUT4_F_LC.F
+Info:  0.3  7.0    Net input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_I0[0] budget 6.506007 ns (22,14) -> (22,14)
+Info:                Sink input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_1_F_LUT2_F_8_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  8.0  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_1_F_LUT2_F_8_LC.F
+Info:  0.4  8.5    Net input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_1_F[1] budget 5.249839 ns (22,14) -> (22,13)
+Info:                Sink input_inst.key_value_ALU_I0_SUM_ALU_SUM_7_ALULC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/techmap.v:200.21-200.22
+Info:  1.1  9.5  Source input_inst.key_value_ALU_I0_SUM_ALU_SUM_7_ALULC.F
+Info:  0.4 10.0    Net input_inst.key_value_ALU_I0_SUM[2] budget 4.343005 ns (22,13) -> (21,13)
+Info:                Sink input_inst.temp_value_DFFCE_Q_9_D_LUT2_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
+Info:  0.0 10.0  Setup input_inst.temp_value_DFFCE_Q_9_D_LUT2_F_LC.B
+Info: 6.6 ns logic, 3.3 ns routing
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 
 Info: Critical path report for clock 'slow_clk' (posedge -> posedge):
 Info: curr total
@@ -270,6 +574,7 @@ Info:  1.0 10.6  Source debouncer_loop[3].debounce_inst.noisy_signal_reg_LUT2_I1
 Info:  1.7 12.3    Net debouncer_loop[3].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_I0[3] budget 17.740519 ns (23,7) -> (20,6)
 Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_LC.D
 Info:                Defined in:
+<<<<<<< HEAD
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
 Info:  0.6 12.9  Source debouncer_loop[3].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_LC.F
 Info:  1.0 13.9    Net debouncer_loop[3].debounce_inst.clean_signal_DFFCE_Q_CE budget 8.321259 ns (20,6) -> (18,8)
@@ -278,6 +583,16 @@ Info:                Defined in:
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
 Info:  0.0 13.9  Setup debouncer_loop[3].debounce_inst.clean_signal_DFFCE_Q_CE_LUT1_I0_LC.A
 Info: 1.7 ns logic, 12.2 ns routing
+=======
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.6 13.7  Source debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_LC.F
+Info:  0.9 14.6    Net debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE budget 8.321259 ns (18,3) -> (18,5)
+Info:                Sink debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT1_I0_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.0 14.6  Setup debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT1_I0_LC.A
+Info: 1.7 ns logic, 13.0 ns routing
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 
 Info: Critical path report for cross-domain path '<async>' -> 'posedge display_inst.clk_i':
 Info: curr total
@@ -291,9 +606,15 @@ Info:  1.0 10.6  Source debouncer_loop[3].debounce_inst.noisy_signal_reg_LUT2_I1
 Info:  2.4 13.0    Net debouncer_loop[3].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_I0[3] budget 17.740519 ns (23,7) -> (18,4)
 Info:                Sink debouncer_loop[3].debounce_inst.counter_DFFCE_Q_25_D_LUT2_F_LC.A
 Info:                Defined in:
+<<<<<<< HEAD
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
 Info:  0.0 13.0  Setup debouncer_loop[3].debounce_inst.counter_DFFCE_Q_25_D_LUT2_F_LC.A
 Info: 1.0 ns logic, 12.0 ns routing
+=======
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.0 14.9  Setup debouncer_loop[2].debounce_inst.counter_DFFCE_Q_23_D_LUT2_F_LC.A
+Info: 1.0 ns logic, 13.8 ns routing
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 
 Info: Critical path report for cross-domain path 'posedge display_inst.clk_i' -> '<async>':
 Info: curr total
@@ -306,6 +627,7 @@ Info:  1.0  2.9  Source display_inst.anodo_o_LUT3_I2_F_ALU_SUM_COUT_ALU_COUT_1_S
 Info:  1.4  4.3    Net display_inst.anodo_o_LUT3_I2_F_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_ALU_I1_SUM_ALU_SUM_COUT_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_1_S0[2] budget 17.774019 ns (27,24) -> (25,23)
 Info:                Sink display_inst.anodo_o_LUT3_I2_F_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_ALU_I1_SUM_ALU_SUM_COUT_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
 Info:                Defined in:
+<<<<<<< HEAD
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
 Info:  1.0  5.3  Source display_inst.anodo_o_LUT3_I2_F_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_ALU_I1_SUM_ALU_SUM_COUT_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
 Info:  0.3  5.7    Net display_inst.anodo_o_LUT3_I2_F_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_ALU_I1_SUM_ALU_SUM_COUT_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 5.575839 ns (25,23) -> (25,23)
@@ -494,6 +816,252 @@ Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../s
 Info:  0.2 48.7  Source display_inst.anodo_o_LUT3_I2_F_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_1_I1_MUX2_LUT5_O_LC.OF
 Info:  0.3 49.0    Net display_inst.anodo_o_LUT3_I2_F_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_1_I1 budget 0.362668 ns (27,17) -> (27,17)
 Info:                Sink display_inst.anodo_o_LUT3_I2_F_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_1_LC.I1
+=======
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  5.3  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3  5.7    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 4.678148 ns (30,12) -> (30,12)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2  5.8  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3  6.2    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 4.678148 ns (30,12) -> (30,12)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4  6.5  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3  6.8    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1 budget 4.678148 ns (30,12) -> (30,12)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5  7.4  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.OF
+Info:  0.3  7.7    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1 budget 4.678148 ns (30,12) -> (30,12)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7  8.4  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_LC.OF
+Info:  1.8 10.2    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0[0] budget 4.678148 ns (30,12) -> (27,11)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 11.2  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 11.5    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 3.118504 ns (27,11) -> (27,11)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 11.7  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 12.0    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0 budget 3.118504 ns (27,11) -> (27,11)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 12.4  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_LC.OF
+Info:  2.4 14.8    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0[1] budget 3.118504 ns (27,11) -> (20,11)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 15.9  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 16.2    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 2.073217 ns (20,11) -> (20,11)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 16.4  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 16.7    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0 budget 2.073217 ns (20,11) -> (20,11)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 17.1  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3 17.4    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1 budget 2.073217 ns (20,11) -> (20,11)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 17.9  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_LC.OF
+Info:  1.4 19.3    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_CIN_SUM[0] budget 2.073217 ns (20,11) -> (18,10)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 20.3  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 20.6    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 1.378318 ns (18,10) -> (18,10)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 20.8  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 21.1    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1 budget 1.378318 ns (18,10) -> (18,10)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 21.5  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.OF
+Info:  0.3 21.8    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0 budget 1.378318 ns (18,10) -> (18,10)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:  0.5 22.4  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.OF
+Info:  0.3 22.7    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_I1 budget 1.378318 ns (18,10) -> (18,10)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7 23.4  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT8_O_LC.OF
+Info:  1.4 24.8    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I1_LUT3_I1_F_LUT2_F_I1_ALU_SUM_1_COUT_ALU_COUT_SUM[3] budget 1.378318 ns (18,10) -> (19,7)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_LUT4_F_I1_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT3_F_LC.C
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8 25.6  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_LUT4_F_I1_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT3_F_LC.F
+Info:  1.2 26.8    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_LUT4_F_I1_ALU_SUM_COUT_ALU_COUT_1_SUM[3] budget 1.268302 ns (19,7) -> (19,4)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_LUT4_F_I1_ALU_SUM_COUT_ALU_COUT_1_ALULC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 27.9  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_LUT4_F_I1_ALU_SUM_COUT_ALU_COUT_1_ALULC.F
+Info:  0.4 28.3    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_LUT4_F_I1[1] budget 1.155621 ns (19,4) -> (18,4)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_MUX2_LUT5_O_1_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 29.3  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_MUX2_LUT5_O_1_I1_LUT4_F_LC.F
+Info:  0.3 29.7    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_MUX2_LUT5_O_1_I1 budget 1.002610 ns (18,4) -> (18,4)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_MUX2_LUT5_O_1_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 29.8  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_O_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_I0_ALU_I1_SUM_ALU_SUM_COUT_MUX2_LUT5_O_1_LC.OF
+Info:  1.8 31.6    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0[3] budget 1.002610 ns (18,4) -> (22,3)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 32.6  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 33.0    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 0.776557 ns (22,3) -> (22,3)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 33.1  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 33.5    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0 budget 0.776557 ns (22,3) -> (22,3)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 33.8  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.OF
+Info:  0.3 34.1    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I0 budget 0.776557 ns (22,3) -> (22,3)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:  0.5 34.7  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_LC.OF
+Info:  1.0 35.6    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_S0[1] budget 0.776557 ns (22,3) -> (24,2)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 36.7  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 37.1    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_I1 budget 0.644601 ns (24,2) -> (24,2)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 37.2  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 37.6    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0 budget 0.644601 ns (24,2) -> (24,2)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 37.9  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_LC.OF
+Info:  1.2 39.1    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_S0[1] budget 0.644601 ns (24,2) -> (24,4)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 40.2  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 40.5    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 0.538668 ns (24,4) -> (24,4)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 40.7  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 41.0    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_I1 budget 0.538668 ns (24,4) -> (24,4)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 41.3  Source display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_LC.OF
+Info:  2.2 43.6    Net display_inst.contador_digitos_MUX2_LUT7_S0_2_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0[0] budget 0.538668 ns (24,4) -> (29,5)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_ALULC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 44.7  Source display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0_ALU_SUM_ALULC.F
+Info:  0.4 45.1    Net display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_I0[3] budget 0.490530 ns (29,5) -> (29,6)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 46.1  Source display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 46.5    Net display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 0.355821 ns (29,6) -> (29,6)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 46.6  Source display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 47.0    Net display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_I0 budget 0.355821 ns (29,6) -> (29,6)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 47.3  Source display_inst.contador_digitos_MUX2_LUT7_S0_I0_MUX2_LUT6_O_LC.OF
+Info:  0.3 47.6    Net display_inst.contador_digitos_MUX2_LUT7_S0_I0 budget 0.355821 ns (29,6) -> (29,6)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT7_S0_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:  0.5 48.2  Source display_inst.contador_digitos_MUX2_LUT7_S0_LC.OF
+Info:  0.3 48.5    Net display_inst.contador_digitos_MUX2_LUT7_S0_O budget 0.355821 ns (29,6) -> (29,6)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7 49.2  Source display_inst.contador_digitos_MUX2_LUT8_S0_LC.OF
+Info:  1.7 50.9    Net display_inst.contador_digitos_MUX2_LUT8_S0_O[2] budget 0.355821 ns (29,6) -> (32,7)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 51.9  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 52.3    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 0.274047 ns (32,7) -> (32,7)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 52.4  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 52.8    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 0.274047 ns (32,7) -> (32,7)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 53.1  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3 53.4    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_I1 budget 0.274047 ns (32,7) -> (32,7)
+Info:                Sink display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 54.0  Source display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F_MUX2_LUT7_O_LC.OF
+Info:  0.8 54.8    Net display_inst.contador_digitos_MUX2_LUT8_S0_1_O_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_LUT4_I0_F[2] budget 0.274047 ns (32,7) -> (32,8)
+Info:                Sink display_inst.catodo_o_MUX2_LUT5_O_I1_LUT3_F_LC.C
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8 55.6  Source display_inst.catodo_o_MUX2_LUT5_O_I1_LUT3_F_LC.F
+Info:  0.3 55.9    Net display_inst.catodo_o_MUX2_LUT5_O_I1 budget 0.239667 ns (32,8) -> (32,8)
+Info:                Sink display_inst.catodo_o_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 56.1  Source display_inst.catodo_o_MUX2_LUT5_O_LC.OF
+Info:  6.7 62.8    Net display_inst.catodo_o[1] budget 0.239667 ns (32,8) -> (40,28)
+Info:                Sink catodo_po_OBUF_O_5$iob.I
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 Info:                Defined in:
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
@@ -537,6 +1105,7 @@ Info:  0.2  2.4  Source input_inst.key_value_LUT4_F_I1_MUX2_LUT5_O_LC.OF
 Info:  0.8  3.2    Net input_inst.key_value_LUT4_F_I1[3] budget 11.768012 ns (18,23) -> (19,23)
 Info:                Sink input_inst.key_value_LUT4_F_I3_LUT3_F_I2_LUT4_I3_LC.B
 Info:                Defined in:
+<<<<<<< HEAD
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
 Info:  1.1  4.3  Source input_inst.key_value_LUT4_F_I3_LUT3_F_I2_LUT4_I3_LC.F
 Info:  0.9  5.2    Net input_inst.key_value_LUT4_F_I3_LUT3_F_I2_LUT4_I3_F[2] budget 8.551509 ns (19,23) -> (20,24)
@@ -555,6 +1124,31 @@ Info:                Defined in:
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/techmap.v:200.21-200.22
 Info:  0.0  7.8  Setup input_inst.key_value_ALU_I0_SUM_ALU_SUM_6_ALULC.B
 Info: 4.6 ns logic, 3.2 ns routing
+=======
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  3.4  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT2_F_LC.F
+Info:  0.0  3.4    Net input_inst.key_value_LUT4_I0_I1_LUT3_F_I2[2] budget 11.461013 ns (18,14) -> (18,14)
+Info:                Sink input_inst.key_value_LUT4_I0_I1_LUT3_F_LC.C
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8  4.2  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_LC.F
+Info:  1.0  5.2    Net input_inst.key_value_LUT4_I0_I1[0] budget 8.390259 ns (18,14) -> (22,14)
+Info:                Sink input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_I0_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  6.2  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_I0_LUT4_F_LC.F
+Info:  0.3  6.5    Net input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_I0[0] budget 6.506007 ns (22,14) -> (22,14)
+Info:                Sink input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  7.6  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_LC.F
+Info:  0.4  8.0    Net input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F[1] budget 5.249839 ns (22,14) -> (22,13)
+Info:                Sink input_inst.key_value_ALU_I0_SUM_ALU_SUM_8_ALULC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/techmap.v:200.24-200.25
+Info:  0.0  8.0  Setup input_inst.key_value_ALU_I0_SUM_ALU_SUM_8_ALULC.A
+Info: 5.5 ns logic, 2.4 ns routing
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 
 Info: Critical path report for cross-domain path 'posedge slow_clk' -> 'posedge display_inst.clk_i':
 Info: curr total
@@ -573,6 +1167,7 @@ Info:  0.2  2.4  Source input_inst.key_value_LUT4_F_I1_MUX2_LUT5_O_LC.OF
 Info:  0.8  3.2    Net input_inst.key_value_LUT4_F_I1[3] budget 11.768012 ns (18,23) -> (19,23)
 Info:                Sink input_inst.key_value_LUT4_F_I3_LUT3_F_I2_LUT4_I3_LC.B
 Info:                Defined in:
+<<<<<<< HEAD
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
 Info:  1.1  4.3  Source input_inst.key_value_LUT4_F_I3_LUT3_F_I2_LUT4_I3_LC.F
 Info:  0.9  5.2    Net input_inst.key_value_LUT4_F_I3_LUT3_F_I2_LUT4_I3_F[2] budget 8.551509 ns (19,23) -> (20,24)
@@ -596,6 +1191,36 @@ Info:                Defined in:
 Info:                  c:\Users\ericj\OneDrive\ESCRIT~1\design\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
 Info:  0.0  9.3  Setup input_inst.temp_value_DFFCE_Q_9_D_LUT2_F_LC.B
 Info: 5.6 ns logic, 3.7 ns routing
+=======
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  3.4  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT2_F_LC.F
+Info:  0.0  3.4    Net input_inst.key_value_LUT4_I0_I1_LUT3_F_I2[2] budget 11.461013 ns (18,14) -> (18,14)
+Info:                Sink input_inst.key_value_LUT4_I0_I1_LUT3_F_LC.C
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8  4.2  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_LC.F
+Info:  1.0  5.2    Net input_inst.key_value_LUT4_I0_I1[0] budget 8.390259 ns (18,14) -> (22,14)
+Info:                Sink input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_I0_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  6.2  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_I0_LUT4_F_LC.F
+Info:  0.3  6.5    Net input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_F_LUT2_F_9_I0[0] budget 6.506007 ns (22,14) -> (22,14)
+Info:                Sink input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_1_F_LUT2_F_8_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  7.6  Source input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_1_F_LUT2_F_8_LC.F
+Info:  0.4  8.0    Net input_inst.key_value_LUT4_I0_I1_LUT3_F_I2_LUT4_I0_F_LUT3_I0_1_F[1] budget 5.249839 ns (22,14) -> (22,13)
+Info:                Sink input_inst.key_value_ALU_I0_SUM_ALU_SUM_7_ALULC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/techmap.v:200.21-200.22
+Info:  1.1  9.1  Source input_inst.key_value_ALU_I0_SUM_ALU_SUM_7_ALULC.F
+Info:  0.4  9.5    Net input_inst.key_value_ALU_I0_SUM[2] budget 4.343005 ns (22,13) -> (21,13)
+Info:                Sink input_inst.temp_value_DFFCE_Q_9_D_LUT2_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
+Info:  0.0  9.5  Setup input_inst.temp_value_DFFCE_Q_9_D_LUT2_F_LC.B
+Info: 6.6 ns logic, 2.8 ns routing
+>>>>>>> 62ee2ce1d53a9ac2f2d30e65f0265ae136090fd4
 
 Info: Max frequency for clock 'display_inst.clk_i': 115.30 MHz (PASS at 27.00 MHz)
 Info: Max frequency for clock           'slow_clk': 1067.24 MHz (PASS at 27.00 MHz)
