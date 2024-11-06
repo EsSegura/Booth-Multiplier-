@@ -1,0 +1,138 @@
+$date
+	Mon Nov 04 13:25:08 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_mult_with_no_fsm $end
+$var wire 16 ! Y [15:0] $end
+$var wire 2 " Q_LSB [1:0] $end
+$var parameter 32 # N $end
+$var reg 8 $ A [7:0] $end
+$var reg 8 % B [7:0] $end
+$var reg 1 & add_sub $end
+$var reg 1 ' clk $end
+$var reg 1 ( load_A $end
+$var reg 1 ) load_B $end
+$var reg 1 * load_add $end
+$var reg 1 + rst $end
+$var reg 1 , shift_HQ_LQ_Q_1 $end
+$scope module uut $end
+$var wire 8 - A [7:0] $end
+$var wire 8 . B [7:0] $end
+$var wire 1 & add_sub $end
+$var wire 1 ' clk $end
+$var wire 1 ( load_A $end
+$var wire 1 ) load_B $end
+$var wire 1 * load_add $end
+$var wire 1 + rst $end
+$var wire 1 , shift_HQ_LQ_Q_1 $end
+$var parameter 32 / N $end
+$var reg 8 0 HQ [7:0] $end
+$var reg 8 1 LQ [7:0] $end
+$var reg 8 2 M [7:0] $end
+$var reg 1 3 Q_1 $end
+$var reg 2 4 Q_LSB [1:0] $end
+$var reg 16 5 Y [15:0] $end
+$var reg 8 6 adder_sub_out [7:0] $end
+$var reg 16 7 shift [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 /
+b1000 #
+$end
+#0
+$dumpvars
+bx 7
+bx 6
+bx 5
+bx 4
+x3
+bx 2
+bx 1
+bx 0
+b0 .
+b0 -
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+b0 %
+b0 $
+bx "
+bx !
+$end
+#5
+b0 "
+b0 4
+bx000000000000000 !
+bx000000000000000 5
+03
+b0 1
+bx0000000 0
+b0 2
+b0 7
+1'
+#10
+0'
+1+
+#15
+1'
+#20
+0'
+1(
+b1111 $
+b1111 -
+0+
+#25
+1'
+#30
+0'
+1)
+b11 %
+b11 .
+0(
+#35
+1'
+#40
+0'
+1&
+1*
+0)
+#45
+1'
+#50
+0'
+1,
+0*
+#55
+1'
+#60
+0'
+0&
+1*
+0,
+#65
+1'
+#70
+0'
+1,
+0*
+#75
+1'
+#80
+0'
+0,
+#85
+1'
+#90
+0'

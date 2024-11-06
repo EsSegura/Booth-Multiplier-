@@ -27,6 +27,15 @@ module module_top (
     logic [7:0] temp_value;
     logic [3:0] signo;
 
+    logic [7:0] A;
+    logic [7:0] B;
+    logic [15:0] Y;
+    logic load_A;
+    logic load_B;
+    logic load_add;
+    logic shift_HQ_LQ_Q_1;
+    logic add_sub;
+    logic [1:0] Q_LSB;
 
     // Registro de desplazamiento de columnas
     assign col_shift_reg = col_out;
@@ -96,7 +105,19 @@ module module_top (
         .B(stored_B),                // Salida de operando B
         .temp_value(temp_value)   // Salida temporal para visualización en display
     );
-
+         mult_with_no_fsm mult_inst (
+            .clk(clk),
+            .rst(rst),
+            .A(stored_A),       // Entrada operando A
+            .B(stored_B),       // Entrada operando B
+            .load_A(load_A),
+            .load_B(load_B),
+            .load_add(load_add),
+            .shift_HQ_LQ_Q_1(shift_HQ_LQ_Q_1),
+            .add_sub(add_sub),
+            .Q_LSB(Q_LSB),
+            .Y(Y)
+    );
 
     // Instancia del módulo input_control para gestionar la entrada
 /*    input_module input_inst (
@@ -122,11 +143,21 @@ module module_top (
 */
 
 
-    // Conversión de `display_data` a BCD
-    bin_to_bcd converter_inst (
-        .binario(temp_value), // `display_data` contiene el valor de acumulador o multiplicación
-        .bcd(bcd)
-    );
+logic [15:0] display_valor;
+
+// Multiplexor para seleccionar entre temp_value y Y
+always_comb begin
+    if (ready_operandos)
+        display_valor = Y;          // Mostrar resultado de la multiplicación cuando está listo
+    else
+        display_valor = temp_value; // Mostrar valor temporal de entrada
+end
+
+// Instancia del módulo bin_to_bcd con entrada multiplexada
+bin_to_bcd converter_inst (
+    .binario(display_valor[11:0]),  // Usamos display_valor como la entrada BCD
+    .bcd(bcd)
+);
 
     // Controlador del display de 7 segmentos
     module_7_segments display_inst (

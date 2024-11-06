@@ -1,0 +1,471 @@
+$date
+	Mon Nov 04 15:15:32 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module module_top_tb $end
+$var wire 4 ! col_out [3:0] $end
+$var wire 7 " catodo_po [6:0] $end
+$var wire 4 # anodo_po [3:0] $end
+$var reg 1 $ clk $end
+$var reg 4 % row_in [3:0] $end
+$var reg 1 & rst $end
+$scope module uut $end
+$var wire 1 ' add_sub $end
+$var wire 1 $ clk $end
+$var wire 4 ( col_shift_reg [3:0] $end
+$var wire 1 ) load_A $end
+$var wire 1 * load_B $end
+$var wire 1 + load_add $end
+$var wire 4 , row_in [3:0] $end
+$var wire 1 & rst $end
+$var wire 1 - shift_HQ_LQ_Q_1 $end
+$var wire 8 . temp_value [7:0] $end
+$var wire 8 / stored_B [7:0] $end
+$var wire 8 0 stored_A [7:0] $end
+$var wire 1 1 slow_clk $end
+$var wire 4 2 key_value [3:0] $end
+$var wire 1 3 key_pressed $end
+$var wire 1 4 is_sign_key $end
+$var wire 1 5 enable_sign $end
+$var wire 1 6 enable_B $end
+$var wire 1 7 enable_A $end
+$var wire 2 8 column_index [1:0] $end
+$var wire 4 9 col_out [3:0] $end
+$var wire 4 : clean_rows [3:0] $end
+$var wire 7 ; catodo_po [6:0] $end
+$var wire 16 < bcd [15:0] $end
+$var wire 4 = anodo_po [3:0] $end
+$var wire 1 > Y $end
+$var wire 1 ? Q_LSB $end
+$var reg 16 @ display_valor [15:0] $end
+$var reg 1 A ready_operandos $end
+$scope begin debouncer_loop[0] $end
+$var parameter 2 B i $end
+$scope module debounce_inst $end
+$var wire 1 $ clk $end
+$var wire 1 C noisy_signal $end
+$var wire 1 & rst $end
+$var parameter 32 D DEBOUNCE_TIME $end
+$var reg 1 E clean_signal $end
+$var reg 32 F counter [31:0] $end
+$var reg 1 G noisy_signal_reg $end
+$upscope $end
+$upscope $end
+$scope begin debouncer_loop[1] $end
+$var parameter 2 H i $end
+$scope module debounce_inst $end
+$var wire 1 $ clk $end
+$var wire 1 I noisy_signal $end
+$var wire 1 & rst $end
+$var parameter 32 J DEBOUNCE_TIME $end
+$var reg 1 K clean_signal $end
+$var reg 32 L counter [31:0] $end
+$var reg 1 M noisy_signal_reg $end
+$upscope $end
+$upscope $end
+$scope begin debouncer_loop[2] $end
+$var parameter 3 N i $end
+$scope module debounce_inst $end
+$var wire 1 $ clk $end
+$var wire 1 O noisy_signal $end
+$var wire 1 & rst $end
+$var parameter 32 P DEBOUNCE_TIME $end
+$var reg 1 Q clean_signal $end
+$var reg 32 R counter [31:0] $end
+$var reg 1 S noisy_signal_reg $end
+$upscope $end
+$upscope $end
+$scope begin debouncer_loop[3] $end
+$var parameter 3 T i $end
+$scope module debounce_inst $end
+$var wire 1 $ clk $end
+$var wire 1 U noisy_signal $end
+$var wire 1 & rst $end
+$var parameter 32 V DEBOUNCE_TIME $end
+$var reg 1 W clean_signal $end
+$var reg 32 X counter [31:0] $end
+$var reg 1 Y noisy_signal_reg $end
+$upscope $end
+$upscope $end
+$scope module converter_inst $end
+$var wire 12 Z binario [11:0] $end
+$var reg 16 [ bcd [15:0] $end
+$var integer 32 \ i [31:0] $end
+$upscope $end
+$scope module display_inst $end
+$var wire 16 ] bcd_i [15:0] $end
+$var wire 1 $ clk_i $end
+$var wire 1 & rst_i $end
+$var parameter 32 ^ DISPLAY_REFRESH $end
+$var parameter 32 _ WIDTH_DISPLAY_COUNTER $end
+$var reg 4 ` anodo_o [3:0] $end
+$var reg 7 a catodo_o [6:0] $end
+$var reg 2 b contador_digitos [1:0] $end
+$var reg 15 c cuenta_salida [14:0] $end
+$var reg 4 d digito_o [3:0] $end
+$var reg 1 e en_conmutador $end
+$upscope $end
+$scope module divisor_inst $end
+$var wire 1 $ clk $end
+$var wire 1 & rst $end
+$var reg 25 f clk_divider_counter [24:0] $end
+$var reg 1 1 slow_clk $end
+$upscope $end
+$scope module fsm_input_inst $end
+$var wire 1 $ clk $end
+$var wire 1 & rst $end
+$var wire 1 3 key_pressed $end
+$var wire 1 4 is_sign_key $end
+$var reg 3 g current_state [2:0] $end
+$var reg 1 7 enable_A $end
+$var reg 1 6 enable_B $end
+$var reg 1 5 enable_sign $end
+$var reg 2 h key_count [1:0] $end
+$var reg 1 i key_pressed_prev $end
+$var reg 3 j next_state [2:0] $end
+$upscope $end
+$scope module mult_inst $end
+$var wire 1 ' add_sub $end
+$var wire 1 $ clk $end
+$var wire 1 ) load_A $end
+$var wire 1 * load_B $end
+$var wire 1 + load_add $end
+$var wire 1 & rst $end
+$var wire 1 - shift_HQ_LQ_Q_1 $end
+$var wire 8 k B [7:0] $end
+$var wire 8 l A [7:0] $end
+$var parameter 32 m N $end
+$var reg 8 n HQ [7:0] $end
+$var reg 8 o LQ [7:0] $end
+$var reg 8 p M [7:0] $end
+$var reg 1 q Q_1 $end
+$var reg 2 r Q_LSB [1:0] $end
+$var reg 16 s Y [15:0] $end
+$var reg 8 t adder_sub_out [7:0] $end
+$var reg 16 u shift [15:0] $end
+$upscope $end
+$scope module registro_inst $end
+$var wire 1 & rst $end
+$var wire 1 1 slow_clk $end
+$var wire 1 3 key_pressed $end
+$var reg 4 v col_shift_reg [3:0] $end
+$var reg 2 w column_index [1:0] $end
+$upscope $end
+$scope module scanner_inst $end
+$var wire 4 x col_shift_reg [3:0] $end
+$var wire 4 y row_in [3:0] $end
+$var wire 1 & rst $end
+$var wire 1 1 slow_clk $end
+$var reg 1 4 is_sign_key $end
+$var reg 1 3 key_pressed $end
+$var reg 4 z key_value [3:0] $end
+$upscope $end
+$scope module storage_inst $end
+$var wire 1 $ clk $end
+$var wire 1 7 enable_A $end
+$var wire 1 6 enable_B $end
+$var wire 1 5 enable_sign $end
+$var wire 1 4 is_sign_key $end
+$var wire 1 3 key_pressed $end
+$var wire 4 { key_value [3:0] $end
+$var wire 1 & rst $end
+$var reg 8 | A [7:0] $end
+$var reg 8 } B [7:0] $end
+$var reg 1 ~ key_pressed_prev $end
+$var reg 1 !" load_value $end
+$var reg 8 "" temp_A [7:0] $end
+$var reg 8 #" temp_B [7:0] $end
+$var reg 8 $" temp_value [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 m
+b1111 _
+b110100101111000 ^
+b110100101111000 V
+b11 T
+b110100101111000 P
+b10 N
+b110100101111000 J
+b1 H
+b110100101111000 D
+b0 B
+$end
+#0
+$dumpvars
+bx $"
+bx #"
+bx ""
+x!"
+x~
+bx }
+bx |
+b0 {
+b0 z
+bx y
+bx x
+bx w
+bx v
+bx u
+bx t
+bx s
+bx r
+xq
+bx p
+bx o
+bx n
+bx l
+bx k
+b0 j
+xi
+bx h
+bx g
+bx f
+xe
+bx d
+bx c
+bx b
+bx a
+bx `
+b0xxxxxxxx ]
+b1100 \
+b0xxxxxxxx [
+b0xxxxxxxx Z
+xY
+bx X
+xW
+0U
+xS
+bx R
+xQ
+0O
+xM
+bx L
+xK
+0I
+xG
+bx F
+xE
+0C
+xA
+b0xxxxxxxx @
+x?
+x>
+bx =
+b0xxxxxxxx <
+bx ;
+bx :
+bx 9
+bx 8
+07
+06
+05
+04
+03
+b0 2
+01
+bx 0
+bx /
+bx .
+z-
+b0 ,
+z+
+z*
+z)
+bx (
+z'
+1&
+b0 %
+0$
+bx #
+bx "
+bx !
+$end
+#5
+0E
+0K
+0Q
+b0 :
+b0 y
+0W
+0i
+b0 g
+0!"
+0~
+0e
+1$
+#10
+b1100 \
+b0 <
+b0 [
+b0 ]
+b0 Z
+b0 @
+b0 .
+b0 $"
+b0 #"
+b0 ""
+b0 /
+b0 k
+b0 }
+b0 0
+b0 l
+b0 |
+b0 h
+0Y
+b0 X
+0S
+b0 R
+0M
+b0 L
+0G
+b0 F
+1C
+0$
+b1 %
+b1 ,
+0&
+#15
+b1000000 "
+b1000000 ;
+b1000000 a
+0?
+0>
+b1110 #
+b1110 =
+b1110 `
+b0 d
+b0 r
+bx000000000000000 s
+0q
+b0 o
+bx0000000 n
+b0 b
+b110100101110111 c
+b0 u
+b0 p
+b0 f
+1$
+#20
+0$
+#25
+1$
+#30
+0C
+0$
+b0 %
+b0 ,
+#35
+1$
+#40
+1I
+0$
+b10 %
+b10 ,
+#45
+1$
+#50
+0$
+#55
+1$
+#60
+0I
+0$
+b0 %
+b0 ,
+#65
+1$
+#70
+1C
+1I
+0$
+b11 %
+b11 ,
+#75
+1$
+#80
+0$
+#85
+1$
+#90
+0C
+0I
+0$
+b0 %
+b0 ,
+#95
+1$
+#100
+1O
+0$
+b100 %
+b100 ,
+#105
+1$
+#110
+0$
+#115
+1$
+#120
+0O
+0$
+b0 %
+b0 ,
+#125
+1$
+#130
+0$
+#135
+1$
+#140
+0$
+#145
+1$
+#150
+0$
+#155
+1$
+#160
+0$
+#165
+1$
+#170
+0$
+#175
+1$
+#180
+0$
+#185
+1$
+#190
+0$
+#195
+1$
+#200
+0$
+#205
+1$
+#210
+0$
+#215
+1$
+#220
+0$
+#225
+1$
+#230
+0$
+#235
+1$
+#240
+0$
+#245
+1$
