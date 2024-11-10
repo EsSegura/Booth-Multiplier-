@@ -21,7 +21,7 @@ module module_top (
     logic ready_operandos;
 
 
-    logic is_sign_key;
+    logic [2:0] is_sign_key;
     logic [7:0] stored_A;
     logic [7:0] stored_B;
     logic [7:0] temp_value;
@@ -88,7 +88,8 @@ module module_top (
         .rst(rst),
         .key_value(key_value),    // Entrada de valor de tecla
         .key_pressed(key_pressed),
-        .is_sign_key(is_sign_key),        
+        .is_sign_key(is_sign_key),
+        .signo(signo),
         .enable_A(enable_A),      // Habilitación para almacenar A
         .enable_B(enable_B),      // Habilitación para almacenar B
         .enable_sign(enable_sign), // Habilitación para almacenamiento temporal (signo o valor actual)
@@ -97,29 +98,6 @@ module module_top (
         .temp_value(temp_value)   // Salida temporal para visualización en display
     );
 
-
-    // Instancia del módulo input_control para gestionar la entrada
-/*    input_module input_inst (
-        .clk(clk),
-        .rst(rst),                  // Invertir el reset si es necesario
-        .key_pressed(key_pressed),
-        .key_value(key_value),
-        .is_sign_key(is_sign_key),
-        .state_enableA(enableA),
-        .state_enableB(enableB),
-        .stored_A(stored_A),          // Salida para el valor almacenado en A
-        .stored_B(stored_B)           // Salida para el valor almacenado en B
-    );
-
-    output_control ocontrol_inst (
-        .clk(clk),
-        .rst(rst),
-        .state_enableA(enableA),
-        .state_enableB(enableB),
-        .ready(ready_operandos)
-    );
-
-*/
 
 
     // Conversión de `display_data` a BCD

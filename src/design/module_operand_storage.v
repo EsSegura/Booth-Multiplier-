@@ -3,7 +3,8 @@ module operand_storage(
     input logic rst,
     input logic [3:0] key_value,     // Valor ingresado desde el teclado (4 bits)
     input logic key_pressed,          // Señal de tecla presionada
-    input logic is_sign_key,
+    input logic [2:0] is_sign_key,
+    input logic signo,
     input logic enable_A,
     input logic enable_B,
     input logic enable_sign,
@@ -30,13 +31,30 @@ module operand_storage(
             key_pressed_prev <= key_pressed; // Detecta el flanco ascendente del botón
 
             // Detección de flanco positivo
-            if (key_pressed && !key_pressed_prev) begin
+            if (key_pressed && !key_pressed_prev ) begin
 
-                if (!is_sign_key) begin
-                // Si es una tecla numérica, actualizar el valor temporal
-                temp_value <= (temp_value << 3) + (temp_value << 1) + key_value; // Desplazamientos para multiplicar por 10
-                load_value <= 1'b1; // Señal para cargar el valor
-                end
+                case (is_sign_key)
+                    3'b000: begin  // se ingresó un nuevo numero
+                        temp_value <= (temp_value << 3) + (temp_value << 1) + key_value; // Desplazamientos para multiplicar por 10
+                        load_value <= 1'b1; // Señal para cargar el valor                        
+                    end
+
+                    3'b001: begin  // se ingresó un operando de multiplicación
+                        temp_value <= (temp_value << 3) + (temp_value << 1) + 4'b0000; // Desplazamientos para multiplicar por 10 y se agrega un 0 en unidades 
+                        load_value <= 1'b1; // Señal para cargar el valor  
+                        
+                    end
+
+                    3'b010: begin  // se ingresó un operando de suma
+                        signo <= 0; 
+                    end
+
+                    3'b100: begin  // se ingresó un operando de resta
+                        signo <= 1; 
+                    end
+
+                endcase
+                
 
             end else begin
                 load_value <= 1'b0; // Resetear la señal de carga
@@ -49,11 +67,15 @@ module operand_storage(
                     A <= temp_A;           // Actualizar la salida de A
                     
                 end else if (enable_sign) begin
+
                     temp_value <= 8'b0; // vuelese el valor temporal
+
                 end else if (enable_B) begin
                     temp_B <= temp_value; // Almacenar el valor temporal en B
-                    B <= temp_B; 
-                end
+                    B <= temp_B;
+                end else if (!enable_A && !enable_B) begin
+                    temp_value <= 8'b0;
+                end 
             end
         end
     end
