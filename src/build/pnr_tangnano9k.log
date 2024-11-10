@@ -27,6 +27,7 @@ Info: Packing ALUs..
 Info: Packing LUT-FFs..
 Info: Packing non-LUT FFs..
 Info: Packing PLLs..
+<<<<<<< HEAD
 Info: Checksum: 0x4f8b3202
 
 Info: Annotating ports with timing budgets for target frequency 27.00 MHz
@@ -41,6 +42,22 @@ Info: 	           MUX2_LUT5:   192/ 4320     4%
 Info: 	           MUX2_LUT6:    86/ 2160     3%
 Info: 	           MUX2_LUT7:    36/ 1080     3%
 Info: 	           MUX2_LUT8:    14/ 1056     1%
+=======
+Info: Checksum: 0xf7ecadbf
+
+Info: Annotating ports with timing budgets for target frequency 27.00 MHz
+Info: Checksum: 0xf7ecadbf
+
+Info: Device utilisation:
+Info: 	                 VCC:     1/    1   100%
+Info: 	               SLICE:  1099/ 8640    12%
+Info: 	                 IOB:    21/  274     7%
+Info: 	                ODDR:     0/  274     0%
+Info: 	           MUX2_LUT5:   107/ 4320     2%
+Info: 	           MUX2_LUT6:    43/ 2160     1%
+Info: 	           MUX2_LUT7:    19/ 1080     1%
+Info: 	           MUX2_LUT8:     8/ 1056     0%
+>>>>>>> 212ba39db74b0038748ef35835ec1b3b109a98d0
 Info: 	                 GND:     1/    1   100%
 Info: 	                RAMW:     0/  270     0%
 Info: 	                 GSR:     1/    1   100%
@@ -48,6 +65,7 @@ Info: 	                 OSC:     0/    1     0%
 Info: 	                rPLL:     0/    2     0%
 
 Info: Placed 21 cells based on constraints.
+<<<<<<< HEAD
 Info: Creating initial analytic placement for 561 cells, random placement wirelen = 23323.
 Info:     at initial placer iter 0, wirelen = 1017
 Info:     at initial placer iter 1, wirelen = 858
@@ -263,6 +281,152 @@ Info: [ 27866,  30641) |********+
 Info: [ 30641,  33416) |*************************+
 Info: [ 33416,  36191) |************************************************************ 
 Info: Checksum: 0xc3a340a6
+=======
+Info: Creating initial analytic placement for 542 cells, random placement wirelen = 22347.
+Info:     at initial placer iter 0, wirelen = 980
+Info:     at initial placer iter 1, wirelen = 827
+Info:     at initial placer iter 2, wirelen = 792
+Info:     at initial placer iter 3, wirelen = 775
+Info: Running main analytical placer, max placement attempts per cell = 211250.
+Info:     at iteration #1, type SLICE: wirelen solved = 771, spread = 6048, legal = 6054; time = 0.02s
+Info:     at iteration #1, type MUX2_LUT6: wirelen solved = 6039, spread = 6108, legal = 6112; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT5: wirelen solved = 5918, spread = 6000, legal = 5996; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT7: wirelen solved = 5993, spread = 6036, legal = 6043; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT8: wirelen solved = 5883, spread = 5887, legal = 5960; time = 0.01s
+Info:     at iteration #1, type VCC: wirelen solved = 5960, spread = 5960, legal = 5960; time = 0.01s
+Info:     at iteration #1, type GND: wirelen solved = 5960, spread = 5960, legal = 5960; time = 0.01s
+Info:     at iteration #1, type GSR: wirelen solved = 5960, spread = 5960, legal = 5960; time = 0.01s
+Info:     at iteration #1, type ALL: wirelen solved = 851, spread = 6841, legal = 6898; time = 0.02s
+Info:     at iteration #2, type SLICE: wirelen solved = 1351, spread = 5126, legal = 5274; time = 0.02s
+Info:     at iteration #2, type MUX2_LUT6: wirelen solved = 5221, spread = 5245, legal = 5254; time = 0.01s
+Info:     at iteration #2, type MUX2_LUT5: wirelen solved = 5221, spread = 5239, legal = 5268; time = 0.01s
+Info:     at iteration #2, type MUX2_LUT7: wirelen solved = 5241, spread = 5241, legal = 5248; time = 0.01s
+Info:     at iteration #2, type MUX2_LUT8: wirelen solved = 5157, spread = 5163, legal = 5222; time = 0.01s
+Info:     at iteration #2, type VCC: wirelen solved = 5222, spread = 5222, legal = 5222; time = 0.01s
+Info:     at iteration #2, type GND: wirelen solved = 5222, spread = 5222, legal = 5222; time = 0.01s
+Info:     at iteration #2, type GSR: wirelen solved = 5222, spread = 5222, legal = 5222; time = 0.01s
+Info:     at iteration #2, type ALL: wirelen solved = 826, spread = 4647, legal = 4822; time = 0.02s
+Info:     at iteration #3, type SLICE: wirelen solved = 1299, spread = 4973, legal = 5095; time = 0.02s
+Info:     at iteration #3, type MUX2_LUT6: wirelen solved = 5055, spread = 5055, legal = 5070; time = 0.01s
+Info:     at iteration #3, type MUX2_LUT5: wirelen solved = 4953, spread = 4970, legal = 4977; time = 0.01s
+Info:     at iteration #3, type MUX2_LUT7: wirelen solved = 4950, spread = 4950, legal = 4967; time = 0.01s
+Info:     at iteration #3, type MUX2_LUT8: wirelen solved = 4829, spread = 4831, legal = 4931; time = 0.01s
+Info:     at iteration #3, type VCC: wirelen solved = 4931, spread = 4931, legal = 4931; time = 0.01s
+Info:     at iteration #3, type GND: wirelen solved = 4931, spread = 4931, legal = 4931; time = 0.01s
+Info:     at iteration #3, type GSR: wirelen solved = 4931, spread = 4931, legal = 4931; time = 0.01s
+Info:     at iteration #3, type ALL: wirelen solved = 887, spread = 4789, legal = 4939; time = 0.03s
+Info:     at iteration #4, type SLICE: wirelen solved = 1346, spread = 4008, legal = 4237; time = 0.03s
+Info:     at iteration #4, type MUX2_LUT6: wirelen solved = 4215, spread = 4218, legal = 4224; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT5: wirelen solved = 4143, spread = 4155, legal = 4167; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT7: wirelen solved = 4138, spread = 4138, legal = 4172; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT8: wirelen solved = 4087, spread = 4089, legal = 4169; time = 0.01s
+Info:     at iteration #4, type VCC: wirelen solved = 4169, spread = 4169, legal = 4169; time = 0.00s
+Info:     at iteration #4, type GND: wirelen solved = 4169, spread = 4169, legal = 4169; time = 0.01s
+Info:     at iteration #4, type GSR: wirelen solved = 4169, spread = 4169, legal = 4169; time = 0.01s
+Info:     at iteration #4, type ALL: wirelen solved = 998, spread = 3701, legal = 3858; time = 0.03s
+Info:     at iteration #5, type SLICE: wirelen solved = 1308, spread = 3385, legal = 3786; time = 0.02s
+Info:     at iteration #5, type MUX2_LUT6: wirelen solved = 3750, spread = 3767, legal = 3816; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT5: wirelen solved = 3753, spread = 3821, legal = 3829; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT7: wirelen solved = 3813, spread = 3822, legal = 3843; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT8: wirelen solved = 3804, spread = 3814, legal = 3855; time = 0.01s
+Info:     at iteration #5, type VCC: wirelen solved = 3855, spread = 3855, legal = 3855; time = 0.01s
+Info:     at iteration #5, type GND: wirelen solved = 3855, spread = 3855, legal = 3855; time = 0.01s
+Info:     at iteration #5, type GSR: wirelen solved = 3855, spread = 3855, legal = 3855; time = 0.01s
+Info:     at iteration #5, type ALL: wirelen solved = 1057, spread = 2980, legal = 3194; time = 0.02s
+Info:     at iteration #6, type SLICE: wirelen solved = 1322, spread = 3327, legal = 3488; time = 0.02s
+Info:     at iteration #6, type MUX2_LUT6: wirelen solved = 3463, spread = 3498, legal = 3496; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT5: wirelen solved = 3452, spread = 3504, legal = 3518; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT7: wirelen solved = 3513, spread = 3513, legal = 3511; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT8: wirelen solved = 3487, spread = 3490, legal = 3514; time = 0.01s
+Info:     at iteration #6, type VCC: wirelen solved = 3514, spread = 3514, legal = 3514; time = 0.01s
+Info:     at iteration #6, type GND: wirelen solved = 3514, spread = 3514, legal = 3514; time = 0.01s
+Info:     at iteration #6, type GSR: wirelen solved = 3514, spread = 3514, legal = 3514; time = 0.01s
+Info:     at iteration #6, type ALL: wirelen solved = 1089, spread = 3382, legal = 3497; time = 0.02s
+Info:     at iteration #7, type SLICE: wirelen solved = 1347, spread = 3262, legal = 3408; time = 0.02s
+Info:     at iteration #7, type MUX2_LUT6: wirelen solved = 3391, spread = 3413, legal = 3416; time = 0.01s
+Info:     at iteration #7, type MUX2_LUT5: wirelen solved = 3356, spread = 3434, legal = 3431; time = 0.01s
+Info:     at iteration #7, type MUX2_LUT7: wirelen solved = 3427, spread = 3427, legal = 3429; time = 0.01s
+Info:     at iteration #7, type MUX2_LUT8: wirelen solved = 3400, spread = 3400, legal = 3418; time = 0.01s
+Info:     at iteration #7, type VCC: wirelen solved = 3418, spread = 3418, legal = 3418; time = 0.01s
+Info:     at iteration #7, type GND: wirelen solved = 3418, spread = 3418, legal = 3418; time = 0.01s
+Info:     at iteration #7, type GSR: wirelen solved = 3418, spread = 3418, legal = 3418; time = 0.01s
+Info:     at iteration #7, type ALL: wirelen solved = 1165, spread = 3400, legal = 3569; time = 0.02s
+Info:     at iteration #8, type SLICE: wirelen solved = 1473, spread = 3228, legal = 3446; time = 0.02s
+Info:     at iteration #8, type MUX2_LUT6: wirelen solved = 3423, spread = 3437, legal = 3446; time = 0.01s
+Info:     at iteration #8, type MUX2_LUT5: wirelen solved = 3353, spread = 3428, legal = 3428; time = 0.01s
+Info:     at iteration #8, type MUX2_LUT7: wirelen solved = 3415, spread = 3425, legal = 3442; time = 0.01s
+Info:     at iteration #8, type MUX2_LUT8: wirelen solved = 3431, spread = 3474, legal = 3502; time = 0.01s
+Info:     at iteration #8, type VCC: wirelen solved = 3502, spread = 3502, legal = 3502; time = 0.01s
+Info:     at iteration #8, type GND: wirelen solved = 3502, spread = 3502, legal = 3502; time = 0.01s
+Info:     at iteration #8, type GSR: wirelen solved = 3502, spread = 3502, legal = 3502; time = 0.01s
+Info:     at iteration #8, type ALL: wirelen solved = 1234, spread = 3382, legal = 3483; time = 0.02s
+Info:     at iteration #9, type SLICE: wirelen solved = 1571, spread = 3240, legal = 3452; time = 0.02s
+Info:     at iteration #9, type MUX2_LUT6: wirelen solved = 3428, spread = 3439, legal = 3448; time = 0.01s
+Info:     at iteration #9, type MUX2_LUT5: wirelen solved = 3345, spread = 3357, legal = 3367; time = 0.01s
+Info:     at iteration #9, type MUX2_LUT7: wirelen solved = 3347, spread = 3347, legal = 3367; time = 0.01s
+Info:     at iteration #9, type MUX2_LUT8: wirelen solved = 3349, spread = 3353, legal = 3371; time = 0.01s
+Info:     at iteration #9, type VCC: wirelen solved = 3371, spread = 3371, legal = 3371; time = 0.01s
+Info:     at iteration #9, type GND: wirelen solved = 3371, spread = 3371, legal = 3371; time = 0.01s
+Info:     at iteration #9, type GSR: wirelen solved = 3371, spread = 3371, legal = 3371; time = 0.01s
+Info:     at iteration #9, type ALL: wirelen solved = 1289, spread = 3209, legal = 3412; time = 0.02s
+Info:     at iteration #10, type SLICE: wirelen solved = 1593, spread = 3445, legal = 3548; time = 0.02s
+Info:     at iteration #10, type MUX2_LUT6: wirelen solved = 3511, spread = 3546, legal = 3559; time = 0.01s
+Info:     at iteration #10, type MUX2_LUT5: wirelen solved = 3459, spread = 3507, legal = 3507; time = 0.01s
+Info:     at iteration #10, type MUX2_LUT7: wirelen solved = 3488, spread = 3488, legal = 3506; time = 0.01s
+Info:     at iteration #10, type MUX2_LUT8: wirelen solved = 3491, spread = 3491, legal = 3518; time = 0.01s
+Info:     at iteration #10, type VCC: wirelen solved = 3518, spread = 3518, legal = 3518; time = 0.01s
+Info:     at iteration #10, type GND: wirelen solved = 3518, spread = 3518, legal = 3518; time = 0.01s
+Info:     at iteration #10, type GSR: wirelen solved = 3518, spread = 3518, legal = 3518; time = 0.00s
+Info:     at iteration #10, type ALL: wirelen solved = 1343, spread = 3040, legal = 3262; time = 0.02s
+Info: HeAP Placer Time: 1.03s
+Info:   of which solving equations: 0.74s
+Info:   of which spreading cells: 0.10s
+Info:   of which strict legalisation: 0.09s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 43, wirelen = 3194
+Info:   at iteration #5: temp = 0.000000, timing cost = 34, wirelen = 2189
+Info:   at iteration #10: temp = 0.000000, timing cost = 32, wirelen = 2023
+Info:   at iteration #15: temp = 0.000000, timing cost = 41, wirelen = 1938
+Info:   at iteration #20: temp = 0.000000, timing cost = 40, wirelen = 1904
+Info:   at iteration #25: temp = 0.000000, timing cost = 31, wirelen = 1842
+Info:   at iteration #27: temp = 0.000000, timing cost = 26, wirelen = 1833 
+Info: SA placement time 2.19s
+
+Info: Max frequency for clock 'display_inst.clk_i': 82.03 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock           'slow_clk': 794.91 MHz (PASS at 27.00 MHz)
+
+Info: Max delay <async>                    -> <async>                   : 19.66 ns
+Info: Max delay <async>                    -> posedge display_inst.clk_i: 20.63 ns
+Info: Max delay posedge display_inst.clk_i -> <async>                   : 44.62 ns
+Info: Max delay posedge slow_clk           -> <async>                   : 8.41 ns
+Info: Max delay posedge slow_clk           -> posedge display_inst.clk_i: 10.31 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 10 endpoint(s)
+Info:          + represents [1,10) endpoint(s)
+Info: [ -7583,  -5394) |+
+Info: [ -5394,  -3205) |*+
+Info: [ -3205,  -1016) |+
+Info: [ -1016,   1173) |*+
+Info: [  1173,   3362) |+
+Info: [  3362,   5551) |+
+Info: [  5551,   7740) |+
+Info: [  7740,   9929) | 
+Info: [  9929,  12118) |**+
+Info: [ 12118,  14307) |*+
+Info: [ 14307,  16496) |**+
+Info: [ 16496,  18685) |*****+
+Info: [ 18685,  20874) |*********+
+Info: [ 20874,  23063) |*******+
+Info: [ 23063,  25252) |*****+
+Info: [ 25252,  27441) |****+
+Info: [ 27441,  29630) |******+
+Info: [ 29630,  31819) |**************+
+Info: [ 31819,  34008) |***********************************+
+Info: [ 34008,  36197) |************************************************************ 
+Info: Checksum: 0x7627d680
+>>>>>>> 212ba39db74b0038748ef35835ec1b3b109a98d0
 Info: Find global nets...
 Info:  Non clock source, skip slow_clk.
 Info: Routing globals...
@@ -271,6 +435,7 @@ Info:   Net display_inst.clk_i is routed.
 
 Info: Routing..
 Info: Setting up routing queue.
+<<<<<<< HEAD
 Info: Routing 4163 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
@@ -288,9 +453,28 @@ Info: curr total
 Info:  0.5  0.5  Source debouncer_loop[0].debounce_inst.clean_signal_DFFCE_Q_DFFLC.Q
 Info:  0.4  0.9    Net clean_rows[0] budget 36.579037 ns (15,17) -> (15,17)
 Info:                Sink debouncer_loop[1].debounce_inst.clean_signal_LUT4_I0_2_LC.B
+=======
+Info: Routing 3535 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       91        908 |   91   908 |      2630|       2.65       2.65|
+Info:       2000 |      129       1870 |   38   962 |      1677|       9.10      11.75|
+Info:       3000 |      192       2807 |   63   937 |       783|       8.73      20.47|
+Info:       3917 |      284       3633 |   92   826 |         0|       8.26      28.74|
+Info: Routing complete.
+Info: Router1 time 28.74s
+Info: Checksum: 0x32b3590c
+
+Info: Critical path report for clock 'display_inst.clk_i' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_DFFLC.Q
+Info:  0.4  0.9    Net clean_rows[2] budget 36.579037 ns (22,23) -> (22,23)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT4_F_LC.B
+>>>>>>> 212ba39db74b0038748ef35835ec1b3b109a98d0
 Info:                Defined in:
-Info:                  ../design/module_top.v:64.17-72.6
+Info:                  ../design/module_top.v:73.17-81.6
 Info:                  ../design/module_row_scanner.v:5.23-5.29
+<<<<<<< HEAD
 Info:  1.1  2.0  Source debouncer_loop[1].debounce_inst.clean_signal_LUT4_I0_2_LC.F
 Info:  0.8  2.8    Net scanner_inst.key_value_LUT4_F_1_I0[0] budget 17.740519 ns (15,17) -> (15,19)
 Info:                Sink scanner_inst.key_value_LUT4_F_1_I0_LUT2_F_LC.A
@@ -352,11 +536,55 @@ Info:                Defined in:
 Info:                  ../design/module_top.v:64.17-72.6
 Info:                  ../design/module_row_scanner.v:4.23-4.36
 Info:  0.0  0.9  Setup registro_inst.col_shift_reg_DFFRE_Q_DFFLC.A
+=======
+Info:  1.1  2.0  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT4_F_LC.F
+Info:  0.9  2.9    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0[0] budget 17.740519 ns (22,23) -> (21,24)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT4_I0_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  3.9  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT4_I0_LC.F
+Info:  0.3  4.2    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT4_I0_F budget 8.568259 ns (21,24) -> (21,24)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2  4.4  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F_MUX2_LUT5_O_LC.OF
+Info:  0.8  5.2    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F[0] budget 8.568259 ns (21,24) -> (23,24)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F_LUT3_I0_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  6.2  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F_LUT3_I0_LC.F
+Info:  0.4  6.6    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F_LUT3_I0_F[0] budget 6.648407 ns (23,24) -> (24,24)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F_LUT3_I0_F_LUT2_I0_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  7.7  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F_LUT3_I0_F_LUT2_I0_LC.F
+Info:  0.9  8.6    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT4_I2_F_LUT3_I0_F[1] budget 5.368506 ns (24,24) -> (23,23)
+Info:                Sink scanner_inst.key_value_ALU_I0_SUM_ALU_SUM_6_ALULC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/techmap.v:200.24-200.25
+Info:  1.0  9.6  Source scanner_inst.key_value_ALU_I0_SUM_ALU_SUM_6_ALULC.F
+Info:  0.4 10.0    Net scanner_inst.key_value_ALU_I0_SUM[1] budget 4.454291 ns (23,23) -> (23,22)
+Info:                Sink storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
+Info:  0.0 10.0  Setup storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_LC.B
+Info: 5.9 ns logic, 4.1 ns routing
+
+Info: Critical path report for clock 'slow_clk' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_2_DFFLC.Q
+Info:  0.4  0.9    Net col_shift_reg[1] budget 36.579037 ns (22,24) -> (21,24)
+Info:                Sink registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.0  0.9  Setup registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.A
+>>>>>>> 212ba39db74b0038748ef35835ec1b3b109a98d0
 Info: 0.5 ns logic, 0.4 ns routing
 
 Info: Critical path report for cross-domain path '<async>' -> '<async>':
 Info: curr total
 Info:  0.0  0.0  Source debouncer_loop[0].debounce_inst.rst_IBUF_O$iob.O
+<<<<<<< HEAD
 Info: 14.2 14.2    Net display_inst.en_conmutador_DFFR_Q_D[1] budget 37.037037 ns (1,0) -> (40,17)
 Info:                Sink debouncer_loop[2].debounce_inst.noisy_signal_reg_DFFCE_Q_CLEAR_LUT1_F_LC.A
 Info:                Defined in:
@@ -370,9 +598,25 @@ Info: curr total
 Info:  0.0  0.0  Source debouncer_loop[0].debounce_inst.noisy_signal_IBUF_O$iob.O
 Info:  7.0  7.0    Net debouncer_loop[0].debounce_inst.noisy_signal budget 37.037037 ns (14,28) -> (20,6)
 Info:                Sink debouncer_loop[0].debounce_inst.noisy_signal_reg_LUT2_I1_LC.A
+=======
+Info: 12.3 12.3    Net display_inst.en_conmutador_DFFR_Q_D[1] budget 37.037037 ns (1,0) -> (24,24)
+Info:                Sink storage_inst.temp_value_DFFC_Q_2_CLEAR_LUT1_F_LC.A
 Info:                Defined in:
-Info:                  ../design/module_top.v:54.23-59.14
+Info:                  ../design/module_top.v:95.21-107.6
+Info:                  ../design/module_operand_storage.v:3.17-3.20
+Info:  0.0 12.3  Setup storage_inst.temp_value_DFFC_Q_2_CLEAR_LUT1_F_LC.A
+Info: 0.0 ns logic, 12.3 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge display_inst.clk_i':
+Info: curr total
+Info:  0.0  0.0  Source debouncer_loop[3].debounce_inst.noisy_signal_IBUF_O$iob.O
+Info:  9.1  9.1    Net debouncer_loop[3].debounce_inst.noisy_signal budget 37.037037 ns (46,23) -> (18,13)
+Info:                Sink debouncer_loop[3].debounce_inst.noisy_signal_reg_LUT2_I1_LC.A
+>>>>>>> 212ba39db74b0038748ef35835ec1b3b109a98d0
+Info:                Defined in:
+Info:                  ../design/module_top.v:63.23-68.14
 Info:                  ../design/module_debouncer.v:4.11-4.23
+<<<<<<< HEAD
 Info:  1.0  8.1  Source debouncer_loop[0].debounce_inst.noisy_signal_reg_LUT2_I1_LC.F
 Info:  3.3 11.3    Net debouncer_loop[0].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_I0[3] budget 17.740519 ns (20,6) -> (27,2)
 Info:                Sink debouncer_loop[0].debounce_inst.counter_DFFCE_Q_3_D_LUT2_F_LC.A
@@ -693,5 +937,250 @@ Info: [ 27866,  30049) |************+
 Info: [ 30049,  32232) |****************+
 Info: [ 32232,  34415) |********************************+
 Info: [ 34415,  36598) |************************************************************ 
+=======
+Info:  1.0 10.1  Source debouncer_loop[3].debounce_inst.noisy_signal_reg_LUT2_I1_LC.F
+Info:  2.7 12.9    Net debouncer_loop[3].debounce_inst.noisy_signal_reg_LUT2_I1_F[3] budget 17.740519 ns (18,13) -> (12,16)
+Info:                Sink debouncer_loop[3].debounce_inst.counter_DFFCE_Q_25_D_LUT2_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.0 12.9  Setup debouncer_loop[3].debounce_inst.counter_DFFCE_Q_25_D_LUT2_F_LC.A
+Info: 1.0 ns logic, 11.8 ns routing
+
+Info: Critical path report for cross-domain path 'posedge display_inst.clk_i' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source storage_inst.temp_value_DFFC_Q_2_D_LUT4_F_LC.Q
+Info:  1.7  2.2    Net display_valor[5] budget 36.579037 ns (24,24) -> (26,22)
+Info:                Sink display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_SUM_LUT4_F_I1_ALU_SUM_1_COUT_ALU_COUT_1_ALULC.B
+Info:                Defined in:
+Info:                  ../design/module_top.v:27.17-27.27
+Info:  1.1  3.3  Source display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_SUM_LUT4_F_I1_ALU_SUM_1_COUT_ALU_COUT_1_ALULC.F
+Info:  0.4  3.7    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_SUM_LUT4_F_I1[0] budget 17.740519 ns (26,22) -> (25,22)
+Info:                Sink display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  4.7  Source display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_LUT3_F_LC.F
+Info:  1.2  5.9    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0[4] budget 11.483345 ns (25,22) -> (24,21)
+Info:                Sink display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_ALU_SUM_COUT_ALU_COUT_ALULC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  7.0  Source display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_ALU_SUM_COUT_ALU_COUT_ALULC.F
+Info:  0.9  7.9    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0[3] budget 8.338009 ns (24,21) -> (25,20)
+Info:                Sink display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I0_LUT3_F_LC.C
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8  8.7  Source display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I0_LUT3_F_LC.F
+Info:  0.3  9.0    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I0 budget 4.571291 ns (25,20) -> (25,20)
+Info:                Sink display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
+Info:  0.2  9.2  Source display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3  9.6    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_I1 budget 4.571291 ns (25,20) -> (25,20)
+Info:                Sink display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4  9.9  Source display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_LC.OF
+Info:  1.7 11.6    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM[3] budget 4.571291 ns (25,20) -> (27,22)
+Info:                Sink display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT5_S0_I0_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 12.6  Source display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT5_S0_I0_LUT4_F_LC.F
+Info:  0.3 13.0    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT5_S0_I0 budget 3.421226 ns (27,22) -> (27,22)
+Info:                Sink display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT5_S0_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
+Info:  0.2 13.1  Source display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT5_S0_LC.OF
+Info:  1.8 14.9    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT5_S0_O[3] budget 3.421226 ns (27,22) -> (28,25)
+Info:                Sink display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT5_S0_O_ALU_SUM_ALULC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 16.0  Source display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT5_S0_O_ALU_SUM_ALULC.F
+Info:  0.9 16.9    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_SUM_MUX2_LUT5_O_S0_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT5_S0_O[5] budget 2.969304 ns (28,25) -> (28,26)
+Info:                Sink display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT2_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 18.0  Source display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT2_F_LC.F
+Info:  0.3 18.3    Net display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 1.788336 ns (28,26) -> (28,26)
+Info:                Sink display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 18.5  Source display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 18.8    Net display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0 budget 1.788336 ns (28,26) -> (28,26)
+Info:                Sink display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 19.2  Source display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3 19.5    Net display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1 budget 1.788336 ns (28,26) -> (28,26)
+Info:                Sink display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 20.0  Source display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.OF
+Info:  0.3 20.4    Net display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_I1 budget 1.788336 ns (28,26) -> (28,26)
+Info:                Sink display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7 21.1  Source display_inst.anodo_o_LUT4_I3_F_MUX2_LUT8_O_LC.OF
+Info:  2.4 23.5    Net display_inst.anodo_o_LUT3_I2_1_F[1] budget 1.788336 ns (28,26) -> (32,21)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 24.5  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT4_F_LC.F
+Info:  0.3 24.8    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0 budget 1.095430 ns (32,21) -> (32,21)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
+Info:  0.2 25.0  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 25.3    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 1.095430 ns (32,21) -> (32,21)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 25.7  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3 26.0    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_I1 budget 1.095430 ns (32,21) -> (32,21)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 26.5  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_LC.OF
+Info:  0.4 26.9    Net display_inst.anodo_o_MUX2_LUT8_S0_I0 budget 1.095430 ns (32,21) -> (31,21)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_LC.I0
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.9-169.11
+Info:  0.7 27.6  Source display_inst.anodo_o_MUX2_LUT8_S0_LC.OF
+Info:  6.0 33.7    Net display_inst.anodo_o_MUX2_LUT8_S0_O[1] budget 1.095430 ns (31,21) -> (45,13)
+Info:                Sink display_inst.catodo_o_MUX2_LUT5_O_4_I1_LUT2_F_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 34.7  Source display_inst.catodo_o_MUX2_LUT5_O_4_I1_LUT2_F_LC.F
+Info:  0.3 35.0    Net display_inst.catodo_o_MUX2_LUT5_O_4_I1 budget 0.944741 ns (45,13) -> (45,13)
+Info:                Sink display_inst.catodo_o_MUX2_LUT5_O_4_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 35.2  Source display_inst.catodo_o_MUX2_LUT5_O_4_LC.OF
+Info:  0.9 36.1    Net display_inst.catodo_o[2] budget 0.944741 ns (45,13) -> (46,12)
+Info:                Sink catodo_po_OBUF_O_4$iob.I
+Info:                Defined in:
+Info:                  ../design/module_top.v:163.23-169.6
+Info:                  ../design/module_7_segments.v:8.24-8.32
+Info: 14.2 ns logic, 21.9 ns routing
+
+Info: Critical path report for cross-domain path 'posedge slow_clk' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.Q
+Info:  0.3  0.8    Net col_shift_reg[2] budget 36.579037 ns (21,24) -> (21,24)
+Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  1.9  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3  2.2    Net debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_I1 budget 8.669759 ns (21,24) -> (21,24)
+Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2  2.4  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_LC.OF
+Info:  0.4  2.8    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F[2] budget 8.669759 ns (21,24) -> (22,24)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_I2_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  3.9  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_I2_LUT4_F_LC.F
+Info:  0.4  4.3    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_I2[2] budget 6.716207 ns (22,24) -> (23,24)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_LC.C
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8  5.1  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_LC.F
+Info:  0.4  5.5    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_F[0] budget 5.459839 ns (23,24) -> (23,23)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_F_LUT2_I0_1_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  6.6  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_F_LUT2_I0_1_LC.F
+Info:  0.3  6.9    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT4_I2_F_LUT3_I0_1_F[2] budget 4.532577 ns (23,23) -> (23,23)
+Info:                Sink scanner_inst.key_value_ALU_I0_SUM_ALU_SUM_4_ALULC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/techmap.v:200.21-200.22
+Info:  0.0  6.9  Setup scanner_inst.key_value_ALU_I0_SUM_ALU_SUM_4_ALULC.B
+Info: 4.7 ns logic, 2.2 ns routing
+
+Info: Critical path report for cross-domain path 'posedge slow_clk' -> 'posedge display_inst.clk_i':
+Info: curr total
+Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.Q
+Info:  0.3  0.8    Net col_shift_reg[2] budget 36.579037 ns (21,24) -> (21,24)
+Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  1.9  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3  2.2    Net debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_I1 budget 8.669759 ns (21,24) -> (21,24)
+Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2  2.4  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_F_MUX2_LUT5_O_LC.OF
+Info:  0.4  2.8    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I0_LUT2_I0_F[2] budget 8.669759 ns (21,24) -> (22,24)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_I2_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  3.9  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_I2_LUT4_F_LC.F
+Info:  0.4  4.3    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_I2[2] budget 6.716207 ns (22,24) -> (23,24)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_LC.C
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8  5.1  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_LC.F
+Info:  0.4  5.5    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_F[0] budget 5.459839 ns (23,24) -> (23,23)
+Info:                Sink scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_F_LUT2_I0_1_LC.A
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  6.6  Source scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT3_I0_F_LUT2_I0_1_LC.F
+Info:  0.3  6.9    Net scanner_inst.key_value_LUT4_F_I3_LUT3_F_I1_LUT4_I2_F_LUT3_I0_1_F[2] budget 4.532577 ns (23,23) -> (23,23)
+Info:                Sink scanner_inst.key_value_ALU_I0_SUM_ALU_SUM_4_ALULC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/techmap.v:200.21-200.22
+Info:  1.1  8.0  Source scanner_inst.key_value_ALU_I0_SUM_ALU_SUM_4_ALULC.F
+Info:  0.4  8.4    Net scanner_inst.key_value_ALU_I0_SUM[3] budget 3.828755 ns (23,23) -> (23,22)
+Info:                Sink storage_inst.temp_value_DFFC_Q_4_D_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\Users\CRIS\OneDrive\ESCRIT~1\Tutorial\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
+Info:  0.0  8.4  Setup storage_inst.temp_value_DFFC_Q_4_D_LUT4_F_LC.B
+Info: 5.8 ns logic, 2.6 ns routing
+
+Info: Max frequency for clock 'display_inst.clk_i': 99.94 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock           'slow_clk': 1149.43 MHz (PASS at 27.00 MHz)
+
+Info: Max delay <async>                    -> <async>                   : 12.30 ns
+Info: Max delay <async>                    -> posedge display_inst.clk_i: 12.85 ns
+Info: Max delay posedge display_inst.clk_i -> <async>                   : 36.08 ns
+Info: Max delay posedge slow_clk           -> <async>                   : 6.90 ns
+Info: Max delay posedge slow_clk           -> posedge display_inst.clk_i: 8.41 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 9 endpoint(s)
+Info:          + represents [1,9) endpoint(s)
+Info: [   959,   2741) |+
+Info: [  2741,   4523) |*+
+Info: [  4523,   6305) |*+
+Info: [  6305,   8087) |+
+Info: [  8087,   9869) |*+
+Info: [  9869,  11651) |+
+Info: [ 11651,  13433) |+
+Info: [ 13433,  15215) |**+
+Info: [ 15215,  16997) |*+
+Info: [ 16997,  18779) |**+
+Info: [ 18779,  20561) |*+
+Info: [ 20561,  22343) |***+
+Info: [ 22343,  24125) |*+
+Info: [ 24125,  25907) |******+
+Info: [ 25907,  27689) |*********+
+Info: [ 27689,  29471) |**********+
+Info: [ 29471,  31253) |**********+
+Info: [ 31253,  33035) |****************+
+Info: [ 33035,  34817) |**************************************+
+Info: [ 34817,  36599) |************************************************************ 
+>>>>>>> 212ba39db74b0038748ef35835ec1b3b109a98d0
 
 Info: Program finished normally.
