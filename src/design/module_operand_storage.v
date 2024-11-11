@@ -82,7 +82,6 @@ module operand_storage(
 endmodule
 
 
-
 /*
                     if (key_value == 4'b1100) begin
 
