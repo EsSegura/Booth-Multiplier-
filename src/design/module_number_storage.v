@@ -28,30 +28,38 @@ module number_storage(
             temp_value <= 8'b0;
             key_pressed_prev <= 1'b0;
             load_value <= 1'b0;
+            signo <= 1'b0;
+            valid <= 1'b0;
         end else begin
             key_pressed_prev <= key_pressed; // Detecta el flanco ascendente del botón
 
             // Detección de flanco positivo
-            if (key_pressed && !key_pressed_prev ) begin
-
+            if (key_pressed && !key_pressed_prev) begin
                 case (is_sign_key)
-                    3'b000: begin  // se ingresó un nuevo numero
-                        temp_value <= (temp_value << 3) + (temp_value << 1) + key_value; // Desplazamientos para multiplicar por 10
-                        load_value <= 1'b1; // Señal para cargar el valor                        
+                    3'b000: begin // Se ingresó un nuevo número
+                        temp_value <= (temp_value << 3) + (temp_value << 1) + key_value; // Multiplicación por 10
+                        load_value <= 1'b1; // Señal para cargar el valor
                     end
 
-                    3'b001: begin  // se ingresó un operando de multiplicación
-                        temp_value <= temp_value; // se guarda el operando tal cual esta, solo unidades 
-                        load_value <= 1'b1; // Señal para cargar el valor  1 *
-                        
+                    3'b001: begin // Se ingresó un operando (por ejemplo, multiplicación)
+                        // Guardar el valor actual y limpiar temp_value
+                        if (enable_A) begin
+                            temp_A <= temp_value;
+                            A <= temp_A; // Actualizar la salida de A
+                        end else if (enable_B) begin
+                            temp_B <= temp_value;
+                            B <= temp_B; // Actualizar la salida de B
+                        end
+                        temp_value <= 8'b0; // Limpiar el valor temporal para un nuevo ingreso
+                        load_value <= 1'b0; // Señal para finalizar la carga
                     end
 
-                    3'b010: begin  // se ingresó un operando de suma
-                        signo <= 0; 
+                    3'b010: begin // Se ingresó un operando de suma
+                        signo <= 1'b0;
                     end
 
-                    3'b100: begin  // se ingresó un operando de resta
-                        signo <= 1; 
+                    3'b100: begin // Se ingresó un operando de resta
+                        signo <= 1'b1;
                     end
                     3'b010: begin  // se ingresó un operando de resta
                         signo <= 1; 
@@ -60,31 +68,29 @@ module number_storage(
                         valid <= 1;
                     end                   
 
-                endcase
+                    3'b111: begin // Validar la entrada
+                        valid <= 1'b1;
+                    end
 
+                    default: begin
+                        load_value <= 1'b0; // Resetear la señal de carga
+                    end
+                endcase
             end else begin
                 load_value <= 1'b0; // Resetear la señal de carga
                 signo <= 0;
                 valid <= 0;
             end
-            
+
             // Almacenar el valor temporal en A o B según el habilitador
             if (load_value) begin
                 if (enable_A) begin
                     temp_A <= temp_value; // Almacenar el valor temporal en A
-                    A <= temp_A;           // Actualizar la salida de A
-                    
-                end else if (enable_sign) begin
-                    temp_value <= 8'b0; // vuelese el valor temporal
-
+                    A <= temp_A;          // Actualizar la salida de A
                 end else if (enable_B) begin
                     temp_B <= temp_value; // Almacenar el valor temporal en B
-                    B <= temp_B;
-                    
-                end else if (!enable_A && !enable_B) begin
-                    temp_value <= 8'b0;
-                end 
-
+                    B <= temp_B;          // Actualizar la salida de B
+                end
             end
         end
     end

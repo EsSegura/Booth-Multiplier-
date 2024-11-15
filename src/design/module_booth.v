@@ -58,7 +58,7 @@ module BoothMul(
             end
         end
 
-        START:s
+        START:
         begin
             case(temp)
             3'b100:   Y_temp = {Y[15:8] - B, Y[7:0]};   // Ajuste de tamaño de Y

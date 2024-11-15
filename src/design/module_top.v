@@ -129,7 +129,7 @@ module module_top (
 
     // Conversión a BCD
     bin_to_bcd converter_inst (
-        .binario(display_valor[11:0]),  // Limitamos a 12 bits para BCD
+        .binario(stored_B),  // Limitamos a 12 bits para BCD
         .bcd(bcd)
     );
 
