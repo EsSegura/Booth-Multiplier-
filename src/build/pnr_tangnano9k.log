@@ -27,20 +27,20 @@ Info: Packing ALUs..
 Info: Packing LUT-FFs..
 Info: Packing non-LUT FFs..
 Info: Packing PLLs..
-Info: Checksum: 0x850953e9
+Info: Checksum: 0xc3efdc43
 
 Info: Annotating ports with timing budgets for target frequency 27.00 MHz
-Info: Checksum: 0x850953e9
+Info: Checksum: 0xc3efdc43
 
 Info: Device utilisation:
 Info: 	                 VCC:     1/    1   100%
-Info: 	               SLICE:  1579/ 8640    18%
+Info: 	               SLICE:  1300/ 8640    15%
 Info: 	                 IOB:    21/  274     7%
 Info: 	                ODDR:     0/  274     0%
-Info: 	           MUX2_LUT5:   196/ 4320     4%
-Info: 	           MUX2_LUT6:    87/ 2160     4%
-Info: 	           MUX2_LUT7:    23/ 1080     2%
-Info: 	           MUX2_LUT8:     2/ 1056     0%
+Info: 	           MUX2_LUT5:   174/ 4320     4%
+Info: 	           MUX2_LUT6:    82/ 2160     3%
+Info: 	           MUX2_LUT7:    33/ 1080     3%
+Info: 	           MUX2_LUT8:    12/ 1056     1%
 Info: 	                 GND:     1/    1   100%
 Info: 	                RAMW:     0/  270     0%
 Info: 	                 GSR:     1/    1   100%
@@ -48,556 +48,571 @@ Info: 	                 OSC:     0/    1     0%
 Info: 	                rPLL:     0/    2     0%
 
 Info: Placed 21 cells based on constraints.
-Info: Creating initial analytic placement for 732 cells, random placement wirelen = 32023.
-Info:     at initial placer iter 0, wirelen = 1221
-Info:     at initial placer iter 1, wirelen = 820
-Info:     at initial placer iter 2, wirelen = 817
-Info:     at initial placer iter 3, wirelen = 737
-Info: Running main analytical placer, max placement attempts per cell = 456490.
-Info:     at iteration #1, type SLICE: wirelen solved = 901, spread = 9144, legal = 9089; time = 0.01s
-Info:     at iteration #1, type MUX2_LUT6: wirelen solved = 8674, spread = 8932, legal = 8999; time = 0.01s
-Info:     at iteration #1, type MUX2_LUT5: wirelen solved = 8771, spread = 8871, legal = 8895; time = 0.01s
-Info:     at iteration #1, type MUX2_LUT7: wirelen solved = 8482, spread = 8482, legal = 8656; time = 0.01s
-Info:     at iteration #1, type MUX2_LUT8: wirelen solved = 8579, spread = 8579, legal = 8641; time = 0.01s
-Info:     at iteration #1, type VCC: wirelen solved = 8641, spread = 8641, legal = 8641; time = 0.01s
-Info:     at iteration #1, type GND: wirelen solved = 8641, spread = 8641, legal = 8641; time = 0.00s
-Info:     at iteration #1, type GSR: wirelen solved = 8641, spread = 8641, legal = 8641; time = 0.01s
-Info:     at iteration #1, type ALL: wirelen solved = 874, spread = 10252, legal = 10462; time = 0.02s
-Info:     at iteration #2, type SLICE: wirelen solved = 2220, spread = 7571, legal = 8141; time = 0.01s
-Info:     at iteration #2, type MUX2_LUT6: wirelen solved = 7623, spread = 7786, legal = 7849; time = 0.01s
-Info:     at iteration #2, type MUX2_LUT5: wirelen solved = 7611, spread = 7629, legal = 7640; time = 0.01s
-Info:     at iteration #2, type MUX2_LUT7: wirelen solved = 7329, spread = 7333, legal = 7361; time = 0.01s
-Info:     at iteration #2, type MUX2_LUT8: wirelen solved = 7317, spread = 7317, legal = 7344; time = 0.00s
-Info:     at iteration #2, type VCC: wirelen solved = 7344, spread = 7344, legal = 7344; time = 0.00s
-Info:     at iteration #2, type GND: wirelen solved = 7344, spread = 7344, legal = 7344; time = 0.01s
-Info:     at iteration #2, type GSR: wirelen solved = 7344, spread = 7344, legal = 7344; time = 0.00s
-Info:     at iteration #2, type ALL: wirelen solved = 1029, spread = 6178, legal = 6423; time = 0.02s
-Info:     at iteration #3, type SLICE: wirelen solved = 1970, spread = 5381, legal = 5552; time = 0.01s
-Info:     at iteration #3, type MUX2_LUT6: wirelen solved = 5393, spread = 5656, legal = 5702; time = 0.01s
-Info:     at iteration #3, type MUX2_LUT5: wirelen solved = 5538, spread = 5585, legal = 5582; time = 0.01s
-Info:     at iteration #3, type MUX2_LUT7: wirelen solved = 5395, spread = 5494, legal = 5553; time = 0.01s
-Info:     at iteration #3, type MUX2_LUT8: wirelen solved = 5533, spread = 5533, legal = 5559; time = 0.00s
-Info:     at iteration #3, type VCC: wirelen solved = 5559, spread = 5559, legal = 5559; time = 0.01s
-Info:     at iteration #3, type GND: wirelen solved = 5559, spread = 5559, legal = 5559; time = 0.01s
-Info:     at iteration #3, type GSR: wirelen solved = 5559, spread = 5559, legal = 5559; time = 0.00s
-Info:     at iteration #3, type ALL: wirelen solved = 1123, spread = 5407, legal = 5661; time = 0.01s
-Info:     at iteration #4, type SLICE: wirelen solved = 1911, spread = 5050, legal = 5265; time = 0.01s
-Info:     at iteration #4, type MUX2_LUT6: wirelen solved = 5043, spread = 5257, legal = 5295; time = 0.01s
-Info:     at iteration #4, type MUX2_LUT5: wirelen solved = 5103, spread = 5186, legal = 5193; time = 0.01s
-Info:     at iteration #4, type MUX2_LUT7: wirelen solved = 5071, spread = 5124, legal = 5184; time = 0.01s
-Info:     at iteration #4, type MUX2_LUT8: wirelen solved = 5168, spread = 5168, legal = 5181; time = 0.01s
-Info:     at iteration #4, type VCC: wirelen solved = 5181, spread = 5181, legal = 5181; time = 0.00s
-Info:     at iteration #4, type GND: wirelen solved = 5181, spread = 5181, legal = 5181; time = 0.01s
-Info:     at iteration #4, type GSR: wirelen solved = 5181, spread = 5181, legal = 5181; time = 0.00s
-Info:     at iteration #4, type ALL: wirelen solved = 1308, spread = 5265, legal = 5438; time = 0.01s
-Info:     at iteration #5, type SLICE: wirelen solved = 2047, spread = 5675, legal = 5801; time = 0.01s
-Info:     at iteration #5, type MUX2_LUT6: wirelen solved = 5547, spread = 5665, legal = 5730; time = 0.01s
-Info:     at iteration #5, type MUX2_LUT5: wirelen solved = 5556, spread = 5568, legal = 5566; time = 0.00s
-Info:     at iteration #5, type MUX2_LUT7: wirelen solved = 5380, spread = 5476, legal = 5527; time = 0.01s
-Info:     at iteration #5, type MUX2_LUT8: wirelen solved = 5487, spread = 5487, legal = 5525; time = 0.00s
-Info:     at iteration #5, type VCC: wirelen solved = 5525, spread = 5525, legal = 5525; time = 0.01s
-Info:     at iteration #5, type GND: wirelen solved = 5525, spread = 5525, legal = 5525; time = 0.00s
-Info:     at iteration #5, type GSR: wirelen solved = 5525, spread = 5525, legal = 5525; time = 0.01s
-Info:     at iteration #5, type ALL: wirelen solved = 1472, spread = 4296, legal = 4508; time = 0.01s
-Info:     at iteration #6, type SLICE: wirelen solved = 2099, spread = 4271, legal = 4591; time = 0.01s
-Info:     at iteration #6, type MUX2_LUT6: wirelen solved = 4332, spread = 4419, legal = 4472; time = 0.01s
-Info:     at iteration #6, type MUX2_LUT5: wirelen solved = 4356, spread = 4360, legal = 4379; time = 0.01s
-Info:     at iteration #6, type MUX2_LUT7: wirelen solved = 4302, spread = 4305, legal = 4330; time = 0.01s
-Info:     at iteration #6, type MUX2_LUT8: wirelen solved = 4314, spread = 4314, legal = 4325; time = 0.01s
-Info:     at iteration #6, type VCC: wirelen solved = 4325, spread = 4325, legal = 4325; time = 0.00s
-Info:     at iteration #6, type GND: wirelen solved = 4325, spread = 4325, legal = 4325; time = 0.01s
-Info:     at iteration #6, type GSR: wirelen solved = 4325, spread = 4325, legal = 4325; time = 0.00s
-Info:     at iteration #6, type ALL: wirelen solved = 1437, spread = 3896, legal = 4253; time = 0.01s
-Info:     at iteration #7, type SLICE: wirelen solved = 2098, spread = 3929, legal = 4233; time = 0.01s
-Info:     at iteration #7, type MUX2_LUT6: wirelen solved = 4005, spread = 4179, legal = 4232; time = 0.01s
-Info:     at iteration #7, type MUX2_LUT5: wirelen solved = 4137, spread = 4181, legal = 4199; time = 0.01s
-Info:     at iteration #7, type MUX2_LUT7: wirelen solved = 4152, spread = 4209, legal = 4290; time = 0.01s
-Info:     at iteration #7, type MUX2_LUT8: wirelen solved = 4280, spread = 4280, legal = 4296; time = 0.01s
-Info:     at iteration #7, type VCC: wirelen solved = 4296, spread = 4296, legal = 4296; time = 0.00s
-Info:     at iteration #7, type GND: wirelen solved = 4296, spread = 4296, legal = 4296; time = 0.01s
-Info:     at iteration #7, type GSR: wirelen solved = 4296, spread = 4296, legal = 4296; time = 0.00s
-Info:     at iteration #7, type ALL: wirelen solved = 1569, spread = 3994, legal = 4330; time = 0.01s
-Info:     at iteration #8, type SLICE: wirelen solved = 2202, spread = 4102, legal = 4455; time = 0.01s
-Info:     at iteration #8, type MUX2_LUT6: wirelen solved = 4284, spread = 4408, legal = 4442; time = 0.01s
-Info:     at iteration #8, type MUX2_LUT5: wirelen solved = 4317, spread = 4350, legal = 4365; time = 0.00s
-Info:     at iteration #8, type MUX2_LUT7: wirelen solved = 4236, spread = 4280, legal = 4330; time = 0.01s
-Info:     at iteration #8, type MUX2_LUT8: wirelen solved = 4323, spread = 4323, legal = 4330; time = 0.00s
-Info:     at iteration #8, type VCC: wirelen solved = 4330, spread = 4330, legal = 4330; time = 0.01s
-Info:     at iteration #8, type GND: wirelen solved = 4330, spread = 4330, legal = 4330; time = 0.01s
-Info:     at iteration #8, type GSR: wirelen solved = 4330, spread = 4330, legal = 4330; time = 0.00s
-Info:     at iteration #8, type ALL: wirelen solved = 1638, spread = 4005, legal = 4324; time = 0.01s
-Info:     at iteration #9, type SLICE: wirelen solved = 2422, spread = 4435, legal = 4736; time = 0.01s
-Info:     at iteration #9, type MUX2_LUT6: wirelen solved = 4550, spread = 4682, legal = 4757; time = 0.01s
-Info:     at iteration #9, type MUX2_LUT5: wirelen solved = 4542, spread = 4558, legal = 4579; time = 0.01s
-Info:     at iteration #9, type MUX2_LUT7: wirelen solved = 4501, spread = 4610, legal = 4651; time = 0.01s
-Info:     at iteration #9, type MUX2_LUT8: wirelen solved = 4652, spread = 4652, legal = 4651; time = 0.00s
-Info:     at iteration #9, type VCC: wirelen solved = 4651, spread = 4651, legal = 4651; time = 0.01s
-Info:     at iteration #9, type GND: wirelen solved = 4651, spread = 4651, legal = 4651; time = 0.01s
-Info:     at iteration #9, type GSR: wirelen solved = 4651, spread = 4651, legal = 4651; time = 0.00s
-Info:     at iteration #9, type ALL: wirelen solved = 1758, spread = 4091, legal = 4292; time = 0.01s
-Info:     at iteration #10, type SLICE: wirelen solved = 2455, spread = 4122, legal = 4427; time = 0.01s
-Info:     at iteration #10, type MUX2_LUT6: wirelen solved = 4249, spread = 4484, legal = 4544; time = 0.01s
-Info:     at iteration #10, type MUX2_LUT5: wirelen solved = 4429, spread = 4441, legal = 4458; time = 0.00s
-Info:     at iteration #10, type MUX2_LUT7: wirelen solved = 4304, spread = 4418, legal = 4466; time = 0.01s
-Info:     at iteration #10, type MUX2_LUT8: wirelen solved = 4440, spread = 4440, legal = 4468; time = 0.01s
-Info:     at iteration #10, type VCC: wirelen solved = 4468, spread = 4468, legal = 4468; time = 0.00s
-Info:     at iteration #10, type GND: wirelen solved = 4468, spread = 4468, legal = 4468; time = 0.01s
-Info:     at iteration #10, type GSR: wirelen solved = 4468, spread = 4468, legal = 4468; time = 0.01s
-Info:     at iteration #10, type ALL: wirelen solved = 1817, spread = 4249, legal = 4568; time = 0.01s
-Info:     at iteration #11, type SLICE: wirelen solved = 2495, spread = 4769, legal = 4922; time = 0.01s
-Info:     at iteration #11, type MUX2_LUT6: wirelen solved = 4725, spread = 4807, legal = 4868; time = 0.01s
-Info:     at iteration #11, type MUX2_LUT5: wirelen solved = 4674, spread = 4703, legal = 4712; time = 0.01s
-Info:     at iteration #11, type MUX2_LUT7: wirelen solved = 4575, spread = 4765, legal = 4818; time = 0.00s
-Info:     at iteration #11, type MUX2_LUT8: wirelen solved = 4797, spread = 4797, legal = 4808; time = 0.01s
-Info:     at iteration #11, type VCC: wirelen solved = 4808, spread = 4808, legal = 4808; time = 0.00s
-Info:     at iteration #11, type GND: wirelen solved = 4808, spread = 4808, legal = 4808; time = 0.01s
-Info:     at iteration #11, type GSR: wirelen solved = 4808, spread = 4808, legal = 4808; time = 0.00s
-Info:     at iteration #11, type ALL: wirelen solved = 1961, spread = 4994, legal = 5160; time = 0.01s
-Info: HeAP Placer Time: 0.74s
-Info:   of which solving equations: 0.54s
-Info:   of which spreading cells: 0.06s
-Info:   of which strict legalisation: 0.08s
+Info: Creating initial analytic placement for 591 cells, random placement wirelen = 25748.
+Info:     at initial placer iter 0, wirelen = 1090
+Info:     at initial placer iter 1, wirelen = 887
+Info:     at initial placer iter 2, wirelen = 857
+Info:     at initial placer iter 3, wirelen = 851
+Info: Running main analytical placer, max placement attempts per cell = 330078.
+Info:     at iteration #1, type SLICE: wirelen solved = 887, spread = 8117, legal = 8145; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT7: wirelen solved = 8102, spread = 8136, legal = 8154; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT8: wirelen solved = 8139, spread = 8143, legal = 8208; time = 0.00s
+Info:     at iteration #1, type MUX2_LUT6: wirelen solved = 8037, spread = 8063, legal = 8076; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT5: wirelen solved = 7880, spread = 7945, legal = 7957; time = 0.00s
+Info:     at iteration #1, type VCC: wirelen solved = 7957, spread = 7957, legal = 7957; time = 0.00s
+Info:     at iteration #1, type GND: wirelen solved = 7957, spread = 7957, legal = 7957; time = 0.00s
+Info:     at iteration #1, type GSR: wirelen solved = 7957, spread = 7957, legal = 7957; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 959, spread = 7519, legal = 7496; time = 0.01s
+Info:     at iteration #2, type SLICE: wirelen solved = 1465, spread = 5864, legal = 6093; time = 0.01s
+Info:     at iteration #2, type MUX2_LUT7: wirelen solved = 5865, spread = 5882, legal = 5917; time = 0.00s
+Info:     at iteration #2, type MUX2_LUT8: wirelen solved = 5850, spread = 5863, legal = 5886; time = 0.01s
+Info:     at iteration #2, type MUX2_LUT6: wirelen solved = 5683, spread = 5758, legal = 5809; time = 0.00s
+Info:     at iteration #2, type MUX2_LUT5: wirelen solved = 5712, spread = 5722, legal = 5744; time = 0.00s
+Info:     at iteration #2, type VCC: wirelen solved = 5744, spread = 5744, legal = 5744; time = 0.00s
+Info:     at iteration #2, type GND: wirelen solved = 5744, spread = 5744, legal = 5744; time = 0.00s
+Info:     at iteration #2, type GSR: wirelen solved = 5744, spread = 5744, legal = 5744; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 919, spread = 5853, legal = 5982; time = 0.01s
+Info:     at iteration #3, type SLICE: wirelen solved = 1452, spread = 4802, legal = 5110; time = 0.01s
+Info:     at iteration #3, type MUX2_LUT7: wirelen solved = 4942, spread = 4942, legal = 4961; time = 0.00s
+Info:     at iteration #3, type MUX2_LUT8: wirelen solved = 4914, spread = 4915, legal = 4961; time = 0.00s
+Info:     at iteration #3, type MUX2_LUT6: wirelen solved = 4748, spread = 4801, legal = 4819; time = 0.01s
+Info:     at iteration #3, type MUX2_LUT5: wirelen solved = 4686, spread = 4702, legal = 4711; time = 0.00s
+Info:     at iteration #3, type VCC: wirelen solved = 4711, spread = 4711, legal = 4711; time = 0.00s
+Info:     at iteration #3, type GND: wirelen solved = 4711, spread = 4711, legal = 4711; time = 0.00s
+Info:     at iteration #3, type GSR: wirelen solved = 4711, spread = 4711, legal = 4711; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 1017, spread = 4170, legal = 4356; time = 0.01s
+Info:     at iteration #4, type SLICE: wirelen solved = 1518, spread = 3591, legal = 3816; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT7: wirelen solved = 3716, spread = 3745, legal = 3761; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT8: wirelen solved = 3729, spread = 3731, legal = 3777; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT6: wirelen solved = 3688, spread = 3712, legal = 3725; time = 0.00s
+Info:     at iteration #4, type MUX2_LUT5: wirelen solved = 3630, spread = 3631, legal = 3632; time = 0.00s
+Info:     at iteration #4, type VCC: wirelen solved = 3632, spread = 3632, legal = 3632; time = 0.00s
+Info:     at iteration #4, type GND: wirelen solved = 3632, spread = 3632, legal = 3632; time = 0.01s
+Info:     at iteration #4, type GSR: wirelen solved = 3632, spread = 3632, legal = 3632; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 1072, spread = 3383, legal = 3593; time = 0.01s
+Info:     at iteration #5, type SLICE: wirelen solved = 1561, spread = 3418, legal = 3548; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT7: wirelen solved = 3457, spread = 3464, legal = 3494; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT8: wirelen solved = 3463, spread = 3465, legal = 3502; time = 0.00s
+Info:     at iteration #5, type MUX2_LUT6: wirelen solved = 3432, spread = 3517, legal = 3518; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT5: wirelen solved = 3458, spread = 3474, legal = 3476; time = 0.00s
+Info:     at iteration #5, type VCC: wirelen solved = 3476, spread = 3476, legal = 3476; time = 0.00s
+Info:     at iteration #5, type GND: wirelen solved = 3476, spread = 3476, legal = 3476; time = 0.00s
+Info:     at iteration #5, type GSR: wirelen solved = 3476, spread = 3476, legal = 3476; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 1146, spread = 3473, legal = 3694; time = 0.01s
+Info:     at iteration #6, type SLICE: wirelen solved = 1690, spread = 3887, legal = 4140; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT7: wirelen solved = 4086, spread = 4111, legal = 4135; time = 0.00s
+Info:     at iteration #6, type MUX2_LUT8: wirelen solved = 4095, spread = 4117, legal = 4140; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT6: wirelen solved = 4062, spread = 4095, legal = 4148; time = 0.00s
+Info:     at iteration #6, type MUX2_LUT5: wirelen solved = 4054, spread = 4054, legal = 4056; time = 0.00s
+Info:     at iteration #6, type VCC: wirelen solved = 4056, spread = 4056, legal = 4056; time = 0.00s
+Info:     at iteration #6, type GND: wirelen solved = 4056, spread = 4056, legal = 4056; time = 0.00s
+Info:     at iteration #6, type GSR: wirelen solved = 4056, spread = 4056, legal = 4056; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 1307, spread = 3441, legal = 3617; time = 0.01s
+Info:     at iteration #7, type SLICE: wirelen solved = 1646, spread = 3634, legal = 3893; time = 0.01s
+Info:     at iteration #7, type MUX2_LUT7: wirelen solved = 3792, spread = 3799, legal = 3835; time = 0.00s
+Info:     at iteration #7, type MUX2_LUT8: wirelen solved = 3780, spread = 3792, legal = 3862; time = 0.00s
+Info:     at iteration #7, type MUX2_LUT6: wirelen solved = 3752, spread = 3769, legal = 3815; time = 0.01s
+Info:     at iteration #7, type MUX2_LUT5: wirelen solved = 3754, spread = 3754, legal = 3758; time = 0.00s
+Info:     at iteration #7, type VCC: wirelen solved = 3758, spread = 3758, legal = 3758; time = 0.00s
+Info:     at iteration #7, type GND: wirelen solved = 3758, spread = 3758, legal = 3758; time = 0.00s
+Info:     at iteration #7, type GSR: wirelen solved = 3758, spread = 3758, legal = 3758; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 1298, spread = 3706, legal = 3837; time = 0.01s
+Info:     at iteration #8, type SLICE: wirelen solved = 1737, spread = 3530, legal = 3689; time = 0.01s
+Info:     at iteration #8, type MUX2_LUT7: wirelen solved = 3614, spread = 3640, legal = 3668; time = 0.00s
+Info:     at iteration #8, type MUX2_LUT8: wirelen solved = 3635, spread = 3646, legal = 3736; time = 0.01s
+Info:     at iteration #8, type MUX2_LUT6: wirelen solved = 3660, spread = 3672, legal = 3695; time = 0.00s
+Info:     at iteration #8, type MUX2_LUT5: wirelen solved = 3633, spread = 3637, legal = 3640; time = 0.00s
+Info:     at iteration #8, type VCC: wirelen solved = 3640, spread = 3640, legal = 3640; time = 0.00s
+Info:     at iteration #8, type GND: wirelen solved = 3640, spread = 3640, legal = 3640; time = 0.00s
+Info:     at iteration #8, type GSR: wirelen solved = 3640, spread = 3640, legal = 3640; time = 0.00s
+Info:     at iteration #8, type ALL: wirelen solved = 1413, spread = 3417, legal = 3567; time = 0.01s
+Info:     at iteration #9, type SLICE: wirelen solved = 1742, spread = 3383, legal = 3589; time = 0.01s
+Info:     at iteration #9, type MUX2_LUT7: wirelen solved = 3551, spread = 3563, legal = 3593; time = 0.00s
+Info:     at iteration #9, type MUX2_LUT8: wirelen solved = 3562, spread = 3574, legal = 3628; time = 0.01s
+Info:     at iteration #9, type MUX2_LUT6: wirelen solved = 3527, spread = 3566, legal = 3590; time = 0.00s
+Info:     at iteration #9, type MUX2_LUT5: wirelen solved = 3506, spread = 3522, legal = 3538; time = 0.00s
+Info:     at iteration #9, type VCC: wirelen solved = 3538, spread = 3538, legal = 3538; time = 0.00s
+Info:     at iteration #9, type GND: wirelen solved = 3538, spread = 3538, legal = 3538; time = 0.00s
+Info:     at iteration #9, type GSR: wirelen solved = 3538, spread = 3538, legal = 3538; time = 0.00s
+Info:     at iteration #9, type ALL: wirelen solved = 1393, spread = 3605, legal = 3766; time = 0.01s
+Info:     at iteration #10, type SLICE: wirelen solved = 1886, spread = 4144, legal = 4272; time = 0.01s
+Info:     at iteration #10, type MUX2_LUT7: wirelen solved = 4143, spread = 4158, legal = 4180; time = 0.00s
+Info:     at iteration #10, type MUX2_LUT8: wirelen solved = 4148, spread = 4170, legal = 4188; time = 0.01s
+Info:     at iteration #10, type MUX2_LUT6: wirelen solved = 4052, spread = 4083, legal = 4103; time = 0.00s
+Info:     at iteration #10, type MUX2_LUT5: wirelen solved = 4002, spread = 4002, legal = 4009; time = 0.00s
+Info:     at iteration #10, type VCC: wirelen solved = 4009, spread = 4009, legal = 4009; time = 0.00s
+Info:     at iteration #10, type GND: wirelen solved = 4009, spread = 4009, legal = 4009; time = 0.00s
+Info:     at iteration #10, type GSR: wirelen solved = 4009, spread = 4009, legal = 4009; time = 0.00s
+Info:     at iteration #10, type ALL: wirelen solved = 1584, spread = 3943, legal = 4095; time = 0.01s
+Info:     at iteration #11, type SLICE: wirelen solved = 2003, spread = 3286, legal = 3541; time = 0.01s
+Info:     at iteration #11, type MUX2_LUT7: wirelen solved = 3464, spread = 3470, legal = 3465; time = 0.00s
+Info:     at iteration #11, type MUX2_LUT8: wirelen solved = 3446, spread = 3446, legal = 3489; time = 0.01s
+Info:     at iteration #11, type MUX2_LUT6: wirelen solved = 3417, spread = 3457, legal = 3451; time = 0.00s
+Info:     at iteration #11, type MUX2_LUT5: wirelen solved = 3388, spread = 3393, legal = 3395; time = 0.00s
+Info:     at iteration #11, type VCC: wirelen solved = 3395, spread = 3395, legal = 3395; time = 0.00s
+Info:     at iteration #11, type GND: wirelen solved = 3395, spread = 3395, legal = 3395; time = 0.00s
+Info:     at iteration #11, type GSR: wirelen solved = 3395, spread = 3395, legal = 3395; time = 0.00s
+Info:     at iteration #11, type ALL: wirelen solved = 1736, spread = 3979, legal = 4151; time = 0.01s
+Info:     at iteration #12, type SLICE: wirelen solved = 2098, spread = 4130, legal = 4279; time = 0.01s
+Info:     at iteration #12, type MUX2_LUT7: wirelen solved = 4208, spread = 4208, legal = 4224; time = 0.00s
+Info:     at iteration #12, type MUX2_LUT8: wirelen solved = 4199, spread = 4212, legal = 4250; time = 0.01s
+Info:     at iteration #12, type MUX2_LUT6: wirelen solved = 4137, spread = 4164, legal = 4203; time = 0.00s
+Info:     at iteration #12, type MUX2_LUT5: wirelen solved = 4115, spread = 4139, legal = 4143; time = 0.00s
+Info:     at iteration #12, type VCC: wirelen solved = 4143, spread = 4143, legal = 4143; time = 0.00s
+Info:     at iteration #12, type GND: wirelen solved = 4143, spread = 4143, legal = 4143; time = 0.00s
+Info:     at iteration #12, type GSR: wirelen solved = 4143, spread = 4143, legal = 4143; time = 0.00s
+Info:     at iteration #12, type ALL: wirelen solved = 1753, spread = 3622, legal = 3713; time = 0.01s
+Info:     at iteration #13, type SLICE: wirelen solved = 2059, spread = 3985, legal = 4128; time = 0.01s
+Info:     at iteration #13, type MUX2_LUT7: wirelen solved = 4087, spread = 4118, legal = 4141; time = 0.00s
+Info:     at iteration #13, type MUX2_LUT8: wirelen solved = 4123, spread = 4123, legal = 4139; time = 0.00s
+Info:     at iteration #13, type MUX2_LUT6: wirelen solved = 4043, spread = 4096, legal = 4128; time = 0.01s
+Info:     at iteration #13, type MUX2_LUT5: wirelen solved = 4088, spread = 4129, legal = 4135; time = 0.00s
+Info:     at iteration #13, type VCC: wirelen solved = 4135, spread = 4135, legal = 4135; time = 0.00s
+Info:     at iteration #13, type GND: wirelen solved = 4135, spread = 4135, legal = 4135; time = 0.00s
+Info:     at iteration #13, type GSR: wirelen solved = 4135, spread = 4135, legal = 4135; time = 0.00s
+Info:     at iteration #13, type ALL: wirelen solved = 1875, spread = 3977, legal = 4077; time = 0.01s
+Info: HeAP Placer Time: 0.73s
+Info:   of which solving equations: 0.52s
+Info:   of which spreading cells: 0.05s
+Info:   of which strict legalisation: 0.07s
 
 Info: Running simulated annealing placer for refinement.
-Info:   at iteration #1: temp = 0.000000, timing cost = 64, wirelen = 4253
-Info:   at iteration #5: temp = 0.000000, timing cost = 43, wirelen = 2762
-Info:   at iteration #10: temp = 0.000000, timing cost = 56, wirelen = 2521
-Info:   at iteration #15: temp = 0.000000, timing cost = 60, wirelen = 2418
-Info:   at iteration #20: temp = 0.000000, timing cost = 58, wirelen = 2369
-Info:   at iteration #24: temp = 0.000000, timing cost = 47, wirelen = 2313 
+Info:   at iteration #1: temp = 0.000000, timing cost = 73, wirelen = 3567
+Info:   at iteration #5: temp = 0.000000, timing cost = 37, wirelen = 2412
+Info:   at iteration #10: temp = 0.000000, timing cost = 38, wirelen = 2209
+Info:   at iteration #15: temp = 0.000000, timing cost = 37, wirelen = 2108
+Info:   at iteration #20: temp = 0.000000, timing cost = 35, wirelen = 2042
+Info:   at iteration #25: temp = 0.000000, timing cost = 34, wirelen = 2015
+Info:   at iteration #29: temp = 0.000000, timing cost = 31, wirelen = 1996 
 Info: SA placement time 1.39s
 
-Info: Max frequency for clock 'display_inst.clk_i': 83.65 MHz (PASS at 27.00 MHz)
-Info: Max frequency for clock           'slow_clk': 794.91 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock 'booth_multiplier_inst.clk': 75.12 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock                  'slow_clk': 794.91 MHz (PASS at 27.00 MHz)
 
-Info: Max delay <async>                    -> <async>                   : 21.60 ns
-Info: Max delay <async>                    -> posedge display_inst.clk_i: 20.63 ns
-Info: Max delay posedge display_inst.clk_i -> <async>                   : 52.74 ns
-Info: Max delay posedge slow_clk           -> <async>                   : 9.98 ns
-Info: Max delay posedge slow_clk           -> posedge display_inst.clk_i: 12.21 ns
-
-Info: Slack histogram:
-Info:  legend: * represents 13 endpoint(s)
-Info:          + represents [1,13) endpoint(s)
-Info: [-15699, -13105) |+
-Info: [-13105, -10511) |+
-Info: [-10511,  -7917) |*+
-Info: [ -7917,  -5323) |+
-Info: [ -5323,  -2729) |+
-Info: [ -2729,   -135) |+
-Info: [  -135,   2459) |+
-Info: [  2459,   5053) |****+
-Info: [  5053,   7647) |+
-Info: [  7647,  10241) |****+
-Info: [ 10241,  12835) |**+
-Info: [ 12835,  15429) |**+
-Info: [ 15429,  18023) |********+
-Info: [ 18023,  20617) |*******+
-Info: [ 20617,  23211) |**+
-Info: [ 23211,  25805) |********+
-Info: [ 25805,  28399) |************+
-Info: [ 28399,  30993) |*********+
-Info: [ 30993,  33587) |**********************+
-Info: [ 33587,  36181) |************************************************************ 
-Info: Checksum: 0xaaa405e0
-Info: Find global nets...
-Info:  Non clock source, skip slow_clk.
-Info: Routing globals...
-Info:   Route net display_inst.clk_i, use clock #0.
-Info:   Net display_inst.clk_i is routed.
-
-Info: Routing..
-Info: Setting up routing queue.
-Info: Routing 4887 arcs.
-Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
-Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:       1000 |      143        856 |  143   856 |      4044|       0.83       0.83|
-Info:       2000 |      158       1841 |   15   985 |      3060|       6.43       7.27|
-Info:       3000 |      196       2803 |   38   962 |      2107|       6.97      14.24|
-Info:       4000 |      255       3744 |   59   941 |      1184|       6.50      20.74|
-Info:       5000 |      356       4643 |  101   899 |       344|       5.95      26.69|
-Info:       5414 |      411       5003 |   55   360 |         0|       2.22      28.91|
-Info: Routing complete.
-Info: Router1 time 28.91s
-Info: Checksum: 0xc031fc51
-
-Info: Critical path report for clock 'display_inst.clk_i' (posedge -> posedge):
-Info: curr total
-Info:  0.5  0.5  Source debouncer_loop[3].debounce_inst.clean_signal_DFFCE_Q_DFFLC.Q
-Info:  0.4  0.9    Net clean_rows[3] budget 36.579037 ns (20,22) -> (20,22)
-Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_LUT4_I0_1_LC.B
-Info:                Defined in:
-Info:                  ../design/module_top.v:80.17-88.6
-Info:                  ../design/module_row_scanner.v:5.23-5.29
-Info:  1.1  2.0  Source debouncer_loop[0].debounce_inst.clean_signal_LUT4_I0_1_LC.F
-Info:  0.8  2.8    Net storage_inst.load_value_LUT3_I2_F_LUT4_F_I3[2] budget 17.740519 ns (20,22) -> (21,22)
-Info:                Sink scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_I0_LUT4_F_LC.B
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1  3.9  Source scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_I0_LUT4_F_LC.F
-Info:  0.3  4.2    Net scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_I0 budget 8.551509 ns (21,22) -> (21,22)
-Info:                Sink scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
-Info:  0.2  4.4  Source scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_LC.OF
-Info:  1.8  6.2    Net scanner_inst.key_value_LUT4_F_1_I3[3] budget 8.551509 ns (21,22) -> (21,22)
-Info:                Sink scanner_inst.key_value_LUT4_F_1_LC.D
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.6  6.8  Source scanner_inst.key_value_LUT4_F_1_LC.F
-Info:  0.5  7.3    Net key_value[1] budget 6.712207 ns (21,22) -> (23,22)
-Info:                Sink scanner_inst.key_value_ALU_I0_2_ALULC.A
-Info:                Defined in:
-Info:                  ../design/module_top.v:102.21-115.6
-Info:                  ../design/module_operand_storage.v:4.23-4.32
-Info:  1.0  8.4  Source scanner_inst.key_value_ALU_I0_2_ALULC.F
-Info:  0.8  9.2    Net fsm_output_inst.key_count_DFFCE_Q_D_LUT3_F_I2_LUT2_I0_F[3] budget 5.421673 ns (23,22) -> (24,22)
-Info:                Sink storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_I2_LUT4_F_LC.D
-Info:                Defined in:
-Info:                  ../design/module_top.v:102.21-115.6
-Info:                  ../design/module_operand_storage.v:38.39-38.88
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
-Info:  0.6  9.8  Source storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_I2_LUT4_F_LC.F
-Info:  0.4 10.2    Net storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_I2[2] budget 4.372862 ns (24,22) -> (25,22)
-Info:                Sink storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_LC.C
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.0 10.2  Setup storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_LC.C
-Info: 5.1 ns logic, 5.1 ns routing
-
-Info: Critical path report for clock 'slow_clk' (posedge -> posedge):
-Info: curr total
-Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_DFFLC.Q
-Info:  0.5  0.9    Net col_shift_reg[3] budget 36.579037 ns (21,23) -> (21,24)
-Info:                Sink registro_inst.col_shift_reg_DFFSE_Q_DFFLC.A
-Info:                Defined in:
-Info:                  ../design/module_top.v:80.17-88.6
-Info:                  ../design/module_row_scanner.v:4.23-4.36
-Info:  0.0  0.9  Setup registro_inst.col_shift_reg_DFFSE_Q_DFFLC.A
-Info: 0.5 ns logic, 0.5 ns routing
-
-Info: Critical path report for cross-domain path '<async>' -> '<async>':
-Info: curr total
-Info:  0.0  0.0  Source debouncer_loop[0].debounce_inst.rst_IBUF_O$iob.O
-Info: 13.4 13.4    Net display_inst.en_conmutador_DFFR_Q_D[1] budget 37.037037 ns (1,0) -> (32,22)
-Info:                Sink storage_inst.temp_B_DFFCE_Q_6_CLEAR_LUT1_F_LC.A
-Info:                Defined in:
-Info:                  ../design/module_top.v:102.21-115.6
-Info:                  ../design/module_operand_storage.v:3.17-3.20
-Info:  0.0 13.4  Setup storage_inst.temp_B_DFFCE_Q_6_CLEAR_LUT1_F_LC.A
-Info: 0.0 ns logic, 13.4 ns routing
-
-Info: Critical path report for cross-domain path '<async>' -> 'posedge display_inst.clk_i':
-Info: curr total
-Info:  0.0  0.0  Source debouncer_loop[2].debounce_inst.noisy_signal_IBUF_O$iob.O
-Info:  9.6  9.6    Net debouncer_loop[2].debounce_inst.noisy_signal budget 37.037037 ns (46,23) -> (22,8)
-Info:                Sink debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.A
-Info:                Defined in:
-Info:                  ../design/module_top.v:70.23-75.14
-Info:                  ../design/module_debouncer.v:4.11-4.23
-Info:  1.0 10.6  Source debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.F
-Info:  2.7 13.3    Net debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_I0[3] budget 17.740519 ns (22,8) -> (26,4)
-Info:                Sink debouncer_loop[2].debounce_inst.counter_DFFCE_Q_5_D_LUT2_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.0 13.3  Setup debouncer_loop[2].debounce_inst.counter_DFFCE_Q_5_D_LUT2_F_LC.A
-Info: 1.0 ns logic, 12.2 ns routing
-
-Info: Critical path report for cross-domain path 'posedge display_inst.clk_i' -> '<async>':
-Info: curr total
-Info:  0.5  0.5  Source fsm_output_inst.next_state_LUT3_F_LC.Q
-Info:  0.9  1.3    Net fsm_output_inst.current_state[1] budget 36.579037 ns (21,19) -> (22,19)
-Info:                Sink converter_inst.binario_MUX2_LUT5_O_I1_LUT4_F_LC.D
-Info:                Defined in:
-Info:                  ../design/module_top.v:120.24-129.6
-Info:                  ../design/module_FSM_output_control.v:21.13-21.26
-Info:  0.6  2.0  Source converter_inst.binario_MUX2_LUT5_O_I1_LUT4_F_LC.F
-Info:  0.3  2.3    Net converter_inst.binario_MUX2_LUT5_O_I1 budget 11.768011 ns (22,19) -> (22,19)
-Info:                Sink converter_inst.binario_MUX2_LUT5_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2  2.5  Source converter_inst.binario_MUX2_LUT5_O_LC.OF
-Info:  1.4  3.9    Net display_out[7] budget 11.768012 ns (22,19) -> (21,15)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT6_O_2_I1_MUX2_LUT5_O_I1_LUT4_F_LC.C
-Info:                Defined in:
-Info:                  ../design/module_top.v:120.24-129.6
-Info:                  ../design/module_FSM_output_control.v:9.25-9.36
-Info:  0.8  4.7  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT6_O_2_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
-Info:  0.3  5.1    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT6_O_2_I1_MUX2_LUT5_O_I1 budget 5.658506 ns (21,15) -> (21,15)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT6_O_2_I1_MUX2_LUT5_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2  5.2  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT6_O_2_I1_MUX2_LUT5_O_LC.OF
-Info:  0.3  5.6    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT6_O_2_I1 budget 5.658506 ns (21,15) -> (21,15)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT6_O_2_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
-Info:  0.4  5.9  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT6_O_2_LC.OF
-Info:  1.3  7.2    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0[0] budget 5.658506 ns (21,15) -> (24,15)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0  8.2  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
-Info:  0.3  8.6    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 3.179104 ns (24,15) -> (24,15)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2  8.7  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
-Info:  0.3  9.1    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0 budget 3.179104 ns (24,15) -> (24,15)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
-Info:  0.4  9.4  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.OF
-Info:  0.3  9.7    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_I0 budget 3.179104 ns (24,15) -> (24,15)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
-Info:  0.5 10.3  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_O_LC.OF
-Info:  1.8 12.0    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0[0] budget 3.179104 ns (24,15) -> (27,17)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 13.1  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
-Info:  0.3 13.4    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 2.121288 ns (27,17) -> (27,17)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2 13.6  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
-Info:  0.3 13.9    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0 budget 2.121288 ns (27,17) -> (27,17)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
-Info:  0.4 14.3  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
-Info:  0.3 14.6    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_I1 budget 2.121288 ns (27,17) -> (27,17)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
-Info:  0.5 15.1  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_LC.OF
-Info:  1.3 16.4    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT5_O_1_S0[1] budget 2.121288 ns (27,17) -> (26,19)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 17.4  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
-Info:  0.3 17.7    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 1.655061 ns (26,19) -> (26,19)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2 17.9  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
-Info:  0.3 18.3    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1 budget 1.655061 ns (26,19) -> (26,19)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
-Info:  0.4 18.6  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_LC.OF
-Info:  1.8 20.4    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_S0[1] budget 1.655061 ns (26,19) -> (29,21)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_I1_LUT4_F_LC.B
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1 21.5  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
-Info:  0.3 21.8    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_I1 budget 1.325352 ns (29,21) -> (29,21)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2 22.0  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0_MUX2_LUT5_O_LC.OF
-Info:  0.3 22.3    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_I0 budget 1.325352 ns (29,21) -> (29,21)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
-Info:  0.4 22.7  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_MUX2_LUT7_O_1_S0_ALU_SUM_CIN_ALU_COUT_2_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_2_LC.OF
-Info:  1.2 23.9    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_S0[0] budget 1.325352 ns (29,21) -> (30,20)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I1_LUT4_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 24.9  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
-Info:  0.3 25.2    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I1 budget 1.081654 ns (30,20) -> (30,20)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2 25.4  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_LC.OF
-Info:  0.3 25.7    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_I0 budget 1.081654 ns (30,20) -> (30,20)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
-Info:  0.4 26.1  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_O_1_LC.OF
-Info:  2.7 28.7    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0[0] budget 1.081654 ns (30,20) -> (31,14)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_ALULC.B
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1 29.8  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_ALULC.F
-Info:  0.4 30.2    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_1_SUM[2] budget 0.990835 ns (31,14) -> (32,14)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_S0_O_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I0_LUT1_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 31.3  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_S0_O_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I0_LUT1_F_LC.F
-Info:  0.3 31.6    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_S0_O_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I0 budget 0.825241 ns (32,14) -> (32,14)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_S0_O_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
-Info:  0.2 31.8  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_S0_O_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_LC.OF
-Info:  0.3 32.1    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_S0_O_MUX2_LUT6_O_1_I0 budget 0.793501 ns (32,14) -> (32,14)
-Info:                Sink converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_S0_O_MUX2_LUT6_O_1_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
-Info:  0.4 32.5  Source converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_S0_O_MUX2_LUT6_O_1_LC.OF
-Info:  1.0 33.4    Net converter_inst.binario_LUT4_F_I1_LUT4_I1_F_MUX2_LUT5_I0_O_ALU_SUM_CIN_ALU_COUT_1_SUM_MUX2_LUT7_S0_O[1] budget 0.793501 ns (32,14) -> (33,15)
-Info:                Sink display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F_LC.B
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1 34.5  Source display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F_LC.F
-Info:  0.3 34.8    Net display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0 budget 0.611689 ns (33,15) -> (33,15)
-Info:                Sink display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
-Info:  0.2 35.0  Source display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
-Info:  0.3 35.3    Net display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0 budget 0.611689 ns (33,15) -> (33,15)
-Info:                Sink display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
-Info:  0.4 35.7  Source display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
-Info:  0.3 36.0    Net display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_I1 budget 0.611689 ns (33,15) -> (33,15)
-Info:                Sink display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
-Info:  0.5 36.6  Source display_inst.catodo_o_LUT4_F_6_I3_MUX2_LUT7_O_LC.OF
-Info:  2.7 39.3    Net display_inst.catodo_o_LUT4_F_6_I3[3] budget 0.611689 ns (33,15) -> (40,14)
-Info:                Sink display_inst.catodo_o_LUT4_F_6_LC.D
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.6 39.9  Source display_inst.catodo_o_LUT4_F_6_LC.F
-Info:  3.4 43.3    Net display_inst.catodo_o[0] budget 0.566668 ns (40,14) -> (40,28)
-Info:                Sink catodo_po_OBUF_O_6$iob.I
-Info:                Defined in:
-Info:                  ../design/module_top.v:138.23-144.6
-Info:                  ../design/module_7_segments.v:8.24-8.32
-Info: 17.0 ns logic, 26.3 ns routing
-
-Info: Critical path report for cross-domain path 'posedge slow_clk' -> '<async>':
-Info: curr total
-Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_DFFLC.Q
-Info:  0.4  0.9    Net col_shift_reg[3] budget 36.579037 ns (21,23) -> (21,24)
-Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_LC.B
-Info:                Defined in:
-Info:                  ../design/module_top.v:80.17-88.6
-Info:                  ../design/module_row_scanner.v:4.23-4.36
-Info:  1.1  2.0  Source debouncer_loop[0].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_LC.F
-Info:  0.8  2.8    Net storage_inst.load_value_LUT3_I2_F_LUT4_F_I3[1] budget 17.740519 ns (21,24) -> (21,22)
-Info:                Sink scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_I0_LUT4_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0  3.8  Source scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_I0_LUT4_F_LC.F
-Info:  0.3  4.1    Net scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_I0 budget 8.551509 ns (21,22) -> (21,22)
-Info:                Sink scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
-Info:  0.2  4.3  Source scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_LC.OF
-Info:  1.8  6.2    Net scanner_inst.key_value_LUT4_F_1_I3[3] budget 8.551509 ns (21,22) -> (21,22)
-Info:                Sink scanner_inst.key_value_LUT4_F_1_LC.D
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.6  6.8  Source scanner_inst.key_value_LUT4_F_1_LC.F
-Info:  0.5  7.3    Net key_value[1] budget 6.712207 ns (21,22) -> (23,22)
-Info:                Sink scanner_inst.key_value_ALU_I0_2_ALULC.A
-Info:                Defined in:
-Info:                  ../design/module_top.v:102.21-115.6
-Info:                  ../design/module_operand_storage.v:4.23-4.32
-Info:  1.0  8.3  Source scanner_inst.key_value_ALU_I0_2_ALULC.F
-Info:  0.8  9.1    Net fsm_output_inst.key_count_DFFCE_Q_D_LUT3_F_I2_LUT2_I0_F[3] budget 5.421673 ns (23,22) -> (24,22)
-Info:                Sink storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_I2_LUT4_F_LC.D
-Info:                Defined in:
-Info:                  ../design/module_top.v:102.21-115.6
-Info:                  ../design/module_operand_storage.v:38.39-38.88
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
-Info:  0.0  9.1  Setup storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_I2_LUT4_F_LC.D
-Info: 4.4 ns logic, 4.7 ns routing
-
-Info: Critical path report for cross-domain path 'posedge slow_clk' -> 'posedge display_inst.clk_i':
-Info: curr total
-Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_DFFLC.Q
-Info:  0.4  0.9    Net col_shift_reg[3] budget 36.579037 ns (21,23) -> (21,24)
-Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_LC.B
-Info:                Defined in:
-Info:                  ../design/module_top.v:80.17-88.6
-Info:                  ../design/module_row_scanner.v:4.23-4.36
-Info:  1.1  2.0  Source debouncer_loop[0].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_LC.F
-Info:  0.8  2.8    Net storage_inst.load_value_LUT3_I2_F_LUT4_F_I3[1] budget 17.740519 ns (21,24) -> (21,22)
-Info:                Sink scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_I0_LUT4_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0  3.8  Source scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_I0_LUT4_F_LC.F
-Info:  0.3  4.1    Net scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_I0 budget 8.551509 ns (21,22) -> (21,22)
-Info:                Sink scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
-Info:  0.2  4.3  Source scanner_inst.key_value_LUT4_F_1_I3_MUX2_LUT5_O_LC.OF
-Info:  1.8  6.2    Net scanner_inst.key_value_LUT4_F_1_I3[3] budget 8.551509 ns (21,22) -> (21,22)
-Info:                Sink scanner_inst.key_value_LUT4_F_1_LC.D
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.6  6.8  Source scanner_inst.key_value_LUT4_F_1_LC.F
-Info:  0.5  7.3    Net key_value[1] budget 6.712207 ns (21,22) -> (23,22)
-Info:                Sink scanner_inst.key_value_ALU_I0_2_ALULC.A
-Info:                Defined in:
-Info:                  ../design/module_top.v:102.21-115.6
-Info:                  ../design/module_operand_storage.v:4.23-4.32
-Info:  1.0  8.3  Source scanner_inst.key_value_ALU_I0_2_ALULC.F
-Info:  0.8  9.1    Net fsm_output_inst.key_count_DFFCE_Q_D_LUT3_F_I2_LUT2_I0_F[3] budget 5.421673 ns (23,22) -> (24,22)
-Info:                Sink storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_I2_LUT4_F_LC.D
-Info:                Defined in:
-Info:                  ../design/module_top.v:102.21-115.6
-Info:                  ../design/module_operand_storage.v:38.39-38.88
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
-Info:  0.6  9.7  Source storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_I2_LUT4_F_LC.F
-Info:  0.4 10.1    Net storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_I2[2] budget 4.372862 ns (24,22) -> (25,22)
-Info:                Sink storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_LC.C
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.0 10.1  Setup storage_inst.temp_value_DFFC_Q_6_D_LUT4_F_LC.C
-Info: 5.0 ns logic, 5.1 ns routing
-
-Info: Max frequency for clock 'display_inst.clk_i': 98.04 MHz (PASS at 27.00 MHz)
-Info: Max frequency for clock           'slow_clk': 1067.24 MHz (PASS at 27.00 MHz)
-
-Info: Max delay <async>                    -> <async>                   : 13.41 ns
-Info: Max delay <async>                    -> posedge display_inst.clk_i: 13.28 ns
-Info: Max delay posedge display_inst.clk_i -> <async>                   : 43.25 ns
-Info: Max delay posedge slow_clk           -> <async>                   : 9.10 ns
-Info: Max delay posedge slow_clk           -> posedge display_inst.clk_i: 10.13 ns
+Info: Max delay <async>                           -> <async>                          : 21.26 ns
+Info: Max delay <async>                           -> posedge booth_multiplier_inst.clk: 22.23 ns
+Info: Max delay posedge booth_multiplier_inst.clk -> <async>                          : 53.04 ns
+Info: Max delay posedge slow_clk                  -> <async>                          : 11.41 ns
+Info: Max delay posedge slow_clk                  -> posedge booth_multiplier_inst.clk: 13.64 ns
 
 Info: Slack histogram:
 Info:  legend: * represents 12 endpoint(s)
 Info:          + represents [1,12) endpoint(s)
-Info: [ -6216,  -4076) |+
-Info: [ -4076,  -1936) |+
-Info: [ -1936,    204) |*+
-Info: [   204,   2344) |+
-Info: [  2344,   4484) |+
-Info: [  4484,   6624) |+
-Info: [  6624,   8764) |*+
-Info: [  8764,  10904) |****+
-Info: [ 10904,  13044) |*+
-Info: [ 13044,  15184) |*****+
-Info: [ 15184,  17324) |*+
-Info: [ 17324,  19464) |***+
-Info: [ 19464,  21604) |**+
-Info: [ 21604,  23744) |***+
-Info: [ 23744,  25884) |********+
-Info: [ 25884,  28024) |*******+
-Info: [ 28024,  30164) |*************+
-Info: [ 30164,  32304) |****************+
-Info: [ 32304,  34444) |****************************+
-Info: [ 34444,  36584) |************************************************************ 
+Info: [-16001, -13391) |+
+Info: [-13391, -10781) |+
+Info: [-10781,  -8171) | 
+Info: [ -8171,  -5561) |+
+Info: [ -5561,  -2951) |******+
+Info: [ -2951,   -341) |**+
+Info: [  -341,   2269) | 
+Info: [  2269,   4879) |+
+Info: [  4879,   7489) |**+
+Info: [  7489,  10099) |*+
+Info: [ 10099,  12709) |***+
+Info: [ 12709,  15319) |**+
+Info: [ 15319,  17929) |***+
+Info: [ 17929,  20539) |****+
+Info: [ 20539,  23149) |*******+
+Info: [ 23149,  25759) |********+
+Info: [ 25759,  28369) |**********+
+Info: [ 28369,  30979) |******+
+Info: [ 30979,  33589) |************************+
+Info: [ 33589,  36199) |************************************************************ 
+Info: Checksum: 0xa9474a44
+Info: Find global nets...
+Info:  Non clock source, skip slow_clk.
+Info: Routing globals...
+Info:   Route net booth_multiplier_inst.clk, use clock #0.
+Info:   Net booth_multiplier_inst.clk is routed.
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 4104 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       71        928 |   71   928 |      3185|       1.51       1.51|
+Info:       2000 |       96       1903 |   25   975 |      2215|       5.94       7.45|
+Info:       3000 |      144       2855 |   48   952 |      1287|       6.78      14.23|
+Info:       4000 |      208       3791 |   64   936 |       386|       6.67      20.91|
+Info:       4555 |      287       4268 |   79   477 |         0|       2.69      23.59|
+Info: Routing complete.
+Info: Router1 time 23.59s
+Info: Checksum: 0xfa570ca4
+
+Info: Critical path report for clock 'booth_multiplier_inst.clk' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_DFFLC.Q
+Info:  0.4  0.9    Net clean_rows[2] budget 36.579037 ns (18,22) -> (18,21)
+Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_LC.B
+Info:                Defined in:
+Info:                  ../design/module_top.v:72.17-80.6
+Info:                  ../design/module_row_scanner.v:5.23-5.29
+Info:  1.1  2.0  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_LC.F
+Info:  0.5  2.4    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3[2] budget 17.740519 ns (18,21) -> (19,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  3.5  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.F
+Info:  0.3  3.9    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3[3] budget 11.461013 ns (19,21) -> (19,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  4.9  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.F
+Info:  0.4  5.3    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[1] budget 8.338009 ns (19,21) -> (20,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  6.4  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.F
+Info:  0.3  6.7    Net storage_inst.load_value_DFFCE_Q_D[1] budget 6.450807 ns (20,21) -> (20,21)
+Info:                Sink storage_inst.load_value_LUT3_I2_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  7.8  Source storage_inst.load_value_LUT3_I2_LC.F
+Info:  1.4  9.2    Net storage_inst.load_value_LUT3_I2_F[0] budget 5.192673 ns (20,21) -> (23,20)
+Info:                Sink storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 10.2  Source storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.F
+Info:  0.9 11.1    Net storage_inst.load_value_LUT3_I2_F_LUT3_I0_F[2] budget 4.303576 ns (23,20) -> (24,19)
+Info:                Sink storage_inst.B_DFFC_Q_5_D_LUT3_F_LC.C
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.0 11.1  Setup storage_inst.B_DFFC_Q_5_D_LUT3_F_LC.C
+Info: 6.9 ns logic, 4.2 ns routing
+
+Info: Critical path report for clock 'slow_clk' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.Q
+Info:  0.5  0.9    Net registro_inst.col_shift_reg[2] budget 36.579037 ns (20,23) -> (19,23)
+Info:                Sink registro_inst.col_shift_reg_DFFRE_Q_DFFLC.A
+Info:                Defined in:
+Info:                  ../design/module_top.v:72.17-80.6
+Info:                  ../design/module_row_scanner.v:4.23-4.36
+Info:  0.0  0.9  Setup registro_inst.col_shift_reg_DFFRE_Q_DFFLC.A
+Info: 0.5 ns logic, 0.5 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info: curr total
+Info:  0.0  0.0  Source debouncer_loop[2].debounce_inst.noisy_signal_IBUF_O$iob.O
+Info: 10.5 10.5    Net debouncer_loop[2].debounce_inst.noisy_signal budget 37.037037 ns (46,23) -> (16,11)
+Info:                Sink debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.A
+Info:                Defined in:
+Info:                  ../design/module_top.v:62.23-67.14
+Info:                  ../design/module_debouncer.v:4.11-4.23
+Info:  1.0 11.5  Source debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.F
+Info:  1.2 12.7    Net debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_F[3] budget 17.740519 ns (16,11) -> (15,12)
+Info:                Sink debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_LC.D
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.6 13.3  Source debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_LC.F
+Info:  0.8 14.1    Net debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE budget 8.321259 ns (15,12) -> (15,14)
+Info:                Sink debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT1_I0_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.0 14.1  Setup debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT1_I0_LC.A
+Info: 1.7 ns logic, 12.5 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge booth_multiplier_inst.clk':
+Info: curr total
+Info:  0.0  0.0  Source debouncer_loop[2].debounce_inst.noisy_signal_IBUF_O$iob.O
+Info: 10.5 10.5    Net debouncer_loop[2].debounce_inst.noisy_signal budget 37.037037 ns (46,23) -> (16,11)
+Info:                Sink debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.A
+Info:                Defined in:
+Info:                  ../design/module_top.v:62.23-67.14
+Info:                  ../design/module_debouncer.v:4.11-4.23
+Info:  1.0 11.5  Source debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.F
+Info:  2.7 14.2    Net debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_F[3] budget 17.740519 ns (16,11) -> (10,14)
+Info:                Sink debouncer_loop[2].debounce_inst.counter_DFFCE_Q_21_D_LUT2_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.0 14.2  Setup debouncer_loop[2].debounce_inst.counter_DFFCE_Q_21_D_LUT2_F_LC.A
+Info: 1.0 ns logic, 13.2 ns routing
+
+Info: Critical path report for cross-domain path 'posedge booth_multiplier_inst.clk' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source storage_inst.B_DFFC_Q_D_LUT3_F_LC.Q
+Info:  1.8  2.2    Net stored_B[7] budget 36.579037 ns (23,20) -> (26,21)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_ALU_SUM_2_ALULC.A
+Info:                Defined in:
+Info:                  ../design/module_top.v:24.17-24.25
+Info:  1.0  3.3  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_ALU_SUM_2_ALULC.F
+Info:  0.9  4.1    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_1_S0[1] budget 17.774019 ns (26,21) -> (27,20)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  5.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3  5.5    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 4.678148 ns (27,20) -> (27,20)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2  5.7  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3  6.0    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 4.678148 ns (27,20) -> (27,20)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4  6.4  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3  6.7    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1 budget 4.678148 ns (27,20) -> (27,20)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5  7.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.OF
+Info:  0.3  7.5    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1 budget 4.678148 ns (27,20) -> (27,20)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7  8.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_LC.OF
+Info:  1.9 10.2    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0[0] budget 4.678148 ns (27,20) -> (23,16)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 11.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 11.5    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I1 budget 3.118504 ns (23,16) -> (23,16)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 11.7  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 12.0    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0 budget 3.118504 ns (23,16) -> (23,16)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 12.4  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_LC.OF
+Info:  1.8 14.1    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_I1_MUX2_LUT5_O_I0_LUT4_F_I1[0] budget 3.118504 ns (23,16) -> (26,17)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 15.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 15.5    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 2.073217 ns (26,17) -> (26,17)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 15.7  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 16.0    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 2.073217 ns (26,17) -> (26,17)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 16.4  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3 16.7    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1 budget 2.073217 ns (26,17) -> (26,17)
+Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 17.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_LC.OF
+Info:  1.4 18.6    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_CIN_SUM[1] budget 2.073217 ns (26,17) -> (30,16)
+Info:                Sink display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_I0_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 19.7  Source display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_I0_LUT4_F_LC.F
+Info:  0.3 20.0    Net display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_I0 budget 1.738565 ns (30,16) -> (30,16)
+Info:                Sink display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
+Info:  0.2 20.2  Source display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_LC.OF
+Info:  1.4 21.6    Net display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM[5] budget 1.738565 ns (30,16) -> (29,13)
+Info:                Sink display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_2_ALULC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 22.7  Source display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_2_ALULC.F
+Info:  0.4 23.1    Net display_inst.anodo_o_LUT4_I3_1_I1[0] budget 1.571708 ns (29,13) -> (28,13)
+Info:                Sink display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 24.2  Source display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F_LC.F
+Info:  0.3 24.5    Net display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 1.169478 ns (28,13) -> (28,13)
+Info:                Sink display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 24.7  Source display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 25.0    Net display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1 budget 1.169478 ns (28,13) -> (28,13)
+Info:                Sink display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 25.3  Source display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.OF
+Info:  0.3 25.7    Net display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0 budget 1.169478 ns (28,13) -> (28,13)
+Info:                Sink display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:  0.5 26.2  Source display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_LC.OF
+Info:  0.5 26.7    Net display_inst.anodo_o_LUT2_I0_F[1] budget 1.169478 ns (28,13) -> (28,15)
+Info:                Sink display_inst.anodo_o_LUT4_I3_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 27.7  Source display_inst.anodo_o_LUT4_I3_LC.F
+Info:  0.3 28.0    Net display_inst.anodo_o_LUT4_I3_F budget 0.898641 ns (28,15) -> (28,15)
+Info:                Sink display_inst.anodo_o_LUT4_I3_F_MUX2_LUT5_I1_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 28.2  Source display_inst.anodo_o_LUT4_I3_F_MUX2_LUT5_I1_LC.OF
+Info:  0.3 28.5    Net display_inst.anodo_o_LUT4_I3_F_MUX2_LUT5_I1_O budget 0.898641 ns (28,15) -> (28,15)
+Info:                Sink display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 28.9  Source display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_LC.OF
+Info:  0.3 29.2    Net display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_I0 budget 0.898641 ns (28,15) -> (28,15)
+Info:                Sink display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:  0.5 29.8  Source display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_LC.OF
+Info:  4.2 34.0    Net display_inst.anodo_o_MUX2_LUT6_S0_O[5] budget 0.898641 ns (28,15) -> (42,16)
+Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT2_F_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 35.1  Source display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT2_F_LC.F
+Info:  0.3 35.4    Net display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0 budget 0.653268 ns (42,16) -> (42,16)
+Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
+Info:  0.2 35.6  Source display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 35.9    Net display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 0.653268 ns (42,16) -> (42,16)
+Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 36.3  Source display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3 36.6    Net display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1 budget 0.653268 ns (42,16) -> (42,16)
+Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 37.1  Source display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_LC.OF
+Info:  0.4 37.5    Net display_inst.catodo_o_MUX2_LUT8_O_5_I0 budget 0.653268 ns (42,16) -> (41,16)
+Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.9-169.11
+Info:  0.7 38.3  Source display_inst.catodo_o_MUX2_LUT8_O_5_LC.OF
+Info:  3.4 41.6    Net display_inst.catodo_o[1] budget 0.653268 ns (41,16) -> (40,28)
+Info:                Sink catodo_po_OBUF_O_5$iob.I
+Info:                Defined in:
+Info:                  ../design/module_top.v:137.23-143.6
+Info:                  ../design/module_7_segments.v:8.24-8.32
+Info: 17.4 ns logic, 24.2 ns routing
+
+Info: Critical path report for cross-domain path 'posedge slow_clk' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.Q
+Info:  0.4  0.9    Net registro_inst.col_shift_reg[2] budget 36.579037 ns (20,23) -> (19,23)
+Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_1_LC.B
+Info:                Defined in:
+Info:                  ../design/module_top.v:72.17-80.6
+Info:                  ../design/module_row_scanner.v:4.23-4.36
+Info:  1.1  2.0  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_1_LC.F
+Info:  0.8  2.8    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[2] budget 17.740519 ns (19,23) -> (19,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  3.8  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.F
+Info:  0.3  4.1    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3[3] budget 11.461013 ns (19,21) -> (19,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  5.2  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.F
+Info:  0.4  5.6    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[1] budget 8.338009 ns (19,21) -> (20,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  6.7  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.F
+Info:  0.3  7.0    Net storage_inst.load_value_DFFCE_Q_D[1] budget 6.450807 ns (20,21) -> (20,21)
+Info:                Sink storage_inst.load_value_LUT3_I2_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  8.1  Source storage_inst.load_value_LUT3_I2_LC.F
+Info:  1.4  9.5    Net storage_inst.load_value_LUT3_I2_F[0] budget 5.192673 ns (20,21) -> (23,20)
+Info:                Sink storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.0  9.5  Setup storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.A
+Info: 5.8 ns logic, 3.7 ns routing
+
+Info: Critical path report for cross-domain path 'posedge slow_clk' -> 'posedge booth_multiplier_inst.clk':
+Info: curr total
+Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.Q
+Info:  0.4  0.9    Net registro_inst.col_shift_reg[2] budget 36.579037 ns (20,23) -> (19,23)
+Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_1_LC.B
+Info:                Defined in:
+Info:                  ../design/module_top.v:72.17-80.6
+Info:                  ../design/module_row_scanner.v:4.23-4.36
+Info:  1.1  2.0  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_1_LC.F
+Info:  0.8  2.8    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[2] budget 17.740519 ns (19,23) -> (19,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  3.8  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.F
+Info:  0.3  4.1    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3[3] budget 11.461013 ns (19,21) -> (19,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  5.2  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.F
+Info:  0.4  5.6    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[1] budget 8.338009 ns (19,21) -> (20,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  6.7  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.F
+Info:  0.3  7.0    Net storage_inst.load_value_DFFCE_Q_D[1] budget 6.450807 ns (20,21) -> (20,21)
+Info:                Sink storage_inst.load_value_LUT3_I2_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1  8.1  Source storage_inst.load_value_LUT3_I2_LC.F
+Info:  1.4  9.5    Net storage_inst.load_value_LUT3_I2_F[0] budget 5.192673 ns (20,21) -> (23,20)
+Info:                Sink storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 10.5  Source storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.F
+Info:  0.9 11.4    Net storage_inst.load_value_LUT3_I2_F_LUT3_I0_F[2] budget 4.303576 ns (23,20) -> (24,19)
+Info:                Sink storage_inst.B_DFFC_Q_5_D_LUT3_F_LC.C
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.0 11.4  Setup storage_inst.B_DFFC_Q_5_D_LUT3_F_LC.C
+Info: 6.8 ns logic, 4.5 ns routing
+
+Info: Max frequency for clock 'booth_multiplier_inst.clk': 89.86 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock                  'slow_clk': 1067.24 MHz (PASS at 27.00 MHz)
+
+Info: Max delay <async>                           -> <async>                          : 14.15 ns
+Info: Max delay <async>                           -> posedge booth_multiplier_inst.clk: 14.22 ns
+Info: Max delay posedge booth_multiplier_inst.clk -> <async>                          : 41.61 ns
+Info: Max delay posedge slow_clk                  -> <async>                          : 9.47 ns
+Info: Max delay posedge slow_clk                  -> posedge booth_multiplier_inst.clk: 11.39 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 11 endpoint(s)
+Info:          + represents [1,11) endpoint(s)
+Info: [ -4568,  -2510) |+
+Info: [ -2510,   -452) |+
+Info: [  -452,   1606) | 
+Info: [  1606,   3664) |**+
+Info: [  3664,   5722) |*******+
+Info: [  5722,   7780) |*+
+Info: [  7780,   9838) |+
+Info: [  9838,  11896) |***+
+Info: [ 11896,  13954) |+
+Info: [ 13954,  16012) |***+
+Info: [ 16012,  18070) |*+
+Info: [ 18070,  20128) |**+
+Info: [ 20128,  22186) |+
+Info: [ 22186,  24244) |*****+
+Info: [ 24244,  26302) |**+
+Info: [ 26302,  28360) |*********+
+Info: [ 28360,  30418) |**************+
+Info: [ 30418,  32476) |***********+
+Info: [ 32476,  34534) |*******************************+
+Info: [ 34534,  36592) |************************************************************ 
 
 Info: Program finished normally.
