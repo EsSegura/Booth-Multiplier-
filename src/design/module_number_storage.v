@@ -71,24 +71,19 @@ module number_storage(
             // Almacenar el valor temporal en A o B según el habilitador
             if (load_value) begin
                 if (enable_A) begin
-
                     temp_A <= temp_value; // Almacenar el valor temporal en A
                     A <= temp_A;           // Actualizar la salida de A
                     
                 end else if (enable_sign) begin
-
                     temp_value <= 8'b0; // vuelese el valor temporal
 
                 end else if (enable_B) begin
-
                     temp_B <= temp_value; // Almacenar el valor temporal en B
                     B <= temp_B;
                     
                 end else if (!enable_A && !enable_B) begin
                     temp_value <= 8'b0;
-                end else if (valid) begin
-                    temp_value <= Y;
-                end
+                end 
 
             end
         end
