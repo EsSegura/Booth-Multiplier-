@@ -56,7 +56,7 @@ module number_storage(
                     3'b010: begin  // se ingresó un operando de resta
                         signo <= 1; 
                     end
-                    3'b111; begin
+                    3'b111: begin
                         valid <= 1;
                     end                     
 
