@@ -102,7 +102,6 @@ module module_top (
         .enable_A(enable_A),
         .enable_B(enable_B),
         .enable_sign(enable_sign),
-        .valid(ready_operandos),
         .A(stored_A),
         .B(stored_B),
         .temp_value(temp_value)
