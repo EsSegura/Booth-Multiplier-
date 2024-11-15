@@ -1,4 +1,4 @@
-module operand_storage(
+module number_storage(
     input logic clk,
     input logic rst,
     input logic [3:0] key_value,     // Valor ingresado desde el teclado (4 bits)
@@ -8,6 +8,7 @@ module operand_storage(
     input logic enable_A,
     input logic enable_B,
     input logic enable_sign,
+    input logic valid,
     output logic [7:0] A,             // Salida del operando A
     output logic [7:0] B,             // Salida del operando B
     output logic [7:0] temp_value     // Salida temporal para mostrar en display
@@ -40,8 +41,8 @@ module operand_storage(
                     end
 
                     3'b001: begin  // se ingresó un operando de multiplicación
-                        temp_value <= (temp_value << 3) + (temp_value << 1) + 4'b0000; // Desplazamientos para multiplicar por 10 y se agrega un 0 en unidades 
-                        load_value <= 1'b1; // Señal para cargar el valor  
+                        temp_value <= temp_value; // se guarda el operando tal cual esta, solo unidades 
+                        load_value <= 1'b1; // Señal para cargar el valor  1 *
                         
                     end
 
@@ -52,6 +53,9 @@ module operand_storage(
                     3'b100: begin  // se ingresó un operando de resta
                         signo <= 1; 
                     end
+                    3'b100: begin  // se ingresó un operando de resta
+                        signo <= 1; 
+                    end                    
 
                 endcase
 
@@ -77,7 +81,10 @@ module operand_storage(
                     
                 end else if (!enable_A && !enable_B) begin
                     temp_value <= 8'b0;
-                end 
+                end else if (valid) begin
+                    temp_value <= Y;
+                end
+
             end
         end
     end
