@@ -85,8 +85,8 @@ module fsm_control(
             end
 
             READY: begin
+                enable_operacion = 1;  // Habilitar operacion
                 if (is_sign_key == 3'b100) begin // si el signo es igual "="
-                    enable_operacion = 1;  // Habilitar operacion
                     next_state = IDLE;
                 end
             end
