@@ -41,7 +41,9 @@ Generating RTLIL representation for module `\bin_to_bcd'.
 Successfully finished Verilog frontend.
 
 3. Executing Verilog-2005 frontend: ../design/module_booth.v
+../design/module_booth.v:62: ERROR: syntax error, unexpected TOK_BEGIN
 Parsing SystemVerilog input from `../design/module_booth.v' to AST representation.
+<<<<<<< HEAD
 Generating RTLIL representation for module `\BoothMul'.
 Successfully finished Verilog frontend.
 
@@ -2375,3 +2377,5 @@ Warnings: 5 unique messages, 5 total
 End of script. Logfile hash: 958cd27e83
 Yosys 0.26+1 (git sha1 b1a011138, x86_64-w64-mingw32-g++ 9.2.1 -Os)
 Time spent: 1% 23x opt_expr (0 sec), 1% 21x opt_clean (0 sec), ...
+=======
+>>>>>>> ce19330b26c6a4fbf211911c46f5a35c0dc7a79d

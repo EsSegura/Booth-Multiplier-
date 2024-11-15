@@ -61,6 +61,15 @@ module number_storage(
                     3'b100: begin // Se ingresó un operando de resta
                         signo <= 1'b1;
                     end
+<<<<<<< HEAD
+=======
+                    3'b010: begin  // se ingresó un operando de resta
+                        signo <= 1; 
+                    end
+                    3'b111: begin
+                        valid <= 1;
+                    end                   
+>>>>>>> ce19330b26c6a4fbf211911c46f5a35c0dc7a79d
 
                     3'b111: begin // Validar la entrada
                         valid <= 1'b1;
@@ -72,8 +81,13 @@ module number_storage(
                 endcase
             end else begin
                 load_value <= 1'b0; // Resetear la señal de carga
+<<<<<<< HEAD
                 signo <= 1'b0;
                 valid <= 1'b0;
+=======
+                signo <= 0;
+                valid <= 0;
+>>>>>>> ce19330b26c6a4fbf211911c46f5a35c0dc7a79d
             end
 
             // Almacenar el valor temporal en A o B según el habilitador
