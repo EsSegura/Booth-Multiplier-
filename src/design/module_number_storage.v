@@ -64,6 +64,8 @@ module number_storage(
 
             end else begin
                 load_value <= 1'b0; // Resetear la señal de carga
+                signo <= 0;
+                valid <= 0;
             end
             
             // Almacenar el valor temporal en A o B según el habilitador
