@@ -64,7 +64,7 @@ module fsm_output_control(
             end
 
             SIGN: begin
-                if (is_sign_key == 3'b100) begin //  si el sigmo es igual
+                if (is_sign_key == 3'b100) begin //  si el signo es igual
                     next_state = Mostrar_B;
                 end
             end    

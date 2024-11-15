@@ -85,8 +85,8 @@ module fsm_control(
             end
 
             READY: begin
-                enable_operacion = 1;  // Habilitar almacenamiento del signo
-                if (is_sign_key == 3'b011) begin // si el signo es multiplicación
+                if (is_sign_key == 3'b100) begin // si el signo es igual "="
+                    enable_operacion = 1;  // Habilitar almacenamiento del signo
                     next_state = IDLE;
                 end
             end
