@@ -35,7 +35,7 @@ module row_scanner (
                                 4'b0100 : key_value = 4'b0110;  // "6"
                                 4'b0010 : key_value = 4'b1001;  // "9"
                                 4'b0001 : begin
-                                    key_value = 4'b0000;  // "#"
+                                    key_value = 4'b0000;  // "#" signo de suma
                                     is_sign_key = 3'b010;
                                 end 
 

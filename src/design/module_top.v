@@ -16,6 +16,7 @@ module module_top (
     logic enable_A;
     logic enable_B;
     logic enable_sign;
+    logic enable_operacion;
     logic ready_operandos;
 
     logic [2:0] is_sign_key;
@@ -86,11 +87,12 @@ module module_top (
         .is_sign_key(is_sign_key),
         .enable_A(enable_A),
         .enable_B(enable_B),
-        .enable_sign(enable_sign)
+        .enable_sign(enable_sign),
+        .enable_operacion(enable_operacion)
     );
 
     // Almacenamiento de operandos
-    operand_storage storage_inst (
+    number_storage storage_inst (
         .clk(clk),
         .rst(rst),
         .key_value(key_value),
@@ -100,6 +102,7 @@ module module_top (
         .enable_A(enable_A),
         .enable_B(enable_B),
         .enable_sign(enable_sign),
+        .valid(ready_operandos),
         .A(stored_A),
         .B(stored_B),
         .temp_value(temp_value)
@@ -109,7 +112,7 @@ module module_top (
     BoothMul booth_multiplier_inst (
         .clk(clk),
         .rst(rst),
-        .start(start),
+        .start(enable_operacion),
         .A(stored_A),
         .B(stored_B),
         .valid(ready_operandos),
@@ -123,9 +126,6 @@ module module_top (
         else
             display_valor = temp_value;
     end
-
-    // Activación de la señal start
-    assign start = key_pressed && enable_A && enable_B && !enable_sign;
 
     // Conversión a BCD
     bin_to_bcd converter_inst (
