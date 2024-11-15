@@ -55,11 +55,7 @@ module row_scanner (
                                     is_sign_key = 3'b011;                                               
                                 end 
                                 4'b0001 : begin
-<<<<<<< HEAD
-                                    key_value = 4'b1111;  // "D"
-=======
-                                    key_value = 4'b1111;  // "D" tecla de igual "="
->>>>>>> ce19330b26c6a4fbf211911c46f5a35c0dc7a79d
+                                    key_value = 4'b1101;  // "D"
                                     is_sign_key = 3'b111;           
                                 end
                                 

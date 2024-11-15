@@ -33,7 +33,6 @@ module module_top (
     logic [15:0] result_operacion;
     logic [15:0] display_out;
 
-    logic start;
     logic done;
 
     // Registro de desplazamiento de columnas
@@ -102,34 +101,46 @@ module module_top (
         .enable_A(enable_A),
         .enable_B(enable_B),
         .enable_sign(enable_sign),
-        .valid(ready_operandos),
         .A(stored_A),
         .B(stored_B),
         .temp_value(temp_value)
     );
 
-    // Multiplicador de Booth
-    BoothMul booth_multiplier_inst (
-        .clk(clk),
-        .rst(rst),
-        .start(enable_operacion),
-        .A(stored_A),
-        .B(stored_B),
-        .valid(ready_operandos),
-        .Y(Y)
-    );
+    always_comb begin
+        Y = stored_A * stored_B; // Sumar los operandos y asignar el resultado a Y
+    end
 
     // Multiplexor para seleccionar la entrada del display
     always_comb begin
-        if (ready_operandos)
-            display_valor = Y;
-        else
-            display_valor = temp_value;
+    // Asignar valor por defecto a enable_operacion
+    enable_operacion = 1'b0; // Desactivar operación por defecto
+
+    if (key_pressed) begin
+        case (key_value)
+            4'b1011: begin
+                display_valor = {8'b0, stored_A}; // Mostrar stored_A cuando se presiona B
+                enable_operacion = 1'b1; // Activar operación
+            end
+            4'b1100: begin
+                display_valor = {8'b0, stored_B}; // Mostrar stored_B cuando se presiona C
+                enable_operacion = 1'b1; // Activar operación
+            end
+            4'b1101: begin
+                display_valor = {16'b0, Y}; // Mostrar resultado de la suma
+                enable_operacion = 1'b1; // Activar operación
+            end
+            default: begin
+                display_valor = temp_value; // Mostrar valor temporal cuando no se presiona ninguna tecla relevante
+            end
+        endcase
+    end else begin
+        display_valor = temp_value; // Mostrar valor temporal cuando no se presiona ninguna tecla
     end
+end
 
     // Conversión a BCD
     bin_to_bcd converter_inst (
-        .binario(stored_B),  // Limitamos a 12 bits para BCD
+        .binario(display_valor[11:0]),  // Limitamos a 12 bits para BCD
         .bcd(bcd)
     );
 
@@ -143,6 +154,7 @@ module module_top (
     );
 
 endmodule
+
 
 
 

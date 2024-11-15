@@ -8,7 +8,6 @@ module number_storage(
     input logic enable_A,
     input logic enable_B,
     input logic enable_sign,
-    input logic valid,
     output logic [7:0] A,             // Salida del operando A
     output logic [7:0] B,             // Salida del operando B
     output logic [7:0] temp_value     // Salida temporal para mostrar en display
@@ -29,7 +28,6 @@ module number_storage(
             key_pressed_prev <= 1'b0;
             load_value <= 1'b0;
             signo <= 1'b0;
-            valid <= 1'b0;
         end else begin
             key_pressed_prev <= key_pressed; // Detecta el flanco ascendente del botón
 
@@ -61,19 +59,6 @@ module number_storage(
                     3'b100: begin // Se ingresó un operando de resta
                         signo <= 1'b1;
                     end
-<<<<<<< HEAD
-=======
-                    3'b010: begin  // se ingresó un operando de resta
-                        signo <= 1; 
-                    end
-                    3'b111: begin
-                        valid <= 1;
-                    end                   
->>>>>>> ce19330b26c6a4fbf211911c46f5a35c0dc7a79d
-
-                    3'b111: begin // Validar la entrada
-                        valid <= 1'b1;
-                    end
 
                     default: begin
                         load_value <= 1'b0; // Resetear la señal de carga
@@ -81,13 +66,7 @@ module number_storage(
                 endcase
             end else begin
                 load_value <= 1'b0; // Resetear la señal de carga
-<<<<<<< HEAD
                 signo <= 1'b0;
-                valid <= 1'b0;
-=======
-                signo <= 0;
-                valid <= 0;
->>>>>>> ce19330b26c6a4fbf211911c46f5a35c0dc7a79d
             end
 
             // Almacenar el valor temporal en A o B según el habilitador
@@ -102,6 +81,7 @@ module number_storage(
             end
         end
     end
+
 endmodule
 
 

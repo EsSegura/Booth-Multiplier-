@@ -11,6 +11,8 @@ Info: Cell acumulador[4] not found
 Info: Cell acumulador[4] not found
 Info: Cell acumulador[5] not found
 Info: Cell acumulador[5] not found
+Info: Cell enable_operacion not found
+Info: Cell enable_operacion not found
 
 Info: Packing constants..
 Info: Packing Shadow RAM..
@@ -27,20 +29,20 @@ Info: Packing ALUs..
 Info: Packing LUT-FFs..
 Info: Packing non-LUT FFs..
 Info: Packing PLLs..
-Info: Checksum: 0xc3efdc43
+Info: Checksum: 0xf58e7689
 
 Info: Annotating ports with timing budgets for target frequency 27.00 MHz
-Info: Checksum: 0xc3efdc43
+Info: Checksum: 0xf58e7689
 
 Info: Device utilisation:
 Info: 	                 VCC:     1/    1   100%
-Info: 	               SLICE:  1300/ 8640    15%
+Info: 	               SLICE:  1867/ 8640    21%
 Info: 	                 IOB:    21/  274     7%
 Info: 	                ODDR:     0/  274     0%
-Info: 	           MUX2_LUT5:   174/ 4320     4%
-Info: 	           MUX2_LUT6:    82/ 2160     3%
-Info: 	           MUX2_LUT7:    33/ 1080     3%
-Info: 	           MUX2_LUT8:    12/ 1056     1%
+Info: 	           MUX2_LUT5:   283/ 4320     6%
+Info: 	           MUX2_LUT6:   122/ 2160     5%
+Info: 	           MUX2_LUT7:    43/ 1080     3%
+Info: 	           MUX2_LUT8:    14/ 1056     1%
 Info: 	                 GND:     1/    1   100%
 Info: 	                RAMW:     0/  270     0%
 Info: 	                 GSR:     1/    1   100%
@@ -48,571 +50,911 @@ Info: 	                 OSC:     0/    1     0%
 Info: 	                rPLL:     0/    2     0%
 
 Info: Placed 21 cells based on constraints.
-Info: Creating initial analytic placement for 591 cells, random placement wirelen = 25748.
-Info:     at initial placer iter 0, wirelen = 1090
-Info:     at initial placer iter 1, wirelen = 887
-Info:     at initial placer iter 2, wirelen = 857
-Info:     at initial placer iter 3, wirelen = 851
-Info: Running main analytical placer, max placement attempts per cell = 330078.
-Info:     at iteration #1, type SLICE: wirelen solved = 887, spread = 8117, legal = 8145; time = 0.01s
-Info:     at iteration #1, type MUX2_LUT7: wirelen solved = 8102, spread = 8136, legal = 8154; time = 0.01s
-Info:     at iteration #1, type MUX2_LUT8: wirelen solved = 8139, spread = 8143, legal = 8208; time = 0.00s
-Info:     at iteration #1, type MUX2_LUT6: wirelen solved = 8037, spread = 8063, legal = 8076; time = 0.01s
-Info:     at iteration #1, type MUX2_LUT5: wirelen solved = 7880, spread = 7945, legal = 7957; time = 0.00s
-Info:     at iteration #1, type VCC: wirelen solved = 7957, spread = 7957, legal = 7957; time = 0.00s
-Info:     at iteration #1, type GND: wirelen solved = 7957, spread = 7957, legal = 7957; time = 0.00s
-Info:     at iteration #1, type GSR: wirelen solved = 7957, spread = 7957, legal = 7957; time = 0.00s
-Info:     at iteration #1, type ALL: wirelen solved = 959, spread = 7519, legal = 7496; time = 0.01s
-Info:     at iteration #2, type SLICE: wirelen solved = 1465, spread = 5864, legal = 6093; time = 0.01s
-Info:     at iteration #2, type MUX2_LUT7: wirelen solved = 5865, spread = 5882, legal = 5917; time = 0.00s
-Info:     at iteration #2, type MUX2_LUT8: wirelen solved = 5850, spread = 5863, legal = 5886; time = 0.01s
-Info:     at iteration #2, type MUX2_LUT6: wirelen solved = 5683, spread = 5758, legal = 5809; time = 0.00s
-Info:     at iteration #2, type MUX2_LUT5: wirelen solved = 5712, spread = 5722, legal = 5744; time = 0.00s
-Info:     at iteration #2, type VCC: wirelen solved = 5744, spread = 5744, legal = 5744; time = 0.00s
-Info:     at iteration #2, type GND: wirelen solved = 5744, spread = 5744, legal = 5744; time = 0.00s
-Info:     at iteration #2, type GSR: wirelen solved = 5744, spread = 5744, legal = 5744; time = 0.00s
-Info:     at iteration #2, type ALL: wirelen solved = 919, spread = 5853, legal = 5982; time = 0.01s
-Info:     at iteration #3, type SLICE: wirelen solved = 1452, spread = 4802, legal = 5110; time = 0.01s
-Info:     at iteration #3, type MUX2_LUT7: wirelen solved = 4942, spread = 4942, legal = 4961; time = 0.00s
-Info:     at iteration #3, type MUX2_LUT8: wirelen solved = 4914, spread = 4915, legal = 4961; time = 0.00s
-Info:     at iteration #3, type MUX2_LUT6: wirelen solved = 4748, spread = 4801, legal = 4819; time = 0.01s
-Info:     at iteration #3, type MUX2_LUT5: wirelen solved = 4686, spread = 4702, legal = 4711; time = 0.00s
-Info:     at iteration #3, type VCC: wirelen solved = 4711, spread = 4711, legal = 4711; time = 0.00s
-Info:     at iteration #3, type GND: wirelen solved = 4711, spread = 4711, legal = 4711; time = 0.00s
-Info:     at iteration #3, type GSR: wirelen solved = 4711, spread = 4711, legal = 4711; time = 0.00s
-Info:     at iteration #3, type ALL: wirelen solved = 1017, spread = 4170, legal = 4356; time = 0.01s
-Info:     at iteration #4, type SLICE: wirelen solved = 1518, spread = 3591, legal = 3816; time = 0.01s
-Info:     at iteration #4, type MUX2_LUT7: wirelen solved = 3716, spread = 3745, legal = 3761; time = 0.01s
-Info:     at iteration #4, type MUX2_LUT8: wirelen solved = 3729, spread = 3731, legal = 3777; time = 0.01s
-Info:     at iteration #4, type MUX2_LUT6: wirelen solved = 3688, spread = 3712, legal = 3725; time = 0.00s
-Info:     at iteration #4, type MUX2_LUT5: wirelen solved = 3630, spread = 3631, legal = 3632; time = 0.00s
-Info:     at iteration #4, type VCC: wirelen solved = 3632, spread = 3632, legal = 3632; time = 0.00s
-Info:     at iteration #4, type GND: wirelen solved = 3632, spread = 3632, legal = 3632; time = 0.01s
-Info:     at iteration #4, type GSR: wirelen solved = 3632, spread = 3632, legal = 3632; time = 0.00s
-Info:     at iteration #4, type ALL: wirelen solved = 1072, spread = 3383, legal = 3593; time = 0.01s
-Info:     at iteration #5, type SLICE: wirelen solved = 1561, spread = 3418, legal = 3548; time = 0.01s
-Info:     at iteration #5, type MUX2_LUT7: wirelen solved = 3457, spread = 3464, legal = 3494; time = 0.01s
-Info:     at iteration #5, type MUX2_LUT8: wirelen solved = 3463, spread = 3465, legal = 3502; time = 0.00s
-Info:     at iteration #5, type MUX2_LUT6: wirelen solved = 3432, spread = 3517, legal = 3518; time = 0.01s
-Info:     at iteration #5, type MUX2_LUT5: wirelen solved = 3458, spread = 3474, legal = 3476; time = 0.00s
-Info:     at iteration #5, type VCC: wirelen solved = 3476, spread = 3476, legal = 3476; time = 0.00s
-Info:     at iteration #5, type GND: wirelen solved = 3476, spread = 3476, legal = 3476; time = 0.00s
-Info:     at iteration #5, type GSR: wirelen solved = 3476, spread = 3476, legal = 3476; time = 0.00s
-Info:     at iteration #5, type ALL: wirelen solved = 1146, spread = 3473, legal = 3694; time = 0.01s
-Info:     at iteration #6, type SLICE: wirelen solved = 1690, spread = 3887, legal = 4140; time = 0.01s
-Info:     at iteration #6, type MUX2_LUT7: wirelen solved = 4086, spread = 4111, legal = 4135; time = 0.00s
-Info:     at iteration #6, type MUX2_LUT8: wirelen solved = 4095, spread = 4117, legal = 4140; time = 0.01s
-Info:     at iteration #6, type MUX2_LUT6: wirelen solved = 4062, spread = 4095, legal = 4148; time = 0.00s
-Info:     at iteration #6, type MUX2_LUT5: wirelen solved = 4054, spread = 4054, legal = 4056; time = 0.00s
-Info:     at iteration #6, type VCC: wirelen solved = 4056, spread = 4056, legal = 4056; time = 0.00s
-Info:     at iteration #6, type GND: wirelen solved = 4056, spread = 4056, legal = 4056; time = 0.00s
-Info:     at iteration #6, type GSR: wirelen solved = 4056, spread = 4056, legal = 4056; time = 0.00s
-Info:     at iteration #6, type ALL: wirelen solved = 1307, spread = 3441, legal = 3617; time = 0.01s
-Info:     at iteration #7, type SLICE: wirelen solved = 1646, spread = 3634, legal = 3893; time = 0.01s
-Info:     at iteration #7, type MUX2_LUT7: wirelen solved = 3792, spread = 3799, legal = 3835; time = 0.00s
-Info:     at iteration #7, type MUX2_LUT8: wirelen solved = 3780, spread = 3792, legal = 3862; time = 0.00s
-Info:     at iteration #7, type MUX2_LUT6: wirelen solved = 3752, spread = 3769, legal = 3815; time = 0.01s
-Info:     at iteration #7, type MUX2_LUT5: wirelen solved = 3754, spread = 3754, legal = 3758; time = 0.00s
-Info:     at iteration #7, type VCC: wirelen solved = 3758, spread = 3758, legal = 3758; time = 0.00s
-Info:     at iteration #7, type GND: wirelen solved = 3758, spread = 3758, legal = 3758; time = 0.00s
-Info:     at iteration #7, type GSR: wirelen solved = 3758, spread = 3758, legal = 3758; time = 0.00s
-Info:     at iteration #7, type ALL: wirelen solved = 1298, spread = 3706, legal = 3837; time = 0.01s
-Info:     at iteration #8, type SLICE: wirelen solved = 1737, spread = 3530, legal = 3689; time = 0.01s
-Info:     at iteration #8, type MUX2_LUT7: wirelen solved = 3614, spread = 3640, legal = 3668; time = 0.00s
-Info:     at iteration #8, type MUX2_LUT8: wirelen solved = 3635, spread = 3646, legal = 3736; time = 0.01s
-Info:     at iteration #8, type MUX2_LUT6: wirelen solved = 3660, spread = 3672, legal = 3695; time = 0.00s
-Info:     at iteration #8, type MUX2_LUT5: wirelen solved = 3633, spread = 3637, legal = 3640; time = 0.00s
-Info:     at iteration #8, type VCC: wirelen solved = 3640, spread = 3640, legal = 3640; time = 0.00s
-Info:     at iteration #8, type GND: wirelen solved = 3640, spread = 3640, legal = 3640; time = 0.00s
-Info:     at iteration #8, type GSR: wirelen solved = 3640, spread = 3640, legal = 3640; time = 0.00s
-Info:     at iteration #8, type ALL: wirelen solved = 1413, spread = 3417, legal = 3567; time = 0.01s
-Info:     at iteration #9, type SLICE: wirelen solved = 1742, spread = 3383, legal = 3589; time = 0.01s
-Info:     at iteration #9, type MUX2_LUT7: wirelen solved = 3551, spread = 3563, legal = 3593; time = 0.00s
-Info:     at iteration #9, type MUX2_LUT8: wirelen solved = 3562, spread = 3574, legal = 3628; time = 0.01s
-Info:     at iteration #9, type MUX2_LUT6: wirelen solved = 3527, spread = 3566, legal = 3590; time = 0.00s
-Info:     at iteration #9, type MUX2_LUT5: wirelen solved = 3506, spread = 3522, legal = 3538; time = 0.00s
-Info:     at iteration #9, type VCC: wirelen solved = 3538, spread = 3538, legal = 3538; time = 0.00s
-Info:     at iteration #9, type GND: wirelen solved = 3538, spread = 3538, legal = 3538; time = 0.00s
-Info:     at iteration #9, type GSR: wirelen solved = 3538, spread = 3538, legal = 3538; time = 0.00s
-Info:     at iteration #9, type ALL: wirelen solved = 1393, spread = 3605, legal = 3766; time = 0.01s
-Info:     at iteration #10, type SLICE: wirelen solved = 1886, spread = 4144, legal = 4272; time = 0.01s
-Info:     at iteration #10, type MUX2_LUT7: wirelen solved = 4143, spread = 4158, legal = 4180; time = 0.00s
-Info:     at iteration #10, type MUX2_LUT8: wirelen solved = 4148, spread = 4170, legal = 4188; time = 0.01s
-Info:     at iteration #10, type MUX2_LUT6: wirelen solved = 4052, spread = 4083, legal = 4103; time = 0.00s
-Info:     at iteration #10, type MUX2_LUT5: wirelen solved = 4002, spread = 4002, legal = 4009; time = 0.00s
-Info:     at iteration #10, type VCC: wirelen solved = 4009, spread = 4009, legal = 4009; time = 0.00s
-Info:     at iteration #10, type GND: wirelen solved = 4009, spread = 4009, legal = 4009; time = 0.00s
-Info:     at iteration #10, type GSR: wirelen solved = 4009, spread = 4009, legal = 4009; time = 0.00s
-Info:     at iteration #10, type ALL: wirelen solved = 1584, spread = 3943, legal = 4095; time = 0.01s
-Info:     at iteration #11, type SLICE: wirelen solved = 2003, spread = 3286, legal = 3541; time = 0.01s
-Info:     at iteration #11, type MUX2_LUT7: wirelen solved = 3464, spread = 3470, legal = 3465; time = 0.00s
-Info:     at iteration #11, type MUX2_LUT8: wirelen solved = 3446, spread = 3446, legal = 3489; time = 0.01s
-Info:     at iteration #11, type MUX2_LUT6: wirelen solved = 3417, spread = 3457, legal = 3451; time = 0.00s
-Info:     at iteration #11, type MUX2_LUT5: wirelen solved = 3388, spread = 3393, legal = 3395; time = 0.00s
-Info:     at iteration #11, type VCC: wirelen solved = 3395, spread = 3395, legal = 3395; time = 0.00s
-Info:     at iteration #11, type GND: wirelen solved = 3395, spread = 3395, legal = 3395; time = 0.00s
-Info:     at iteration #11, type GSR: wirelen solved = 3395, spread = 3395, legal = 3395; time = 0.00s
-Info:     at iteration #11, type ALL: wirelen solved = 1736, spread = 3979, legal = 4151; time = 0.01s
-Info:     at iteration #12, type SLICE: wirelen solved = 2098, spread = 4130, legal = 4279; time = 0.01s
-Info:     at iteration #12, type MUX2_LUT7: wirelen solved = 4208, spread = 4208, legal = 4224; time = 0.00s
-Info:     at iteration #12, type MUX2_LUT8: wirelen solved = 4199, spread = 4212, legal = 4250; time = 0.01s
-Info:     at iteration #12, type MUX2_LUT6: wirelen solved = 4137, spread = 4164, legal = 4203; time = 0.00s
-Info:     at iteration #12, type MUX2_LUT5: wirelen solved = 4115, spread = 4139, legal = 4143; time = 0.00s
-Info:     at iteration #12, type VCC: wirelen solved = 4143, spread = 4143, legal = 4143; time = 0.00s
-Info:     at iteration #12, type GND: wirelen solved = 4143, spread = 4143, legal = 4143; time = 0.00s
-Info:     at iteration #12, type GSR: wirelen solved = 4143, spread = 4143, legal = 4143; time = 0.00s
-Info:     at iteration #12, type ALL: wirelen solved = 1753, spread = 3622, legal = 3713; time = 0.01s
-Info:     at iteration #13, type SLICE: wirelen solved = 2059, spread = 3985, legal = 4128; time = 0.01s
-Info:     at iteration #13, type MUX2_LUT7: wirelen solved = 4087, spread = 4118, legal = 4141; time = 0.00s
-Info:     at iteration #13, type MUX2_LUT8: wirelen solved = 4123, spread = 4123, legal = 4139; time = 0.00s
-Info:     at iteration #13, type MUX2_LUT6: wirelen solved = 4043, spread = 4096, legal = 4128; time = 0.01s
-Info:     at iteration #13, type MUX2_LUT5: wirelen solved = 4088, spread = 4129, legal = 4135; time = 0.00s
-Info:     at iteration #13, type VCC: wirelen solved = 4135, spread = 4135, legal = 4135; time = 0.00s
-Info:     at iteration #13, type GND: wirelen solved = 4135, spread = 4135, legal = 4135; time = 0.00s
-Info:     at iteration #13, type GSR: wirelen solved = 4135, spread = 4135, legal = 4135; time = 0.00s
-Info:     at iteration #13, type ALL: wirelen solved = 1875, spread = 3977, legal = 4077; time = 0.01s
-Info: HeAP Placer Time: 0.73s
-Info:   of which solving equations: 0.52s
-Info:   of which spreading cells: 0.05s
-Info:   of which strict legalisation: 0.07s
+Info: Creating initial analytic placement for 856 cells, random placement wirelen = 36329.
+Info:     at initial placer iter 0, wirelen = 1194
+Info:     at initial placer iter 1, wirelen = 829
+Info:     at initial placer iter 2, wirelen = 792
+Info:     at initial placer iter 3, wirelen = 755
+Info: Running main analytical placer, max placement attempts per cell = 692076.
+Info:     at iteration #1, type SLICE: wirelen solved = 890, spread = 12361, legal = 12367; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT6: wirelen solved = 12005, spread = 12290, legal = 12296; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT7: wirelen solved = 12142, spread = 12269, legal = 12294; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT5: wirelen solved = 11737, spread = 11998, legal = 12003; time = 0.01s
+Info:     at iteration #1, type MUX2_LUT8: wirelen solved = 11575, spread = 11594, legal = 11693; time = 0.01s
+Info:     at iteration #1, type VCC: wirelen solved = 11693, spread = 11693, legal = 11693; time = 0.01s
+Info:     at iteration #1, type GND: wirelen solved = 11693, spread = 11693, legal = 11693; time = 0.01s
+Info:     at iteration #1, type GSR: wirelen solved = 11693, spread = 11693, legal = 11693; time = 0.01s
+Info:     at iteration #1, type ALL: wirelen solved = 965, spread = 11212, legal = 11579; time = 0.02s
+Info:     at iteration #2, type SLICE: wirelen solved = 3062, spread = 8182, legal = 8681; time = 0.02s
+Info:     at iteration #2, type MUX2_LUT6: wirelen solved = 8277, spread = 8390, legal = 8450; time = 0.01s
+Info:     at iteration #2, type MUX2_LUT7: wirelen solved = 8191, spread = 8203, legal = 8234; time = 0.01s
+Info:     at iteration #2, type MUX2_LUT5: wirelen solved = 7881, spread = 7904, legal = 7920; time = 0.01s
+Info:     at iteration #2, type MUX2_LUT8: wirelen solved = 7562, spread = 7568, legal = 7695; time = 0.01s
+Info:     at iteration #2, type VCC: wirelen solved = 7695, spread = 7695, legal = 7695; time = 0.01s
+Info:     at iteration #2, type GND: wirelen solved = 7695, spread = 7695, legal = 7695; time = 0.01s
+Info:     at iteration #2, type GSR: wirelen solved = 7695, spread = 7695, legal = 7695; time = 0.01s
+Info:     at iteration #2, type ALL: wirelen solved = 1171, spread = 7853, legal = 8306; time = 0.02s
+Info:     at iteration #3, type SLICE: wirelen solved = 2913, spread = 7742, legal = 8090; time = 0.01s
+Info:     at iteration #3, type MUX2_LUT6: wirelen solved = 7535, spread = 7632, legal = 7661; time = 0.01s
+Info:     at iteration #3, type MUX2_LUT7: wirelen solved = 7532, spread = 7660, legal = 7707; time = 0.01s
+Info:     at iteration #3, type MUX2_LUT5: wirelen solved = 7407, spread = 7434, legal = 7474; time = 0.01s
+Info:     at iteration #3, type MUX2_LUT8: wirelen solved = 7241, spread = 7242, legal = 7336; time = 0.01s
+Info:     at iteration #3, type VCC: wirelen solved = 7336, spread = 7336, legal = 7336; time = 0.01s
+Info:     at iteration #3, type GND: wirelen solved = 7336, spread = 7336, legal = 7336; time = 0.01s
+Info:     at iteration #3, type GSR: wirelen solved = 7336, spread = 7336, legal = 7336; time = 0.01s
+Info:     at iteration #3, type ALL: wirelen solved = 1338, spread = 6749, legal = 7166; time = 0.02s
+Info:     at iteration #4, type SLICE: wirelen solved = 2947, spread = 7267, legal = 7693; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT6: wirelen solved = 7310, spread = 7340, legal = 7395; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT7: wirelen solved = 7235, spread = 7238, legal = 7272; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT5: wirelen solved = 6964, spread = 6982, legal = 6992; time = 0.01s
+Info:     at iteration #4, type MUX2_LUT8: wirelen solved = 6758, spread = 6773, legal = 6869; time = 0.01s
+Info:     at iteration #4, type VCC: wirelen solved = 6869, spread = 6869, legal = 6869; time = 0.01s
+Info:     at iteration #4, type GND: wirelen solved = 6869, spread = 6869, legal = 6869; time = 0.01s
+Info:     at iteration #4, type GSR: wirelen solved = 6869, spread = 6869, legal = 6869; time = 0.01s
+Info:     at iteration #4, type ALL: wirelen solved = 1539, spread = 5485, legal = 5781; time = 0.02s
+Info:     at iteration #5, type SLICE: wirelen solved = 2853, spread = 5554, legal = 5940; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT6: wirelen solved = 5611, spread = 5766, legal = 5786; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT7: wirelen solved = 5649, spread = 5754, legal = 5791; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT5: wirelen solved = 5542, spread = 5751, legal = 5763; time = 0.01s
+Info:     at iteration #5, type MUX2_LUT8: wirelen solved = 5643, spread = 5650, legal = 5756; time = 0.01s
+Info:     at iteration #5, type VCC: wirelen solved = 5756, spread = 5756, legal = 5756; time = 0.01s
+Info:     at iteration #5, type GND: wirelen solved = 5756, spread = 5756, legal = 5756; time = 0.01s
+Info:     at iteration #5, type GSR: wirelen solved = 5756, spread = 5756, legal = 5756; time = 0.01s
+Info:     at iteration #5, type ALL: wirelen solved = 1816, spread = 5182, legal = 5524; time = 0.02s
+Info:     at iteration #6, type SLICE: wirelen solved = 2803, spread = 5466, legal = 5839; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT6: wirelen solved = 5474, spread = 5597, legal = 5642; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT7: wirelen solved = 5545, spread = 5609, legal = 5629; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT5: wirelen solved = 5307, spread = 5349, legal = 5381; time = 0.01s
+Info:     at iteration #6, type MUX2_LUT8: wirelen solved = 5212, spread = 5223, legal = 5388; time = 0.01s
+Info:     at iteration #6, type VCC: wirelen solved = 5388, spread = 5388, legal = 5388; time = 0.01s
+Info:     at iteration #6, type GND: wirelen solved = 5388, spread = 5388, legal = 5388; time = 0.01s
+Info:     at iteration #6, type GSR: wirelen solved = 5388, spread = 5388, legal = 5388; time = 0.01s
+Info:     at iteration #6, type ALL: wirelen solved = 1901, spread = 5086, legal = 5447; time = 0.02s
+Info:     at iteration #7, type SLICE: wirelen solved = 2797, spread = 5693, legal = 6095; time = 0.01s
+Info:     at iteration #7, type MUX2_LUT6: wirelen solved = 5652, spread = 5729, legal = 5775; time = 0.01s
+Info:     at iteration #7, type MUX2_LUT7: wirelen solved = 5659, spread = 5807, legal = 5843; time = 0.01s
+Info:     at iteration #7, type MUX2_LUT5: wirelen solved = 5497, spread = 5551, legal = 5565; time = 0.01s
+Info:     at iteration #7, type MUX2_LUT8: wirelen solved = 5340, spread = 5355, legal = 5499; time = 0.01s
+Info:     at iteration #7, type VCC: wirelen solved = 5499, spread = 5499, legal = 5499; time = 0.01s
+Info:     at iteration #7, type GND: wirelen solved = 5499, spread = 5499, legal = 5499; time = 0.01s
+Info:     at iteration #7, type GSR: wirelen solved = 5499, spread = 5499, legal = 5499; time = 0.01s
+Info:     at iteration #7, type ALL: wirelen solved = 1999, spread = 5274, legal = 5549; time = 0.02s
+Info:     at iteration #8, type SLICE: wirelen solved = 3020, spread = 5099, legal = 5440; time = 0.02s
+Info:     at iteration #8, type MUX2_LUT6: wirelen solved = 5156, spread = 5290, legal = 5358; time = 0.01s
+Info:     at iteration #8, type MUX2_LUT7: wirelen solved = 5213, spread = 5313, legal = 5409; time = 0.01s
+Info:     at iteration #8, type MUX2_LUT5: wirelen solved = 5191, spread = 5215, legal = 5239; time = 0.01s
+Info:     at iteration #8, type MUX2_LUT8: wirelen solved = 5131, spread = 5168, legal = 5359; time = 0.01s
+Info:     at iteration #8, type VCC: wirelen solved = 5359, spread = 5359, legal = 5359; time = 0.01s
+Info:     at iteration #8, type GND: wirelen solved = 5359, spread = 5359, legal = 5359; time = 0.01s
+Info:     at iteration #8, type GSR: wirelen solved = 5359, spread = 5359, legal = 5359; time = 0.01s
+Info:     at iteration #8, type ALL: wirelen solved = 2179, spread = 5161, legal = 5539; time = 0.02s
+Info:     at iteration #9, type SLICE: wirelen solved = 3158, spread = 6232, legal = 6526; time = 0.01s
+Info:     at iteration #9, type MUX2_LUT6: wirelen solved = 6209, spread = 6279, legal = 6284; time = 0.01s
+Info:     at iteration #9, type MUX2_LUT7: wirelen solved = 6110, spread = 6209, legal = 6214; time = 0.01s
+Info:     at iteration #9, type MUX2_LUT5: wirelen solved = 5930, spread = 6014, legal = 6026; time = 0.01s
+Info:     at iteration #9, type MUX2_LUT8: wirelen solved = 5841, spread = 5859, legal = 5991; time = 0.01s
+Info:     at iteration #9, type VCC: wirelen solved = 5991, spread = 5991, legal = 5991; time = 0.01s
+Info:     at iteration #9, type GND: wirelen solved = 5991, spread = 5991, legal = 5991; time = 0.01s
+Info:     at iteration #9, type GSR: wirelen solved = 5991, spread = 5991, legal = 5991; time = 0.01s
+Info:     at iteration #9, type ALL: wirelen solved = 2399, spread = 5694, legal = 5884; time = 0.02s
+Info:     at iteration #10, type SLICE: wirelen solved = 3259, spread = 5731, legal = 6080; time = 0.01s
+Info:     at iteration #10, type MUX2_LUT6: wirelen solved = 5822, spread = 6026, legal = 6067; time = 0.01s
+Info:     at iteration #10, type MUX2_LUT7: wirelen solved = 5949, spread = 6019, legal = 6057; time = 0.01s
+Info:     at iteration #10, type MUX2_LUT5: wirelen solved = 5815, spread = 5937, legal = 5970; time = 0.01s
+Info:     at iteration #10, type MUX2_LUT8: wirelen solved = 5865, spread = 5865, legal = 5952; time = 0.01s
+Info:     at iteration #10, type VCC: wirelen solved = 5952, spread = 5952, legal = 5952; time = 0.01s
+Info:     at iteration #10, type GND: wirelen solved = 5952, spread = 5952, legal = 5952; time = 0.01s
+Info:     at iteration #10, type GSR: wirelen solved = 5952, spread = 5952, legal = 5952; time = 0.01s
+Info:     at iteration #10, type ALL: wirelen solved = 2618, spread = 5418, legal = 5662; time = 0.02s
+Info:     at iteration #11, type SLICE: wirelen solved = 3199, spread = 5201, legal = 5516; time = 0.01s
+Info:     at iteration #11, type MUX2_LUT6: wirelen solved = 5378, spread = 5522, legal = 5574; time = 0.01s
+Info:     at iteration #11, type MUX2_LUT7: wirelen solved = 5456, spread = 5581, legal = 5630; time = 0.01s
+Info:     at iteration #11, type MUX2_LUT5: wirelen solved = 5491, spread = 5551, legal = 5566; time = 0.01s
+Info:     at iteration #11, type MUX2_LUT8: wirelen solved = 5501, spread = 5514, legal = 5633; time = 0.01s
+Info:     at iteration #11, type VCC: wirelen solved = 5633, spread = 5633, legal = 5633; time = 0.01s
+Info:     at iteration #11, type GND: wirelen solved = 5633, spread = 5633, legal = 5633; time = 0.01s
+Info:     at iteration #11, type GSR: wirelen solved = 5633, spread = 5633, legal = 5633; time = 0.01s
+Info:     at iteration #11, type ALL: wirelen solved = 2545, spread = 5350, legal = 5619; time = 0.02s
+Info: HeAP Placer Time: 1.02s
+Info:   of which solving equations: 0.72s
+Info:   of which spreading cells: 0.07s
+Info:   of which strict legalisation: 0.10s
 
 Info: Running simulated annealing placer for refinement.
-Info:   at iteration #1: temp = 0.000000, timing cost = 73, wirelen = 3567
-Info:   at iteration #5: temp = 0.000000, timing cost = 37, wirelen = 2412
-Info:   at iteration #10: temp = 0.000000, timing cost = 38, wirelen = 2209
-Info:   at iteration #15: temp = 0.000000, timing cost = 37, wirelen = 2108
-Info:   at iteration #20: temp = 0.000000, timing cost = 35, wirelen = 2042
-Info:   at iteration #25: temp = 0.000000, timing cost = 34, wirelen = 2015
-Info:   at iteration #29: temp = 0.000000, timing cost = 31, wirelen = 1996 
-Info: SA placement time 1.39s
+Info:   at iteration #1: temp = 0.000000, timing cost = 87, wirelen = 5447
+Info:   at iteration #5: temp = 0.000000, timing cost = 58, wirelen = 3514
+Info:   at iteration #10: temp = 0.000000, timing cost = 58, wirelen = 3219
+Info:   at iteration #15: temp = 0.000000, timing cost = 49, wirelen = 3124
+Info:   at iteration #20: temp = 0.000000, timing cost = 57, wirelen = 3032
+Info:   at iteration #25: temp = 0.000000, timing cost = 46, wirelen = 2972
+Info:   at iteration #29: temp = 0.000000, timing cost = 46, wirelen = 2954 
+Info: SA placement time 2.74s
 
-Info: Max frequency for clock 'booth_multiplier_inst.clk': 75.12 MHz (PASS at 27.00 MHz)
-Info: Max frequency for clock                  'slow_clk': 794.91 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock 'display_inst.clk_i': 73.29 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock           'slow_clk': 794.91 MHz (PASS at 27.00 MHz)
 
-Info: Max delay <async>                           -> <async>                          : 21.26 ns
-Info: Max delay <async>                           -> posedge booth_multiplier_inst.clk: 22.23 ns
-Info: Max delay posedge booth_multiplier_inst.clk -> <async>                          : 53.04 ns
-Info: Max delay posedge slow_clk                  -> <async>                          : 11.41 ns
-Info: Max delay posedge slow_clk                  -> posedge booth_multiplier_inst.clk: 13.64 ns
+Info: Max delay <async>                    -> <async>                   : 21.26 ns
+Info: Max delay <async>                    -> posedge display_inst.clk_i: 21.43 ns
+Info: Max delay posedge display_inst.clk_i -> <async>                   : 91.13 ns
+Info: Max delay posedge slow_clk           -> <async>                   : 86.01 ns
+Info: Max delay posedge slow_clk           -> posedge display_inst.clk_i: 13.71 ns
 
 Info: Slack histogram:
-Info:  legend: * represents 12 endpoint(s)
-Info:          + represents [1,12) endpoint(s)
-Info: [-16001, -13391) |+
-Info: [-13391, -10781) |+
-Info: [-10781,  -8171) | 
-Info: [ -8171,  -5561) |+
-Info: [ -5561,  -2951) |******+
-Info: [ -2951,   -341) |**+
-Info: [  -341,   2269) | 
-Info: [  2269,   4879) |+
-Info: [  4879,   7489) |**+
-Info: [  7489,  10099) |*+
-Info: [ 10099,  12709) |***+
-Info: [ 12709,  15319) |**+
-Info: [ 15319,  17929) |***+
-Info: [ 17929,  20539) |****+
-Info: [ 20539,  23149) |*******+
-Info: [ 23149,  25759) |********+
-Info: [ 25759,  28369) |**********+
-Info: [ 28369,  30979) |******+
-Info: [ 30979,  33589) |************************+
-Info: [ 33589,  36199) |************************************************************ 
-Info: Checksum: 0xa9474a44
+Info:  legend: * represents 21 endpoint(s)
+Info:          + represents [1,21) endpoint(s)
+Info: [-54094, -49580) |+
+Info: [-49580, -45066) |*+
+Info: [-45066, -40552) |*+
+Info: [-40552, -36038) |+
+Info: [-36038, -31524) |****+
+Info: [-31524, -27010) |********+
+Info: [-27010, -22496) |*******+
+Info: [-22496, -17982) |****+
+Info: [-17982, -13468) |*****+
+Info: [-13468,  -8954) |*****+
+Info: [ -8954,  -4440) |****+
+Info: [ -4440,     74) |***+
+Info: [    74,   4588) |***+
+Info: [  4588,   9102) |***+
+Info: [  9102,  13616) |**+
+Info: [ 13616,  18130) |*****+
+Info: [ 18130,  22644) |********+
+Info: [ 22644,  27158) |***********+
+Info: [ 27158,  31672) |*******************+
+Info: [ 31672,  36186) |************************************************************ 
+Info: Checksum: 0x63e883b5
 Info: Find global nets...
 Info:  Non clock source, skip slow_clk.
 Info: Routing globals...
-Info:   Route net booth_multiplier_inst.clk, use clock #0.
-Info:   Net booth_multiplier_inst.clk is routed.
+Info:   Route net display_inst.clk_i, use clock #0.
+Info:   Net display_inst.clk_i is routed.
 
 Info: Routing..
 Info: Setting up routing queue.
-Info: Routing 4104 arcs.
+Info: Routing 5912 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:       1000 |       71        928 |   71   928 |      3185|       1.51       1.51|
-Info:       2000 |       96       1903 |   25   975 |      2215|       5.94       7.45|
-Info:       3000 |      144       2855 |   48   952 |      1287|       6.78      14.23|
-Info:       4000 |      208       3791 |   64   936 |       386|       6.67      20.91|
-Info:       4555 |      287       4268 |   79   477 |         0|       2.69      23.59|
+Info:       1000 |      110        889 |  110   889 |      5025|       1.12       1.12|
+Info:       2000 |      125       1874 |   15   985 |      4043|       6.49       7.61|
+Info:       3000 |      164       2835 |   39   961 |      3088|       5.67      13.28|
+Info:       4000 |      247       3752 |   83   917 |      2193|       5.27      18.55|
+Info:       5000 |      335       4664 |   88   912 |      1348|       5.21      23.76|
+Info:       6000 |      454       5545 |  119   881 |       581|       5.28      29.04|
+Info:       6786 |      560       6226 |  106   681 |         0|       3.76      32.80|
 Info: Routing complete.
-Info: Router1 time 23.59s
-Info: Checksum: 0xfa570ca4
+Info: Router1 time 32.80s
+Info: Checksum: 0xa2425c69
 
-Info: Critical path report for clock 'booth_multiplier_inst.clk' (posedge -> posedge):
+Info: Critical path report for clock 'display_inst.clk_i' (posedge -> posedge):
 Info: curr total
 Info:  0.5  0.5  Source debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_DFFLC.Q
-Info:  0.4  0.9    Net clean_rows[2] budget 36.579037 ns (18,22) -> (18,21)
-Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_LC.B
+Info:  0.4  0.9    Net clean_rows[2] budget 36.579037 ns (16,19) -> (16,19)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT4_F_1_LC.B
 Info:                Defined in:
-Info:                  ../design/module_top.v:72.17-80.6
+Info:                  ../design/module_top.v:71.17-79.6
 Info:                  ../design/module_row_scanner.v:5.23-5.29
-Info:  1.1  2.0  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_1_LC.F
-Info:  0.5  2.4    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3[2] budget 17.740519 ns (18,21) -> (19,21)
-Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.B
+Info:  1.1  2.0  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT4_F_1_LC.F
+Info:  0.8  2.8    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1[1] budget 17.740519 ns (16,19) -> (16,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT3_I1_LC.B
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1  3.5  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.F
-Info:  0.3  3.9    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3[3] budget 11.461013 ns (19,21) -> (19,21)
-Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.A
+Info:  1.1  3.9  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT3_I1_LC.F
+Info:  0.4  4.3    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F[4] budget 11.461013 ns (16,21) -> (16,21)
+Info:                Sink scanner_inst.key_value_LUT2_I0_F_LUT2_F_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0  4.9  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.F
-Info:  0.4  5.3    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[1] budget 8.338009 ns (19,21) -> (20,21)
-Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.B
+Info:  1.0  5.3  Source scanner_inst.key_value_LUT2_I0_F_LUT2_F_LC.F
+Info:  0.0  5.3    Net converter_inst.binario_MUX2_LUT5_O_1_S0[3] budget 8.321259 ns (16,21) -> (16,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT2_I0_LC.B
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1  6.4  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.F
-Info:  0.3  6.7    Net storage_inst.load_value_DFFCE_Q_D[1] budget 6.450807 ns (20,21) -> (20,21)
+Info:  1.1  6.4  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT2_I0_LC.F
+Info:  0.4  6.8    Net storage_inst.load_value_DFFCE_Q_D[1] budget 6.437407 ns (16,21) -> (17,21)
 Info:                Sink storage_inst.load_value_LUT3_I2_LC.B
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1  7.8  Source storage_inst.load_value_LUT3_I2_LC.F
-Info:  1.4  9.2    Net storage_inst.load_value_LUT3_I2_F[0] budget 5.192673 ns (20,21) -> (23,20)
+Info:  1.1  7.9  Source storage_inst.load_value_LUT3_I2_LC.F
+Info:  1.0  8.9    Net storage_inst.load_value_LUT3_I2_F[4] budget 5.181506 ns (17,21) -> (21,21)
 Info:                Sink storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 10.2  Source storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.F
-Info:  0.9 11.1    Net storage_inst.load_value_LUT3_I2_F_LUT3_I0_F[2] budget 4.303576 ns (23,20) -> (24,19)
-Info:                Sink storage_inst.B_DFFC_Q_5_D_LUT3_F_LC.C
+Info:  1.0  9.9  Source storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.F
+Info:  0.9 10.8    Net storage_inst.load_value_LUT3_I2_F_LUT3_I0_F[2] budget 4.294005 ns (21,21) -> (22,20)
+Info:                Sink storage_inst.temp_B_DFFC_Q_4_D_LUT3_F_LC.C
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.0 11.1  Setup storage_inst.B_DFFC_Q_5_D_LUT3_F_LC.C
-Info: 6.9 ns logic, 4.2 ns routing
+Info:  0.0 10.8  Setup storage_inst.temp_B_DFFC_Q_4_D_LUT3_F_LC.C
+Info: 6.9 ns logic, 3.9 ns routing
 
 Info: Critical path report for clock 'slow_clk' (posedge -> posedge):
 Info: curr total
-Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.Q
-Info:  0.5  0.9    Net registro_inst.col_shift_reg[2] budget 36.579037 ns (20,23) -> (19,23)
-Info:                Sink registro_inst.col_shift_reg_DFFRE_Q_DFFLC.A
+Info:  0.5  0.5  Source col_shift_reg_DFFSE_Q_DFFLC.Q
+Info:  0.8  1.3    Net col_shift_reg budget 36.579037 ns (16,24) -> (16,23)
+Info:                Sink registro_inst.col_shift_reg_DFFRE_Q_2_DFFLC.A
 Info:                Defined in:
-Info:                  ../design/module_top.v:72.17-80.6
+Info:                  ../design/module_top.v:71.17-79.6
 Info:                  ../design/module_row_scanner.v:4.23-4.36
-Info:  0.0  0.9  Setup registro_inst.col_shift_reg_DFFRE_Q_DFFLC.A
-Info: 0.5 ns logic, 0.5 ns routing
+Info:  0.0  1.3  Setup registro_inst.col_shift_reg_DFFRE_Q_2_DFFLC.A
+Info: 0.5 ns logic, 0.8 ns routing
 
 Info: Critical path report for cross-domain path '<async>' -> '<async>':
 Info: curr total
 Info:  0.0  0.0  Source debouncer_loop[2].debounce_inst.noisy_signal_IBUF_O$iob.O
-Info: 10.5 10.5    Net debouncer_loop[2].debounce_inst.noisy_signal budget 37.037037 ns (46,23) -> (16,11)
+Info:  9.6  9.6    Net debouncer_loop[2].debounce_inst.noisy_signal budget 37.037037 ns (46,23) -> (23,7)
 Info:                Sink debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.A
 Info:                Defined in:
-Info:                  ../design/module_top.v:62.23-67.14
+Info:                  ../design/module_top.v:61.23-66.14
 Info:                  ../design/module_debouncer.v:4.11-4.23
-Info:  1.0 11.5  Source debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.F
-Info:  1.2 12.7    Net debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_F[3] budget 17.740519 ns (16,11) -> (15,12)
+Info:  1.0 10.6  Source debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.F
+Info:  1.2 11.8    Net debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_I0[3] budget 17.740519 ns (23,7) -> (22,5)
 Info:                Sink debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_LC.D
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.6 13.3  Source debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_LC.F
-Info:  0.8 14.1    Net debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE budget 8.321259 ns (15,12) -> (15,14)
+Info:  0.6 12.5  Source debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT4_F_LC.F
+Info:  1.8 14.2    Net debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE budget 8.321259 ns (22,5) -> (19,6)
 Info:                Sink debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT1_I0_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.0 14.1  Setup debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT1_I0_LC.A
-Info: 1.7 ns logic, 12.5 ns routing
+Info:  0.0 14.2  Setup debouncer_loop[2].debounce_inst.clean_signal_DFFCE_Q_CE_LUT1_I0_LC.A
+Info: 1.7 ns logic, 12.6 ns routing
 
-Info: Critical path report for cross-domain path '<async>' -> 'posedge booth_multiplier_inst.clk':
+Info: Critical path report for cross-domain path '<async>' -> 'posedge display_inst.clk_i':
 Info: curr total
-Info:  0.0  0.0  Source debouncer_loop[2].debounce_inst.noisy_signal_IBUF_O$iob.O
-Info: 10.5 10.5    Net debouncer_loop[2].debounce_inst.noisy_signal budget 37.037037 ns (46,23) -> (16,11)
-Info:                Sink debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.A
+Info:  0.0  0.0  Source debouncer_loop[3].debounce_inst.noisy_signal_IBUF_O$iob.O
+Info:  9.6  9.6    Net debouncer_loop[3].debounce_inst.noisy_signal budget 37.037037 ns (46,23) -> (14,16)
+Info:                Sink debouncer_loop[3].debounce_inst.noisy_signal_reg_LUT2_I1_LC.A
 Info:                Defined in:
-Info:                  ../design/module_top.v:62.23-67.14
+Info:                  ../design/module_top.v:61.23-66.14
 Info:                  ../design/module_debouncer.v:4.11-4.23
-Info:  1.0 11.5  Source debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_LC.F
-Info:  2.7 14.2    Net debouncer_loop[2].debounce_inst.noisy_signal_reg_LUT2_I1_F[3] budget 17.740519 ns (16,11) -> (10,14)
-Info:                Sink debouncer_loop[2].debounce_inst.counter_DFFCE_Q_21_D_LUT2_F_LC.A
+Info:  1.0 10.6  Source debouncer_loop[3].debounce_inst.noisy_signal_reg_LUT2_I1_LC.F
+Info:  3.4 14.0    Net debouncer_loop[3].debounce_inst.noisy_signal_reg_LUT2_I1_F[3] budget 17.740519 ns (14,16) -> (10,10)
+Info:                Sink debouncer_loop[3].debounce_inst.counter_DFFCE_Q_28_D_LUT2_F_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.0 14.2  Setup debouncer_loop[2].debounce_inst.counter_DFFCE_Q_21_D_LUT2_F_LC.A
-Info: 1.0 ns logic, 13.2 ns routing
+Info:  0.0 14.0  Setup debouncer_loop[3].debounce_inst.counter_DFFCE_Q_28_D_LUT2_F_LC.A
+Info: 1.0 ns logic, 12.9 ns routing
 
-Info: Critical path report for cross-domain path 'posedge booth_multiplier_inst.clk' -> '<async>':
+Info: Critical path report for cross-domain path 'posedge display_inst.clk_i' -> '<async>':
 Info: curr total
-Info:  0.5  0.5  Source storage_inst.B_DFFC_Q_D_LUT3_F_LC.Q
-Info:  1.8  2.2    Net stored_B[7] budget 36.579037 ns (23,20) -> (26,21)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_ALU_SUM_2_ALULC.A
+Info:  0.5  0.5  Source storage_inst.A_DFFC_Q_7_D_LUT3_F_LC.Q
+Info:  2.8  3.3    Net Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I0_F_LUT4_F_I3[0] budget 36.579037 ns (20,19) -> (28,21)
+Info:                Sink Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I0_F_LUT4_F_I3_LUT4_I3_F_LUT4_F_I3_LUT3_I0_F_LUT4_F_I2_LUT2_F_LC.A
 Info:                Defined in:
-Info:                  ../design/module_top.v:24.17-24.25
-Info:  1.0  3.3  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_1_S0_ALU_SUM_COUT_ALU_COUT_1_SUM_ALU_SUM_2_ALULC.F
-Info:  0.9  4.1    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_1_S0[1] budget 17.774019 ns (26,21) -> (27,20)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                  ../design/module_top.v:23.17-23.25
+Info:  1.0  4.3  Source Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I0_F_LUT4_F_I3_LUT4_I3_F_LUT4_F_I3_LUT3_I0_F_LUT4_F_I2_LUT2_F_LC.F
+Info:  0.9  5.2    Net Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I0_F_LUT4_F_I3_LUT4_I3_F_LUT4_F_I3_LUT3_I0_F_LUT4_F_I2[2] budget 17.740519 ns (28,21) -> (27,22)
+Info:                Sink Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I0_F_LUT4_F_I3_LUT4_I3_F_LUT4_F_I3_LUT3_I0_F_LUT4_F_I2_LUT3_I0_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0  5.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
-Info:  0.3  5.5    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 4.678148 ns (27,20) -> (27,20)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:  1.0  6.2  Source Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I0_F_LUT4_F_I3_LUT4_I3_F_LUT4_F_I3_LUT3_I0_F_LUT4_F_I2_LUT3_I0_LC.F
+Info:  0.4  6.6    Net Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I0_F_LUT4_F_I3_LUT4_I3_F_LUT4_F_I3_LUT3_I0_F_LUT4_F_I2_LUT3_I0_F[3] budget 11.483345 ns (27,22) -> (27,22)
+Info:                Sink Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_1_I0_MUX2_LUT5_O_I0_LUT3_F_I0_MUX2_LUT5_S0_O_LUT3_F_1_I0_LUT4_F_LC.D
 Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.6  7.3  Source Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_1_I0_MUX2_LUT5_O_I0_LUT3_F_I0_MUX2_LUT5_S0_O_LUT3_F_1_I0_LUT4_F_LC.F
+Info:  0.9  8.2    Net Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_1_I0_MUX2_LUT5_O_I0_LUT3_F_I0_MUX2_LUT5_S0_O_LUT3_F_1_I0[0] budget 8.456259 ns (27,22) -> (26,23)
+Info:                Sink Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I2_F_LUT4_F_I0_LUT4_F_I0_LUT3_I2_F_LUT4_F_I0_LUT3_I2_F_LUT3_I0_F_LUT3_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0  9.2  Source Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I2_F_LUT4_F_I0_LUT4_F_I0_LUT3_I2_F_LUT4_F_I0_LUT3_I2_F_LUT3_I0_F_LUT3_F_LC.F
+Info:  0.4  9.6    Net Y_ALU_SUM_11_I0_LUT3_I0_F_LUT4_I2_F_LUT4_F_I0_LUT4_F_I0_LUT3_I2_F_LUT4_F_I0_LUT3_I2_F_LUT3_I0_F[2] budget 6.558807 ns (26,23) -> (26,22)
+Info:                Sink Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_I0_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 10.6  Source Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 11.0    Net Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_I0_MUX2_LUT5_O_I1 budget 4.512291 ns (26,22) -> (26,22)
+Info:                Sink Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2  5.7  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
-Info:  0.3  6.0    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 4.678148 ns (27,20) -> (27,20)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
-Info:  0.4  6.4  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
-Info:  0.3  6.7    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1 budget 4.678148 ns (27,20) -> (27,20)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
-Info:  0.5  7.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1_MUX2_LUT7_O_LC.OF
-Info:  0.3  7.5    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I1 budget 4.678148 ns (27,20) -> (27,20)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
-Info:  0.7  8.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_LC.OF
-Info:  1.9 10.2    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_S0[0] budget 4.678148 ns (27,20) -> (23,16)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:  0.2 11.1  Source Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_I0_MUX2_LUT5_O_LC.OF
+Info:  0.9 12.0    Net Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_I0[0] budget 4.512291 ns (26,22) -> (26,22)
+Info:                Sink Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 11.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
-Info:  0.3 11.5    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_I1 budget 3.118504 ns (23,16) -> (23,16)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_LC.I1
+Info:  1.0 13.1  Source Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F_LUT3_F_LC.F
+Info:  0.9 13.9    Net Y_ALU_SUM_11_I0_LUT3_I0_F_LUT3_I1_F[9] budget 3.819380 ns (26,22) -> (25,20)
+Info:                Sink Y_ALU_SUM_10_ALULC.B
 Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/techmap.v:200.21-200.22
+Info:  1.1 15.0  Source Y_ALU_SUM_10_ALULC.F
+Info:  0.5 15.5    Net Y[10] budget 3.273004 ns (25,20) -> (25,19)
+Info:                Sink converter_inst.binario_LUT2_F_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 16.6  Source converter_inst.binario_LUT2_F_LC.F
+Info:  0.3 16.9    Net display_valor[10] budget 2.835904 ns (25,19) -> (25,19)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_ALULC.B
+Info:                Defined in:
+Info:                  ../design/module_top.v:30.18-30.31
+Info:  1.1 18.0  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_ALULC.F
+Info:  1.7 19.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM[3] budget 2.478276 ns (25,19) -> (27,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 20.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 21.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 1.528752 ns (27,17) -> (27,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2 11.7  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0_MUX2_LUT5_O_LC.OF
-Info:  0.3 12.0    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_I0 budget 3.118504 ns (23,16) -> (23,16)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
-Info:  0.4 12.4  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_1_LC.OF
-Info:  1.8 14.1    Net display_inst.anodo_o_LUT3_I0_I2_ALU_SUM_1_COUT_ALU_COUT_1_I1_MUX2_LUT5_O_I0_LUT4_F_I1[0] budget 3.118504 ns (23,16) -> (26,17)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 15.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
-Info:  0.3 15.5    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 2.073217 ns (26,17) -> (26,17)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2 15.7  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
-Info:  0.3 16.0    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 2.073217 ns (26,17) -> (26,17)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
-Info:  0.4 16.4  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
-Info:  0.3 16.7    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_I1 budget 2.073217 ns (26,17) -> (26,17)
-Info:                Sink display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
-Info:  0.5 17.2  Source display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT7_O_LC.OF
-Info:  1.4 18.6    Net display_inst.anodo_o_MUX2_LUT8_S0_I0_MUX2_LUT7_O_S0_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_S0_ALU_SUM_COUT_ALU_CIN_SUM[1] budget 2.073217 ns (26,17) -> (30,16)
-Info:                Sink display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_I0_LUT4_F_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 19.7  Source display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_I0_LUT4_F_LC.F
-Info:  0.3 20.0    Net display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_I0 budget 1.738565 ns (30,16) -> (30,16)
-Info:                Sink display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
-Info:  0.2 20.2  Source display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM_MUX2_LUT5_O_LC.OF
-Info:  1.4 21.6    Net display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_SUM[5] budget 1.738565 ns (30,16) -> (29,13)
-Info:                Sink display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_2_ALULC.B
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1 22.7  Source display_inst.anodo_o_LUT4_I3_1_I1_ALU_SUM_CIN_ALU_COUT_2_ALULC.F
-Info:  0.4 23.1    Net display_inst.anodo_o_LUT4_I3_1_I1[0] budget 1.571708 ns (29,13) -> (28,13)
-Info:                Sink display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F_LC.B
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1 24.2  Source display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F_LC.F
-Info:  0.3 24.5    Net display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 1.169478 ns (28,13) -> (28,13)
-Info:                Sink display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2 24.7  Source display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
-Info:  0.3 25.0    Net display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1 budget 1.169478 ns (28,13) -> (28,13)
-Info:                Sink display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
-Info:  0.4 25.3  Source display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.OF
-Info:  0.3 25.7    Net display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_I0 budget 1.169478 ns (28,13) -> (28,13)
-Info:                Sink display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
-Info:  0.5 26.2  Source display_inst.anodo_o_LUT4_I3_1_F_MUX2_LUT7_O_LC.OF
-Info:  0.5 26.7    Net display_inst.anodo_o_LUT2_I0_F[1] budget 1.169478 ns (28,13) -> (28,15)
-Info:                Sink display_inst.anodo_o_LUT4_I3_LC.A
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 27.7  Source display_inst.anodo_o_LUT4_I3_LC.F
-Info:  0.3 28.0    Net display_inst.anodo_o_LUT4_I3_F budget 0.898641 ns (28,15) -> (28,15)
-Info:                Sink display_inst.anodo_o_LUT4_I3_F_MUX2_LUT5_I1_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
-Info:  0.2 28.2  Source display_inst.anodo_o_LUT4_I3_F_MUX2_LUT5_I1_LC.OF
-Info:  0.3 28.5    Net display_inst.anodo_o_LUT4_I3_F_MUX2_LUT5_I1_O budget 0.898641 ns (28,15) -> (28,15)
-Info:                Sink display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
-Info:  0.4 28.9  Source display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_I0_MUX2_LUT6_O_LC.OF
-Info:  0.3 29.2    Net display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_I0 budget 0.898641 ns (28,15) -> (28,15)
-Info:                Sink display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_LC.I0
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
-Info:  0.5 29.8  Source display_inst.anodo_o_MUX2_LUT6_S0_O_MUX2_LUT7_O_1_LC.OF
-Info:  4.2 34.0    Net display_inst.anodo_o_MUX2_LUT6_S0_O[5] budget 0.898641 ns (28,15) -> (42,16)
-Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT2_F_LC.B
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1 35.1  Source display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT2_F_LC.F
-Info:  0.3 35.4    Net display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0 budget 0.653268 ns (42,16) -> (42,16)
-Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I0
+Info:  0.2 21.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 21.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0 budget 1.528752 ns (27,17) -> (27,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I0
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
-Info:  0.2 35.6  Source display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
-Info:  0.3 35.9    Net display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 0.653268 ns (42,16) -> (42,16)
-Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
-Info:                Defined in:
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
-Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
-Info:  0.4 36.3  Source display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
-Info:  0.3 36.6    Net display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_I1 budget 0.653268 ns (42,16) -> (42,16)
-Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_LC.I1
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 22.0  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3 22.3    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1 budget 1.528752 ns (27,17) -> (27,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_LC.I1
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
-Info:  0.5 37.1  Source display_inst.catodo_o_MUX2_LUT8_O_5_I0_MUX2_LUT7_O_LC.OF
-Info:  0.4 37.5    Net display_inst.catodo_o_MUX2_LUT8_O_5_I0 budget 0.653268 ns (42,16) -> (41,16)
-Info:                Sink display_inst.catodo_o_MUX2_LUT8_O_5_LC.I0
+Info:  0.5 22.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0_MUX2_LUT7_O_LC.OF
+Info:  0.4 23.2    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_I0 budget 1.528752 ns (27,17) -> (26,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_LC.I0
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.9-169.11
-Info:  0.7 38.3  Source display_inst.catodo_o_MUX2_LUT8_O_5_LC.OF
-Info:  3.4 41.6    Net display_inst.catodo_o[1] budget 0.653268 ns (41,16) -> (40,28)
+Info:  0.7 23.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_LC.OF
+Info:  1.8 25.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM[3] budget 1.528752 ns (26,17) -> (23,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 26.7  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 27.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 1.031383 ns (23,16) -> (23,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 27.2  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 27.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1 budget 1.031382 ns (23,16) -> (23,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 27.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_LC.OF
+Info:  0.3 28.2    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0 budget 1.031383 ns (23,16) -> (23,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:  0.5 28.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0_MUX2_LUT7_O_LC.OF
+Info:  0.4 29.2    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_I0 budget 1.031383 ns (23,16) -> (22,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.9-169.11
+Info:  0.7 29.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_MUX2_LUT8_O_LC.OF
+Info:  0.5 30.4    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O[0] budget 1.031383 ns (22,16) -> (22,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 31.4  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 31.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_I1 budget 0.782641 ns (22,17) -> (22,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 31.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 32.2    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0 budget 0.782641 ns (22,17) -> (22,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 32.6  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_LC.OF
+Info:  0.3 32.9    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O budget 0.782641 ns (22,17) -> (22,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 33.4  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_O_LC.OF
+Info:  1.3 34.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_COUT_I1_ALU_I1_SUM_MUX2_LUT7_S0_O_MUX2_LUT8_I1_O_LUT4_I1_F[1] budget 0.782641 ns (22,17) -> (20,15)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 35.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 36.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1 budget 0.643001 ns (20,15) -> (20,15)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 36.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 36.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1 budget 0.643001 ns (20,15) -> (20,15)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 36.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_LC.OF
+Info:  1.4 38.4    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O[1] budget 0.643001 ns (20,15) -> (17,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 39.5  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 39.8    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 0.528227 ns (17,14) -> (17,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 40.0  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 40.3    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I0 budget 0.528227 ns (17,14) -> (17,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 40.7  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_LC.OF
+Info:  1.0 41.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM[4] budget 0.528227 ns (17,14) -> (18,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_ALULC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 42.7  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_ALULC.F
+Info:  0.4 43.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM[0] budget 0.477407 ns (18,13) -> (17,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 44.2  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 44.5    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 0.391858 ns (17,13) -> (17,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 44.7  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 45.0    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1 budget 0.391858 ns (17,13) -> (17,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 45.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_LC.OF
+Info:  1.8 47.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_S0[3] budget 0.391858 ns (17,13) -> (19,10)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 48.1  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 48.5    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 0.319817 ns (19,10) -> (19,10)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 48.6  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 49.0    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1 budget 0.319817 ns (19,10) -> (19,10)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 49.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_LC.OF
+Info:  3.2 52.5    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O[1] budget 0.319817 ns (19,10) -> (27,11)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 53.6  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 53.9    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1 budget 0.255733 ns (27,11) -> (27,11)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 54.1  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 54.4    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1 budget 0.255733 ns (27,11) -> (27,11)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 54.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_LC.OF
+Info:  0.9 55.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O[1] budget 0.255733 ns (27,11) -> (27,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 56.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 57.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_I1 budget 0.198046 ns (27,14) -> (27,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 57.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 57.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0 budget 0.198046 ns (27,14) -> (27,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 58.0  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_LC.OF
+Info:  2.2 60.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O[2] budget 0.198046 ns (27,14) -> (30,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_ALULC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 61.2  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_ALULC.F
+Info:  0.4 61.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM[3] budget 0.169245 ns (30,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 62.7  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_LC.F
+Info:  0.3 63.0    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F budget 0.096301 ns (31,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 63.2  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_LC.OF
+Info:  0.3 63.5    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O budget 0.096301 ns (31,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 63.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_LC.OF
+Info:  0.3 64.2    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O budget 0.096301 ns (31,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:  0.5 64.7  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_LC.OF
+Info:  0.3 65.0    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_MUX2_LUT8_O_I1 budget 0.096301 ns (31,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_MUX2_LUT8_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7 65.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_MUX2_LUT8_O_LC.OF
+Info:  1.0 66.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O[4] budget 0.096301 ns (31,16) -> (31,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_LUT4_I0_LC.C
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8 67.5  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_LUT4_I0_LC.F
+Info:  2.9 70.4    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_S0_O[1] budget 0.078295 ns (31,13) -> (40,14)
+Info:                Sink display_inst.catodo_o_LUT4_F_4_LC.C
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8 71.2  Source display_inst.catodo_o_LUT4_F_4_LC.F
+Info:  3.7 74.9    Net display_inst.catodo_o[1] budget 0.059078 ns (40,14) -> (40,28)
 Info:                Sink catodo_po_OBUF_O_5$iob.I
 Info:                Defined in:
-Info:                  ../design/module_top.v:137.23-143.6
+Info:                  ../design/module_top.v:148.23-154.6
 Info:                  ../design/module_7_segments.v:8.24-8.32
-Info: 17.4 ns logic, 24.2 ns routing
+Info: 33.6 ns logic, 41.3 ns routing
 
 Info: Critical path report for cross-domain path 'posedge slow_clk' -> '<async>':
 Info: curr total
 Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.Q
-Info:  0.4  0.9    Net registro_inst.col_shift_reg[2] budget 36.579037 ns (20,23) -> (19,23)
-Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_1_LC.B
+Info:  1.9  2.4    Net registro_inst.col_shift_reg[2] budget 36.579037 ns (16,24) -> (16,17)
+Info:                Sink debouncer_loop[1].debounce_inst.clean_signal_LUT4_I3_LC.A
 Info:                Defined in:
-Info:                  ../design/module_top.v:72.17-80.6
+Info:                  ../design/module_top.v:71.17-79.6
 Info:                  ../design/module_row_scanner.v:4.23-4.36
-Info:  1.1  2.0  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_1_LC.F
-Info:  0.8  2.8    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[2] budget 17.740519 ns (19,23) -> (19,21)
-Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.A
+Info:  1.0  3.4  Source debouncer_loop[1].debounce_inst.clean_signal_LUT4_I3_LC.F
+Info:  0.3  3.7    Net debouncer_loop[1].debounce_inst.clean_signal_LUT4_I3_F budget 5.618506 ns (16,17) -> (16,17)
+Info:                Sink debouncer_loop[1].debounce_inst.clean_signal_LUT4_I3_F_MUX2_LUT5_I0_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
+Info:  0.2  3.9  Source debouncer_loop[1].debounce_inst.clean_signal_LUT4_I3_F_MUX2_LUT5_I0_LC.OF
+Info:  0.3  4.2    Net debouncer_loop[3].debounce_inst.clean_signal_MUX2_LUT6_S0_I0 budget 5.618506 ns (16,17) -> (16,17)
+Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_MUX2_LUT6_S0_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4  4.6  Source debouncer_loop[3].debounce_inst.clean_signal_MUX2_LUT6_S0_LC.OF
+Info:  0.3  4.9    Net debouncer_loop[3].debounce_inst.clean_signal_MUX2_LUT6_S0_O budget 5.618506 ns (16,17) -> (16,17)
+Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_MUX2_LUT6_S0_O_MUX2_LUT7_I1_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5  5.4  Source debouncer_loop[3].debounce_inst.clean_signal_MUX2_LUT6_S0_O_MUX2_LUT7_I1_LC.OF
+Info:  0.3  5.8    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_I1 budget 5.618506 ns (16,17) -> (16,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7  6.5  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_LC.OF
+Info:  3.2  9.7    Net converter_inst.binario_MUX2_LUT5_O_2_S0[0] budget 5.618506 ns (16,17) -> (26,19)
+Info:                Sink converter_inst.binario_LUT2_F_1_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0  3.8  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.F
-Info:  0.3  4.1    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3[3] budget 11.461013 ns (19,21) -> (19,21)
-Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.A
+Info:  1.0 10.7  Source converter_inst.binario_LUT2_F_1_LC.F
+Info:  0.4 11.1    Net display_valor[11] budget 3.628380 ns (26,19) -> (26,19)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_1_ALULC.A
+Info:                Defined in:
+Info:                  ../design/module_top.v:30.18-30.31
+Info:  1.0 12.2  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_1_ALULC.F
+Info:  0.9 13.0    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O[3] budget 3.110671 ns (26,19) -> (27,19)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0  5.2  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.F
-Info:  0.4  5.6    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[1] budget 8.338009 ns (19,21) -> (20,21)
-Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.B
+Info:  1.0 14.1  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 14.4    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 1.799645 ns (27,19) -> (27,19)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 14.6  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 14.9    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1 budget 1.799646 ns (27,19) -> (27,19)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 15.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3 15.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_I1 budget 1.799645 ns (27,19) -> (27,19)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 16.1  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1_MUX2_LUT7_O_LC.OF
+Info:  0.3 16.4    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_I1 budget 1.799645 ns (27,19) -> (27,19)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7 17.1  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_O_1_LC.OF
+Info:  2.2 19.4    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM[5] budget 1.799645 ns (27,19) -> (24,15)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1  6.7  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.F
-Info:  0.3  7.0    Net storage_inst.load_value_DFFCE_Q_D[1] budget 6.450807 ns (20,21) -> (20,21)
-Info:                Sink storage_inst.load_value_LUT3_I2_LC.B
+Info:  1.0 20.4  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 20.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 1.178634 ns (24,15) -> (24,15)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 20.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 21.3    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0 budget 1.178634 ns (24,15) -> (24,15)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:165.42-165.67
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 21.6  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_LC.OF
+Info:  0.3 21.9    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_I1 budget 1.178634 ns (24,15) -> (24,15)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:  0.5 22.5  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1_MUX2_LUT7_O_LC.OF
+Info:  0.3 22.8    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_I1 budget 1.178633 ns (24,15) -> (24,15)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7 23.5  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_LC.OF
+Info:  2.2 25.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_COUT_I1_ALU_I1_SUM_MUX2_LUT7_S0_O_MUX2_LUT8_I1_O_ALU_I1_COUT_ALU_COUT_I1_LUT4_F_I2[0] budget 1.178633 ns (24,15) -> (20,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1_LUT4_F_LC.B
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1  8.1  Source storage_inst.load_value_LUT3_I2_LC.F
-Info:  1.4  9.5    Net storage_inst.load_value_LUT3_I2_F[0] budget 5.192673 ns (20,21) -> (23,20)
-Info:                Sink storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.A
+Info:  1.1 26.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 27.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1 budget 0.837377 ns (20,17) -> (20,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 27.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 27.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1 budget 0.837376 ns (20,17) -> (20,17)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 28.0  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_LC.OF
+Info:  1.4 29.4    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_COUT_I1_ALU_I1_SUM_MUX2_LUT7_S0_O_MUX2_LUT8_I1_O_LUT4_I1_F[2] budget 0.837376 ns (20,17) -> (21,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.B
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.0  9.5  Setup storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.A
-Info: 5.8 ns logic, 3.7 ns routing
+Info:  1.1 30.5  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 30.8    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1 budget 0.650466 ns (21,14) -> (21,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 31.0  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 31.3    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I0 budget 0.650465 ns (21,14) -> (21,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 31.7  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_LC.OF
+Info:  1.4 33.0    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O[3] budget 0.650465 ns (21,14) -> (17,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 34.1  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 34.4    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 0.528227 ns (17,14) -> (17,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 34.6  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 34.9    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_I1 budget 0.528227 ns (17,14) -> (17,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 35.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_O_LC.OF
+Info:  1.0 36.2    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM[4] budget 0.528227 ns (17,14) -> (18,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_ALULC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 37.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_ALULC.F
+Info:  0.4 37.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM[0] budget 0.477407 ns (18,13) -> (17,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 38.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 39.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 0.391858 ns (17,13) -> (17,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 39.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 39.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_I1 budget 0.391858 ns (17,13) -> (17,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 39.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT6_O_LC.OF
+Info:  1.8 41.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_S0[3] budget 0.391858 ns (17,13) -> (19,10)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 42.7  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC.F
+Info:  0.3 43.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1 budget 0.319817 ns (19,10) -> (19,10)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 43.2  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 43.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_I1 budget 0.319817 ns (19,10) -> (19,10)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 43.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT6_O_LC.OF
+Info:  3.2 47.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O[1] budget 0.319817 ns (19,10) -> (27,11)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 48.2  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 48.5    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_I1 budget 0.255733 ns (27,11) -> (27,11)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 48.7  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1_MUX2_LUT5_O_LC.OF
+Info:  0.3 49.0    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_I1 budget 0.255733 ns (27,11) -> (27,11)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:  0.4 49.4  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_LC.OF
+Info:  0.9 50.3    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O[1] budget 0.255733 ns (27,11) -> (27,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_I1_LUT4_F_LC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 51.4  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_I1_LUT4_F_LC.F
+Info:  0.3 51.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_I1 budget 0.198046 ns (27,14) -> (27,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 51.9  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0_MUX2_LUT5_O_LC.OF
+Info:  0.3 52.2    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_I0 budget 0.198046 ns (27,14) -> (27,14)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 52.6  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_LC.OF
+Info:  2.2 54.7    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O[2] budget 0.198046 ns (27,14) -> (30,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_ALULC.B
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.1 55.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_ALULC.F
+Info:  0.4 56.3    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM[3] budget 0.169245 ns (30,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_LC.A
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  1.0 57.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_LC.F
+Info:  0.3 57.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F budget 0.096301 ns (31,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:  0.2 57.8  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_LC.OF
+Info:  0.3 58.1    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O budget 0.096301 ns (31,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:  0.4 58.5  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_LC.OF
+Info:  0.3 58.8    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O budget 0.096301 ns (31,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_LC.I0
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:  0.5 59.3  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_LC.OF
+Info:  0.3 59.6    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_MUX2_LUT8_O_I1 budget 0.096301 ns (31,16) -> (31,16)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_MUX2_LUT8_O_LC.I1
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:  0.7 60.4  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_MUX2_LUT8_O_LC.OF
+Info:  1.0 61.3    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O[4] budget 0.096301 ns (31,16) -> (31,13)
+Info:                Sink debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_LUT4_I0_LC.C
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8 62.1  Source debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_1_SUM_LUT4_I2_F_MUX2_LUT5_I0_O_LUT4_I0_LC.F
+Info:  2.9 65.0    Net debouncer_loop[0].debounce_inst.clean_signal_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT8_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_CIN_SUM_MUX2_LUT5_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_ALU_SUM_COUT_ALU_COUT_SUM_MUX2_LUT6_S0_O_MUX2_LUT7_I1_O_MUX2_LUT7_S0_O[1] budget 0.078295 ns (31,13) -> (40,14)
+Info:                Sink display_inst.catodo_o_LUT4_F_4_LC.C
+Info:                Defined in:
+Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:  0.8 65.8  Source display_inst.catodo_o_LUT4_F_4_LC.F
+Info:  3.7 69.5    Net display_inst.catodo_o[1] budget 0.059078 ns (40,14) -> (40,28)
+Info:                Sink catodo_po_OBUF_O_5$iob.I
+Info:                Defined in:
+Info:                  ../design/module_top.v:148.23-154.6
+Info:                  ../design/module_7_segments.v:8.24-8.32
+Info: 28.8 ns logic, 40.7 ns routing
 
-Info: Critical path report for cross-domain path 'posedge slow_clk' -> 'posedge booth_multiplier_inst.clk':
+Info: Critical path report for cross-domain path 'posedge slow_clk' -> 'posedge display_inst.clk_i':
 Info: curr total
-Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_1_DFFLC.Q
-Info:  0.4  0.9    Net registro_inst.col_shift_reg[2] budget 36.579037 ns (20,23) -> (19,23)
-Info:                Sink debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_1_LC.B
+Info:  0.5  0.5  Source registro_inst.col_shift_reg_DFFRE_Q_2_DFFLC.Q
+Info:  0.4  0.9    Net registro_inst.col_shift_reg[1] budget 36.579037 ns (16,23) -> (16,23)
+Info:                Sink col_shift_reg_LUT4_I2_LC.B
 Info:                Defined in:
-Info:                  ../design/module_top.v:72.17-80.6
+Info:                  ../design/module_top.v:71.17-79.6
 Info:                  ../design/module_row_scanner.v:4.23-4.36
-Info:  1.1  2.0  Source debouncer_loop[3].debounce_inst.clean_signal_LUT4_I0_3_F_LUT4_F_1_LC.F
-Info:  0.8  2.8    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[2] budget 17.740519 ns (19,23) -> (19,21)
-Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.A
+Info:  1.1  2.0  Source col_shift_reg_LUT4_I2_LC.F
+Info:  0.8  2.8    Net col_shift_reg_LUT4_I3_F[5] budget 17.740519 ns (16,23) -> (16,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT3_I1_F_LUT2_F_LC.B
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0  3.8  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT2_F_LC.F
-Info:  0.3  4.1    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3[3] budget 11.461013 ns (19,21) -> (19,21)
-Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.A
+Info:  1.1  3.9  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT3_I1_F_LUT2_F_LC.F
+Info:  0.3  4.2    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT3_I1_F[5] budget 11.461013 ns (16,21) -> (16,21)
+Info:                Sink scanner_inst.key_value_LUT2_I0_F_LUT2_F_LC.B
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0  5.2  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_LC.F
-Info:  0.4  5.6    Net storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F[1] budget 8.338009 ns (19,21) -> (20,21)
-Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.B
+Info:  1.1  5.3  Source scanner_inst.key_value_LUT2_I0_F_LUT2_F_LC.F
+Info:  0.0  5.3    Net converter_inst.binario_MUX2_LUT5_O_1_S0[3] budget 8.321259 ns (16,21) -> (16,21)
+Info:                Sink storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT2_I0_LC.B
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1  6.7  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I3_LUT4_I3_F_LUT3_I0_F_LUT2_F_5_I0_LUT4_F_I3_LUT1_I0_F_LUT3_I1_LC.F
-Info:  0.3  7.0    Net storage_inst.load_value_DFFCE_Q_D[1] budget 6.450807 ns (20,21) -> (20,21)
+Info:  1.1  6.4  Source storage_inst.load_value_DFFCE_Q_D_LUT4_F_I2_LUT2_F_I1_LUT4_F_I1_LUT2_I0_F_LUT4_I3_I2_LUT2_I0_F_LUT2_I0_LC.F
+Info:  0.4  6.8    Net storage_inst.load_value_DFFCE_Q_D[1] budget 6.437407 ns (16,21) -> (17,21)
 Info:                Sink storage_inst.load_value_LUT3_I2_LC.B
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.1  8.1  Source storage_inst.load_value_LUT3_I2_LC.F
-Info:  1.4  9.5    Net storage_inst.load_value_LUT3_I2_F[0] budget 5.192673 ns (20,21) -> (23,20)
+Info:  1.1  7.9  Source storage_inst.load_value_LUT3_I2_LC.F
+Info:  1.0  8.9    Net storage_inst.load_value_LUT3_I2_F[4] budget 5.181506 ns (17,21) -> (21,21)
 Info:                Sink storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.A
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  1.0 10.5  Source storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.F
-Info:  0.9 11.4    Net storage_inst.load_value_LUT3_I2_F_LUT3_I0_F[2] budget 4.303576 ns (23,20) -> (24,19)
-Info:                Sink storage_inst.B_DFFC_Q_5_D_LUT3_F_LC.C
+Info:  1.0  9.9  Source storage_inst.load_value_LUT3_I2_F_LUT3_I0_LC.F
+Info:  0.9 10.8    Net storage_inst.load_value_LUT3_I2_F_LUT3_I0_F[2] budget 4.294005 ns (21,21) -> (22,20)
+Info:                Sink storage_inst.temp_B_DFFC_Q_4_D_LUT3_F_LC.C
 Info:                Defined in:
 Info:                  C:\FPGA\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
-Info:  0.0 11.4  Setup storage_inst.B_DFFC_Q_5_D_LUT3_F_LC.C
-Info: 6.8 ns logic, 4.5 ns routing
+Info:  0.0 10.8  Setup storage_inst.temp_B_DFFC_Q_4_D_LUT3_F_LC.C
+Info: 7.0 ns logic, 3.8 ns routing
 
-Info: Max frequency for clock 'booth_multiplier_inst.clk': 89.86 MHz (PASS at 27.00 MHz)
-Info: Max frequency for clock                  'slow_clk': 1067.24 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock 'display_inst.clk_i': 92.58 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock           'slow_clk': 791.77 MHz (PASS at 27.00 MHz)
 
-Info: Max delay <async>                           -> <async>                          : 14.15 ns
-Info: Max delay <async>                           -> posedge booth_multiplier_inst.clk: 14.22 ns
-Info: Max delay posedge booth_multiplier_inst.clk -> <async>                          : 41.61 ns
-Info: Max delay posedge slow_clk                  -> <async>                          : 9.47 ns
-Info: Max delay posedge slow_clk                  -> posedge booth_multiplier_inst.clk: 11.39 ns
+Info: Max delay <async>                    -> <async>                   : 14.22 ns
+Info: Max delay <async>                    -> posedge display_inst.clk_i: 13.96 ns
+Info: Max delay posedge display_inst.clk_i -> <async>                   : 74.91 ns
+Info: Max delay posedge slow_clk           -> <async>                   : 69.51 ns
+Info: Max delay posedge slow_clk           -> posedge display_inst.clk_i: 10.78 ns
 
 Info: Slack histogram:
-Info:  legend: * represents 11 endpoint(s)
-Info:          + represents [1,11) endpoint(s)
-Info: [ -4568,  -2510) |+
-Info: [ -2510,   -452) |+
-Info: [  -452,   1606) | 
-Info: [  1606,   3664) |**+
-Info: [  3664,   5722) |*******+
-Info: [  5722,   7780) |*+
-Info: [  7780,   9838) |+
-Info: [  9838,  11896) |***+
-Info: [ 11896,  13954) |+
-Info: [ 13954,  16012) |***+
-Info: [ 16012,  18070) |*+
-Info: [ 18070,  20128) |**+
-Info: [ 20128,  22186) |+
-Info: [ 22186,  24244) |*****+
-Info: [ 24244,  26302) |**+
-Info: [ 26302,  28360) |*********+
-Info: [ 28360,  30418) |**************+
-Info: [ 30418,  32476) |***********+
-Info: [ 32476,  34534) |*******************************+
-Info: [ 34534,  36592) |************************************************************ 
+Info:  legend: * represents 21 endpoint(s)
+Info:          + represents [1,21) endpoint(s)
+Info: [-37872, -34149) |+
+Info: [-34149, -30426) |*+
+Info: [-30426, -26703) |*+
+Info: [-26703, -22980) |** 
+Info: [-22980, -19257) |***+
+Info: [-19257, -15534) |********+
+Info: [-15534, -11811) |*******+
+Info: [-11811,  -8088) |****+
+Info: [ -8088,  -4365) |******+
+Info: [ -4365,   -642) |****+
+Info: [  -642,   3081) |****+
+Info: [  3081,   6804) |***+
+Info: [  6804,  10527) |**+
+Info: [ 10527,  14250) |***+
+Info: [ 14250,  17973) |*+
+Info: [ 17973,  21696) |***+
+Info: [ 21696,  25419) |*******+
+Info: [ 25419,  29142) |**********+
+Info: [ 29142,  32865) |***********************+
+Info: [ 32865,  36588) |************************************************************ 
 
 Info: Program finished normally.
