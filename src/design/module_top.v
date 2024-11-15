@@ -122,7 +122,6 @@ module module_top (
     // Multiplexor para seleccionar la entrada del display
     always_comb begin
         if (ready_operandos)
-            temp_value = 8'b0;
             display_valor = Y;
         else
             display_valor = temp_value;
