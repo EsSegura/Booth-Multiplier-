@@ -20,7 +20,6 @@ module module_top (
     logic enable_sign;
     logic ready_operandos;
 
-
     logic [2:0] is_sign_key;
     logic [7:0] stored_A;
     logic [7:0] stored_B;
@@ -41,6 +40,9 @@ module module_top (
     logic [7:0] temp_value_opB;
     logic [15:0] result_operacion;
     logic [15:0] display_out;
+
+    logic start;
+    logic done;
 
     // Registro de desplazamiento de columnas
     assign col_shift_reg = col_out;
@@ -85,7 +87,7 @@ module module_top (
         .is_sign_key(is_sign_key)
     );
 
-        // Instancia del módulo fsm_control
+    // Instancia del módulo fsm_control
     fsm_control fsm_input_inst (
         .clk(clk),
         .rst(rst),
@@ -103,7 +105,7 @@ module module_top (
         .key_value(key_value),    // Entrada de valor de tecla
         .key_pressed(key_pressed),
         .is_sign_key(is_sign_key),
-        .signo(signo),
+       // .signo(signo),
         .enable_A(enable_A),      // Habilitación para almacenar A
         .enable_B(enable_B),      // Habilitación para almacenar B
         .enable_sign(enable_sign), // Habilitación para almacenamiento temporal (signo o valor actual)
@@ -111,21 +113,10 @@ module module_top (
         .B(stored_B),                // Salida de operando B
         .temp_value(temp_value)   // Salida temporal para visualización en display
     );
-    mult_with_no_fsm mult_inst (
-            .clk(clk),
-            .rst(rst),
-            .A(stored_A),       // Entrada operando A
-            .B(stored_B),       // Entrada operando B
-            .load_A(load_A),
-            .load_B(load_B),
-            .load_add(load_add),
-            .shift_HQ_LQ_Q_1(shift_HQ_LQ_Q_1),
-            .add_sub(add_sub),
-            .Q_LSB(Q_LSB),
-            .Y(Y)
-    );
 
+    
 
+    // Instancia del módulo fsm_output_control
     fsm_output_control fsm_output_inst (
         .clk(clk),
         .rst(rst),
@@ -137,12 +128,11 @@ module module_top (
         .display_out(display_out) 
     );
 
-
-// Instancia del módulo bin_to_bcd 
-bin_to_bcd converter_inst (
-    .binario(display_out[15:0]),  // Usamos display_valor como la entrada BCD
-    .bcd(bcd)
-);
+    // Instancia del módulo bin_to_bcd 
+    bin_to_bcd converter_inst (
+        .binario(display_out[15:0]),  // Usamos display_valor como la entrada BCD
+        .bcd(bcd)
+    );
 
     // Controlador del display de 7 segmentos
     module_7_segments display_inst (
@@ -153,9 +143,8 @@ bin_to_bcd converter_inst (
         .catodo_o(catodo_po)
     );
 
-
-
 endmodule
+
 
 
 

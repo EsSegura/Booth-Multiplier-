@@ -1,67 +1,96 @@
-module mult_with_no_fsm#(
-    parameter N = 8
-) (
-    input logic clk,
-    input logic rst,
-    input logic [N-1:0] A,
-    input logic [N.1:0] B,
-    input logic load_A,               // Control de carga de A
-    input logic load_B,               // Control de carga de B
-    input logic load_add,             // Control para carga de adición
-    input logic shift_HQ_LQ_Q_1,      // Control de desplazamiento
-    input logic add_sub,              // Control de suma/resta
-    output logic [1:0] Q_LSB,
-    output logic [2*N-1:0] Y
-);
+module BoothMul(clk, rst, start, X, Y, valid, Z);
 
-logic [N-1:0] M;
-logic [N-1:0] adder_sub_out;
-logic [2*N-1:0] shift;
-logic [N-1:0] HQ;
-logic [N-1:0] LQ;
-logic Q_1;
+input clk;
+input rst;
+input start;
+input signed [6:0] X, Y;   // Entrada de 7 bits
+output signed [15:0] Z;     // Salida de 16 bits
+output valid;
 
-// Registro de M
-always_ff @(posedge clk) begin
-    if (!rst)
-        M <= 'b0;
-    else if (load_A)
-        M <= A ? A: M;
-end
+reg signed [15:0] Z, next_Z, Z_temp; // Ajuste de tamaño de Z a 16 bits
+reg next_state, pres_state;
+reg [2:0] temp, next_temp; // Ajuste de tamaño de temp
+reg [3:0] count, next_count; // Ajuste de tamaño de count
+reg valid, next_valid;
 
-// Adición o sustracción
-always_comb begin
-    if (add_sub)
-        adder_sub_out = HQ + M;   // Operación de suma
+parameter IDLE = 1'b0;
+parameter START = 1'b1;
+
+always @ (posedge clk or negedge rst)
+begin
+    if(!rst)
+    begin
+        Z <= 16'd0;            // Ajuste de tamaño de Z
+        valid <= 1'b0;
+        pres_state <= 1'b0;
+        temp <= 3'd0;          // Ajuste de tamaño de temp
+        count <= 4'd0;         // Ajuste de tamaño de count
+    end
     else
-        adder_sub_out = HQ - M;   // Operación de resta
-end
-// Asignación de HQ, LQ y Q_LSB
-always_comb begin
-    HQ = shift[2*N:N+1];
-    LQ = shift[N:1];
-    Q_1 = shift[0];
-    Y = {HQ, LQ};  // Concatenar HQ y LQ para la salida completa
-    Q_LSB = {LQ[0], Q_1};  // Asignación para controlar suma o resta
-end
-// Control y actualización del registro `shift`
-always_ff @(posedge clk) begin
-    if (!rst) begin
-        shift <= 1'b0;
-    end else if (shift_HQ_LQ_Q_1) begin
-        // Desplazamiento aritmético a la derecha
-        shift <= $signed(shift) >>> 1;
-    end else begin
-        if (load_B) begin
-            shift[N:1] <= B; // Cargar B en `LQ`
-            shift[0] <= 0;   // Inicializar `Q_1` a 0
-        end
-        if (load_add) begin
-            shift[2*N:N+1] <= adder_sub_out; // Cargar el resultado en `HQ`
-        end
+    begin
+        Z <= next_Z;
+        valid <= next_valid;
+        pres_state <= next_state;
+        temp <= next_temp;
+        count <= next_count;
     end
 end
 
+always @ (*)
+begin 
+    case(pres_state)
+    IDLE:
+    begin
+        next_count = 4'b0;     // Ajuste de tamaño de count
+        next_valid = 1'b0;
+        if(start)
+        begin
+            next_state = START;
+            next_temp = {X[0], 2'b0};  // Ajuste para 7 bits
+            next_Z = {9'd0, X};         // Ajuste para 7 bits de X
+        end
+        else
+        begin
+            next_state = pres_state;
+            next_temp = 3'b0;           // Ajuste para 7 bits
+            next_Z = 16'd0;             // Ajuste de tamaño de Z
+        end
+    end
 
-
+    START:
+    begin
+        case(temp)
+        3'b100:   Z_temp = {Z[15:8] - Y, Z[7:0]};   // Ajuste de tamaño de Z
+        3'b011:   Z_temp = {Z[15:8] + Y, Z[7:0]};   // Ajuste de tamaño de Z
+        default:  Z_temp = {Z[15:8], Z[7:0]};       // Ajuste de tamaño de Z
+        endcase
+        
+        next_temp = {X[count+1], X[count], 1'b0}; // Ajuste para 7 bits de X
+        next_count = count + 1'b1;
+        next_Z = Z_temp >>> 1;  // Desplazamiento a la derecha
+        next_valid = (count == 4'b111) ? 1'b1 : 1'b0; // Se activa al completar las iteraciones
+        next_state = (count == 4'b111) ? IDLE : pres_state;
+    end
+    endcase
+end
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

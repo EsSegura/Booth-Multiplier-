@@ -5,7 +5,7 @@ module row_scanner (
     input logic [3:0] row_in,
     output logic [3:0] key_value,
     output logic key_pressed,
-    output logic [2:0] is_sign_key,
+    output logic [2:0] is_sign_key
 );
 
     always_comb begin
