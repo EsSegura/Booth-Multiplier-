@@ -13,8 +13,6 @@ module module_top (
     logic [3:0] clean_rows;
     logic key_pressed;
     logic [15:0] bcd;
-    logic [3:0] col_shift_reg;                   // Señal BCD para los displays
-
     logic enable_A;
     logic enable_B;
     logic enable_sign;
@@ -25,17 +23,10 @@ module module_top (
     logic [7:0] stored_B;
     logic [7:0] temp_value;
     logic [3:0] signo;
-
-    logic [7:0] A;
-    logic [7:0] B;
     logic [15:0] Y;
-    logic load_A;
-    logic load_B;
-    logic load_add;
-    logic shift_HQ_LQ_Q_1;
-    logic add_sub;
-    logic [1:0] Q_LSB;
+    logic start;
 
+    logic [15:0] display_valor;
     logic [7:0] temp_value_opA;
     logic [7:0] temp_value_opB;
     logic [15:0] result_operacion;
@@ -54,7 +45,7 @@ module module_top (
         .slow_clk(slow_clk)
     );
 
-    // Instancia del registro de desplazamiento de columnas
+    // Registro de desplazamiento de columnas
     col_shift_register registro_inst (
         .slow_clk(slow_clk),
         .rst(rst),
@@ -87,7 +78,7 @@ module module_top (
         .is_sign_key(is_sign_key)
     );
 
-    // Instancia del módulo fsm_control
+    // Control de entrada FSM
     fsm_control fsm_input_inst (
         .clk(clk),
         .rst(rst),
@@ -98,39 +89,47 @@ module module_top (
         .enable_sign(enable_sign)
     );
 
-    // Instancia del módulo operand_storage
+    // Almacenamiento de operandos
     operand_storage storage_inst (
         .clk(clk),
         .rst(rst),
-        .key_value(key_value),    // Entrada de valor de tecla
+        .key_value(key_value),
         .key_pressed(key_pressed),
         .is_sign_key(is_sign_key),
-       // .signo(signo),
-        .enable_A(enable_A),      // Habilitación para almacenar A
-        .enable_B(enable_B),      // Habilitación para almacenar B
-        .enable_sign(enable_sign), // Habilitación para almacenamiento temporal (signo o valor actual)
-        .A(stored_A),                // Salida de operando A
-        .B(stored_B),                // Salida de operando B
-        .temp_value(temp_value)   // Salida temporal para visualización en display
+        .signo(signo),
+        .enable_A(enable_A),
+        .enable_B(enable_B),
+        .enable_sign(enable_sign),
+        .A(stored_A),
+        .B(stored_B),
+        .temp_value(temp_value)
     );
 
-    
-
-    // Instancia del módulo fsm_output_control
-    fsm_output_control fsm_output_inst (
+    // Multiplicador de Booth
+    BoothMul booth_multiplier_inst (
         .clk(clk),
         .rst(rst),
-        .key_pressed(key_pressed),
-        .is_sign_key(is_sign_key),
-        .temp_value_opA(stored_A),
-        .temp_value_opB(stored_B),
-        .result_operacion(Y),
-        .display_out(display_out) 
+        .start(start),
+        .A(stored_A),
+        .B(stored_B),
+        .valid(ready_operandos),
+        .Y(Y)
     );
 
-    // Instancia del módulo bin_to_bcd 
+    // Multiplexor para seleccionar la entrada del display
+    always_comb begin
+        if (ready_operandos)
+            display_valor = Y;
+        else
+            display_valor = temp_value;
+    end
+
+    // Activación de la señal start
+    assign start = key_pressed && enable_A && enable_B && !enable_sign;
+
+    // Conversión a BCD
     bin_to_bcd converter_inst (
-        .binario(display_out[15:0]),  // Usamos display_valor como la entrada BCD
+        .binario(display_valor[11:0]),  // Limitamos a 12 bits para BCD
         .bcd(bcd)
     );
 
@@ -138,7 +137,7 @@ module module_top (
     module_7_segments display_inst (
         .clk_i(clk),
         .rst_i(rst),
-        .bcd_i(bcd),          // Conexión de la salida BCD al display
+        .bcd_i(bcd),
         .anodo_o(anodo_po),
         .catodo_o(catodo_po)
     );
