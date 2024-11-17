@@ -32,7 +32,7 @@ TOP_DESIGN = module_top
 #TOP_TB     = tb_freq_divider
 #TOP_TB     = tb_col_shift_register
 #TOP_TB     = tb_module_top
-TOP_TB     = booth_tb
+TOP_TB     = tb_BoothMul
 #TOP_TB     = module_top_tb
 
 #nombre del vcd que va a generar el tb

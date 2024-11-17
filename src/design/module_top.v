@@ -1,39 +1,33 @@
 module module_top (
     input logic clk,
     input logic rst,
-    input logic [3:0] row_in,
-    output logic [3:0] col_out,
-    output logic [6:0] catodo_po,
-    output logic [3:0] anodo_po
+    input logic [3:0] row_in,        // Entrada de las filas del teclado
+    output logic [3:0] col_out,       // Salida de las columnas del teclado
+    output logic [6:0] catodo_po,     // Señales para el catodo del display de 7 segmentos
+    output logic [3:0] anodo_po,       // Señales para el ánodo del display de 7 segmentos
+    output logic enable_operacion     // Señal que indica si se debe realizar la operación
 );
 
-    logic slow_clk;
-    logic [1:0] column_index;
-    logic [3:0] key_value;
-    logic [3:0] clean_rows;
-    logic key_pressed;
-    logic [15:0] bcd;
-    logic enable_A;
-    logic enable_B;
-    logic enable_sign;
-    logic enable_operacion;
-    logic ready_operandos;
+    logic slow_clk;                   // Señal de reloj lento
+    logic [1:0] column_index;         // Índice de columna
+    logic [3:0] key_value;            // Valor de la tecla presionada
+    logic [3:0] clean_rows;           // Señales de filas depuradas
+    logic key_pressed;                // Señal que indica si una tecla ha sido presionada
+    logic [15:0] bcd;                 // Valor en BCD para el display
+    logic enable_A, enable_B, enable_sign; // Señales para habilitar entradas
+    logic ready_operandos;            // Señal que indica que los operandos están listos
 
-    logic [2:0] is_sign_key;
-    logic [7:0] stored_A;
-    logic [7:0] stored_B;
-    logic [7:0] temp_value;
-    logic [3:0] signo;
-    logic [15:0] Y;
-    logic start;
+    logic [2:0] is_sign_key;          // Indica si la tecla es un signo
+    logic [7:0] stored_A, stored_B;   // Almacenamiento de los operandos A y B
+    logic [15:0] temp_value;           // Valor temporal para mostrar
+    logic [3:0] signo;                // Signo de la operación
+    logic [15:0] Y;                   // Resultado de la multiplicación
+    logic start;                      // Señal para iniciar la multiplicación
 
-    logic [15:0] display_valor;
-    logic [7:0] temp_value_opA;
-    logic [7:0] temp_value_opB;
-    logic [15:0] result_operacion;
-    logic [15:0] display_out;
-
-    logic done;
+    logic [15:0] display_valor;       // Valor a mostrar en el display
+    logic [7:0] temp_value_opA, temp_value_opB; 
+    logic [15:0] result_operacion;    // Resultado de la operación
+    logic done;                       // Señal que indica que la operación ha terminado
 
     // Registro de desplazamiento de columnas
     assign col_shift_reg = col_out;
@@ -45,7 +39,7 @@ module module_top (
         .slow_clk(slow_clk)
     );
 
-    // Registro de desplazamiento de columnas
+    // Instancia del registro de desplazamiento de columnas
     col_shift_register registro_inst (
         .slow_clk(slow_clk),
         .rst(rst),
@@ -103,44 +97,45 @@ module module_top (
         .enable_sign(enable_sign),
         .A(stored_A),
         .B(stored_B),
-        .temp_value(temp_value)
+        .temp_value(temp_value),
+        .mul_result(Y),
+        .mul_valid(done)
     );
 
-    always_comb begin
-        Y = stored_A * stored_B; // Sumar los operandos y asignar el resultado a Y
+    // Lógica para manejar la tecla presionada
+    always_ff @(posedge clk or negedge rst) begin
+        if (!rst) begin
+            display_valor <= 16'd0;  // Inicializar la pantalla
+            enable_operacion <= 1'b1; // Deshabilitar la operación
+        end else if (key_pressed) begin
+            case (key_value)
+                4'b1011: begin
+                    // Cuando se presiona la tecla B, mostrar A
+                    display_valor <= {8'b0, stored_A};
+                    enable_operacion <= 1'b1; // No activar operación
+                end
+                4'b1100: begin
+                    // Cuando se presiona la tecla C, mostrar B
+                    display_valor <= {8'b0, stored_B};
+                    enable_operacion <= 1'b1; // No activar operación
+                end
+                4'b1101: begin
+                    // Cuando se presiona la tecla D, realizar la multiplicación
+                    display_valor <= Y;  // Mostrar el resultado de la multiplicación
+                    enable_operacion <= 1'b0;    // Iniciar operación de Booth
+                end
+                default: begin
+                    display_valor <= temp_value; // Mostrar valor temporal
+                end
+            endcase
+        end else begin
+            display_valor <= temp_value; // Mostrar valor temporal cuando no se presiona ninguna tecla
+        end
     end
 
-    // Multiplexor para seleccionar la entrada del display
-    always_comb begin
-    // Asignar valor por defecto a enable_operacion
-    enable_operacion = 1'b0; // Desactivar operación por defecto
-
-    if (key_pressed) begin
-        case (key_value)
-            4'b1011: begin
-                display_valor = {8'b0, stored_A}; // Mostrar stored_A cuando se presiona B
-                enable_operacion = 1'b1; // Activar operación
-            end
-            4'b1100: begin
-                display_valor = {8'b0, stored_B}; // Mostrar stored_B cuando se presiona C
-                enable_operacion = 1'b1; // Activar operación
-            end
-            4'b1101: begin
-                display_valor = {16'b0, Y}; // Mostrar resultado de la suma
-                enable_operacion = 1'b1; // Activar operación
-            end
-            default: begin
-                display_valor = temp_value; // Mostrar valor temporal cuando no se presiona ninguna tecla relevante
-            end
-        endcase
-    end else begin
-        display_valor = temp_value; // Mostrar valor temporal cuando no se presiona ninguna tecla
-    end
-end
-
-    // Conversión a BCD
+    // Conversión de binario a BCD para el display
     bin_to_bcd converter_inst (
-        .binario(display_valor[11:0]),  // Limitamos a 12 bits para BCD
+        .binario(display_valor),  // Limitar a 16 bits para la conversión
         .bcd(bcd)
     );
 
@@ -154,6 +149,9 @@ end
     );
 
 endmodule
+
+
+
 
 
 
