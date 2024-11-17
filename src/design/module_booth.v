@@ -1,77 +1,98 @@
 module BoothMul(
-
-    input clk,
-    input rst,
-    input start,
-    input signed [6:0] A, B,   // Entrada de 7 bits
-    output signed [15:0] Y,    // Salida de 16 bits
-    output valid
+    input clk,                      // Señal de reloj
+    input rst,                      // Señal de reinicio (activa bajo)
+    input start,                    // Señal para iniciar la multiplicación
+    input signed [7:0] A,           // Operando A (máximo 99)
+    input signed [7:0] B,           // Operando B (máximo 99)
+    output reg signed [15:0] Y,     // Resultado (máximo 9999)
+    output reg valid                // Señal de validación de resultado
 );
 
-    reg signed [15:0] Y, next_Y, Y_temp; // Ajuste de tamaño de Y a 16 bits
-    reg next_state, pres_state;
-    reg [2:0] temp, next_temp; // Ajuste de tamaño de temp
-    reg [3:0] count, next_count; // Ajuste de tamaño de count
-    reg valid, next_valid;
+    // Registros internos
+    reg signed [15:0] Y_temp, next_Y_temp;        // Registro temporal para el cálculo
+    reg [7:0] multiplicand, next_multiplicand;    // Operando multiplicador (B)
+    reg [3:0] count, next_count;                  // Contador de iteraciones (máximo 8)
+    reg [1:0] booth_code, next_booth_code;        // Código Booth (2 bits)
+    reg next_valid;                               // Señal de validación para la salida
+    reg state, next_state;                        // Estados de la FSM
 
-    parameter IDLE = 1'b0;
-    parameter START = 1'b1;
+    // Estados de la máquina de estados finitos (FSM)
+    parameter IDLE = 1'b0;      // Estado inactivo (esperando para empezar)
+    parameter START = 1'b1;     // Estado de cálculo
 
-    always @ (posedge clk or negedge rst)
-    begin
-        if(!rst)
-        begin
-            Y <= 16'd0;            // Ajuste de tamaño de Y
+    // Bloque secuencial: actualización de registros
+    always @(posedge clk or negedge rst) begin
+        if (!rst) begin
+            // Reinicio de los registros internos
+            Y <= 16'd0;
             valid <= 1'b0;
-            pres_state <= 1'b0;
-            temp <= 3'd0;          // Ajuste de tamaño de temp
-            count <= 4'd0;         // Ajuste de tamaño de count
-        end
-        else
-        begin
-            Y <= next_Y;
+            Y_temp <= 16'd0;
+            multiplicand <= 8'd0;
+            count <= 4'd0;
+            booth_code <= 2'd0;
+            state <= IDLE;
+        end else begin
+            // Actualización de los registros con los valores próximos
+            Y <= Y_temp;
             valid <= next_valid;
-            pres_state <= next_state;
-            temp <= next_temp;
+            Y_temp <= next_Y_temp;
+            multiplicand <= next_multiplicand;
             count <= next_count;
+            booth_code <= next_booth_code;
+            state <= next_state;
         end
     end
 
-    always @ (*)
-    begin 
-        case(pres_state)
-        IDLE:
-        begin
-            next_count = 4'b0;     // Ajuste de tamaño de count
-            next_valid = 1'b0;
-            if(start)
-            begin
-                next_state = START;
-                next_temp = {A[0], 2'b0};  // Ajuste para 7 bits
-                next_Y = {9'd0, A};         // Ajuste para 7 bits de A
-            end
-            else
-            begin
-                next_state = pres_state;
-                next_temp = 3'b0;           // Ajuste para 7 bits
-                next_Y = 16'd0;             // Ajuste de tamaño de Y
-            end
-        end
+    // Lógica combinacional: implementación del algoritmo de Booth
+    always @(*) begin
+        // Valores predeterminados
+        next_Y_temp = Y_temp;
+        next_multiplicand = multiplicand;
+        next_count = count;
+        next_booth_code = booth_code;
+        next_valid = 1'b0;
+        next_state = state;
 
-        START:
-        begin
-            case(temp)
-            3'b100:   Y_temp = {Y[15:8] - B, Y[7:0]};   // Ajuste de tamaño de Y
-            3'b011:   Y_temp = {Y[15:8] + B, Y[7:0]};   // Ajuste de tamaño de Y
-            default:  Y_temp = {Y[15:8], Y[7:0]};       // Ajuste de tamaño de Y
-            endcase
-            
-            next_temp = {A[count+1], A[count], 1'b0}; // Ajuste para 7 bits de A
-            next_count = count + 1'b1;
-            next_Y = Y_temp >>> 1;  // Desplazamiento a la derecha
-            next_valid = (count == 4'b111) ? 1'b1 : 1'b0; // Se activa al completar las iteraciones
-            next_state = (count == 4'b111) ? IDLE : pres_state;
-        end
+        case (state)
+            IDLE: begin
+                // Configuración inicial
+                if (start) begin
+                    // Inicializar Y_temp con A en los bits menos significativos (considerar signo)
+                    next_Y_temp = {8'd0, A};  // Para manejar el signo de A adecuadamente
+                    next_multiplicand = B;    // Cargar el multiplicador B
+                    next_booth_code = {A[0], 1'b0};  // Inicializar el código Booth con el bit menos significativo de A y un bit extra
+                    next_count = 4'd0;         // Reiniciar el contador de iteraciones
+                    next_state = START;       // Cambiar al estado START para comenzar el cálculo
+                end
+            end
+
+            START: begin
+                // Operaciones de Booth según el código Booth
+                case (booth_code)
+                    2'b10: next_Y_temp = {Y_temp[15:8] - multiplicand, Y_temp[7:0]}; // Restar multiplicador B
+                    2'b01: next_Y_temp = {Y_temp[15:8] + multiplicand, Y_temp[7:0]}; // Sumar multiplicador B
+                    default: next_Y_temp = Y_temp; // No hacer nada (cuando booth_code es 00 o 11)
+                endcase
+
+                // Desplazamiento aritmético a la derecha (considerando el signo)
+                next_Y_temp = next_Y_temp >>> 1;
+
+                // Actualización del código Booth y contador
+                next_booth_code = {Y_temp[1], Y_temp[0]};  // Nueva evaluación del código Booth con los 2 bits menos significativos de Y_temp
+                next_count = count + 1'b1;                   // Incrementar el contador de iteraciones
+
+                // Verificar si la multiplicación ha terminado (8 iteraciones)
+                if (next_count == 4'd8) begin
+                    next_valid = 1'b1;   // Señal de resultado válido
+                    next_state = IDLE;   // Volver al estado IDLE para esperar una nueva operación
+                end else begin
+                    next_state = START; // Continuar en el estado START
+                end
+            end
         endcase
     end
 endmodule
+
+
+
+

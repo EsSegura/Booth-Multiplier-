@@ -6,7 +6,7 @@ module fsm_control(
     output logic enable_A,         // Enable para almacenar A
     output logic enable_B,         // Enable para almacenar B
     output logic enable_sign,       // Enable para almacenar el signo
-    output logic enable_operacion
+    output logic enable_operacion  // Enable para ejecutar la operación
 );
 
     // Estados
@@ -36,12 +36,11 @@ module fsm_control(
             if (key_pressed && !key_pressed_prev) begin
                 // Incrementar contador solo si no es una tecla de signo
                 if (is_sign_key == 3'b000) begin
-                    key_count = key_count + 1;
-                end if (is_sign_key == 3'b001) begin
-                    key_count = 2;
+                    key_count <= key_count + 1;
+                end else if (is_sign_key == 3'b001) begin
+                    key_count <= 3;  // Resetear contador a 3 cuando se detecta el signo
                 end
             end
-
         end
     end
 
@@ -51,9 +50,8 @@ module fsm_control(
         enable_A = 0;
         enable_B = 0;
         enable_sign = 0;
-        next_state = current_state;
         enable_operacion = 0;
-
+        next_state = current_state;
 
         case (current_state)
             IDLE: begin
@@ -65,16 +63,14 @@ module fsm_control(
 
             OPERANDO_A: begin
                 enable_A = 1;  // Habilitar almacenamiento de A
-                if (key_count == 2)
+                if (key_count == 3)
                     next_state = SIGN;
-                    
             end
 
             SIGN: begin
+                enable_sign = 1;  // Habilitar almacenamiento del signo
                 if (is_sign_key == 3'b001) begin // si el signo es multiplicación
                     next_state = OPERANDO_B;
-                    enable_sign = 1;  // Habilitar almacenamiento del signo
-
                 end
             end    
 
@@ -85,7 +81,7 @@ module fsm_control(
             end
 
             READY: begin
-                enable_operacion = 1;  // Habilitar operacion
+                enable_operacion = 1;  // Habilitar operación
                 if (is_sign_key == 3'b111) begin // si el signo es igual "="
                     //next_state = IDLE;
                 end

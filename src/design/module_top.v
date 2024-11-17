@@ -20,22 +20,17 @@ module module_top (
     //logic enable_operacion;
     logic ready_operandos;
 
-    logic [2:0] is_sign_key;
-    logic [7:0] stored_A;
-    logic [7:0] stored_B;
-    logic [7:0] temp_value;
-    logic [3:0] signo;
-    logic [15:0] Y;
-    logic start;
+    logic [2:0] is_sign_key;          // Indica si la tecla es un signo
+    logic [7:0] stored_A, stored_B;   // Almacenamiento de los operandos A y B
+    logic [15:0] temp_value;           // Valor temporal para mostrar
+    logic [3:0] signo;                // Signo de la operación
+    logic [15:0] Y;                   // Resultado de la multiplicación
+    logic start;                      // Señal para iniciar la multiplicación
 
-    logic [15:0] display_valor;
-    logic [7:0] temp_value_opA;
-    logic [7:0] temp_value_opB;
-    logic [15:0] result_operacion;
-    logic [15:0] display_out;
-
-    logic start;
-    logic done;
+    logic [15:0] display_valor;       // Valor a mostrar en el display
+    logic [7:0] temp_value_opA, temp_value_opB; 
+    logic [15:0] result_operacion;    // Resultado de la operación
+    logic done;                       // Señal que indica que la operación ha terminado
 
     // Registro de desplazamiento de columnas
     assign col_shift_reg = col_out;
@@ -47,7 +42,7 @@ module module_top (
         .slow_clk(slow_clk)
     );
 
-    // Registro de desplazamiento de columnas
+    // Instancia del registro de desplazamiento de columnas
     col_shift_register registro_inst (
         .slow_clk(slow_clk),
         .rst(rst),
@@ -105,31 +100,45 @@ module module_top (
         .enable_sign(enable_sign),
         .A(stored_A),
         .B(stored_B),
-        .temp_value(temp_value)
+        .temp_value(temp_value),
+        .mul_result(Y),
+        .mul_valid(done)
     );
 
-    // Multiplicador de Booth
-    BoothMul booth_multiplier_inst (
-        .clk(clk),
-        .rst(rst),
-        .start(enable_operacion),
-        .A(stored_A),
-        .B(stored_B),
-        .valid(ready_operandos),
-        .Y(Y)
-    );
-
-    // Multiplexor para seleccionar la entrada del display
-    always_comb begin
-        if (ready_operandos)
-            display_valor = Y;
-        else
-            display_valor = temp_value;
+    // Lógica para manejar la tecla presionada
+    always_ff @(posedge clk or negedge rst) begin
+        if (!rst) begin
+            display_valor <= 16'd0;  // Inicializar la pantalla
+            enable_operacion <= 1'b1; // Deshabilitar la operación
+        end else if (key_pressed) begin
+            case (key_value)
+                4'b1011: begin
+                    // Cuando se presiona la tecla B, mostrar A
+                    display_valor <= {8'b0, stored_A};
+                    enable_operacion <= 1'b1; // No activar operación
+                end
+                4'b1100: begin
+                    // Cuando se presiona la tecla C, mostrar B
+                    display_valor <= {8'b0, stored_B};
+                    enable_operacion <= 1'b1; // No activar operación
+                end
+                4'b1101: begin
+                    // Cuando se presiona la tecla D, realizar la multiplicación
+                    display_valor <= Y;  // Mostrar el resultado de la multiplicación
+                    enable_operacion <= 1'b0;    // Iniciar operación de Booth
+                end
+                default: begin
+                    display_valor <= temp_value; // Mostrar valor temporal
+                end
+            endcase
+        end else begin
+            display_valor <= temp_value; // Mostrar valor temporal cuando no se presiona ninguna tecla
+        end
     end
 
-    // Conversión a BCD
+    // Conversión de binario a BCD para el display
     bin_to_bcd converter_inst (
-        .binario(stored_B),  // Limitamos a 12 bits para BCD
+        .binario(display_valor),  // Limitar a 16 bits para la conversión
         .bcd(bcd)
     );
 
@@ -143,6 +152,10 @@ module module_top (
     );
 
 endmodule
+
+
+
+
 
 
 
