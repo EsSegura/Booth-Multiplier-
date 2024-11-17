@@ -80,14 +80,14 @@ module fsm_control(
 
             OPERANDO_B: begin
                 enable_B = 1;  // Habilitar almacenamiento de B
-                if (key_count == 4)  
+                if (key_count == 2)  
                     next_state = READY;
             end
 
             READY: begin
                 enable_operacion = 1;  // Habilitar operacion
                 if (is_sign_key == 3'b111) begin // si el signo es igual "="
-                    next_state = IDLE;
+                    //next_state = IDLE;
                 end
             end
 

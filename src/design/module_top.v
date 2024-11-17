@@ -4,7 +4,8 @@ module module_top (
     input logic [3:0] row_in,
     output logic [3:0] col_out,
     output logic [6:0] catodo_po,
-    output logic [3:0] anodo_po
+    output logic [3:0] anodo_po,
+    output logic enable_operacion
 );
 
     logic slow_clk;
@@ -16,7 +17,7 @@ module module_top (
     logic enable_A;
     logic enable_B;
     logic enable_sign;
-    logic enable_operacion;
+    //logic enable_operacion;
     logic ready_operandos;
 
     logic [2:0] is_sign_key;
