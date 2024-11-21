@@ -44,15 +44,13 @@ module module_7_segments # (
 
 #### 3.1.3. Entradas y salidas:
 
+###### Entradas:
 1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
 2. `rst_i`: Señal de reinicio para inicializar los registros.
 3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
-4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
-5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
-6. `cuenta_salida`: Contador de refresco para el display.
-7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
-8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
-9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
+###### Salidas:
+1. `anodo_o [1:0]`: Controla qué dígito del display está activo.
+2. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
     
 ##### Descripción del módulo:
 
