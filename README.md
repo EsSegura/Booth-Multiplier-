@@ -221,6 +221,9 @@ module debouncer (
 El módulo `debouncer` está diseñado para eliminar el efecto de rebote en señales digitales, como las que provienen de botones. Utiliza un contador que se incrementa en cada ciclo de reloj mientras la señal de entrada `noisy_signal` varía de manera diferente a la última señal limpia. Si la señal es constante y coincide con `clean_signal`, el contador se reinicia a cero. En caso de que se detecte un cambio en la señal ruidosa, el contador comienza a contar. Una vez que el contador alcanza el tiempo definido por `DEBOUNCE_TIME`, se actualiza `clean_signal` con el valor actual de `noisy_signal`, garantizando que cualquier cambio en la señal de entrada sea estable antes de que se refleje en la salida
 
 #### 3.5.4. Criterios de diseño
+![module_debouncer](https://github.com/user-attachments/assets/dc9a742c-4447-4b1f-b284-cba0f7186ec6)
+
+
 
 
 ![debouncer](https://github.com/user-attachments/assets/6792a177-09d8-4d76-bfc9-c888ad45f963)
