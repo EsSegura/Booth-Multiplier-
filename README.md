@@ -116,9 +116,9 @@ No se definen parámetros para este módulo
 
 1. `clk`: Señal de reloj que sincroniza las operaciones del módulo.
 2. `rst`: Señal de reinicio para inicializar los registros.
-3. `start`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
-4. `A [7:0]`: Controla qué dígito del display está activo.
-5. `B [7:0]`: Controla los segmentos del display para representar el dígito en BCD.
+3. `start`: .
+4. `A [7:0]`: .
+5. `B [7:0]`: .
 6. `Y [15:0]`: .
 7. `valid`: .
 
@@ -151,11 +151,11 @@ No se definen parámetros para este módulo
 #### 3.4.3. Entradas y salidas:
 ##### Descripción de la entrada:
 
-1. `slow_clk`: Señal de reloj que sincroniza las operaciones del módulo.
+1. `slow_clk`:.
 2. `rst`: Señal de reinicio para inicializar los registros.
 3. `key_pressed`: .
-4. `col_shift_reg [3:0]`: Controla qué dígito del display está activo.
-5. `column_index [1:0]`: Controla los segmentos del display para representar el dígito en BCD.
+4. `col_shift_reg [3:0]`: .
+5. `column_index [1:0]`: .
 
 
 ##### Descripción del módulo:
@@ -220,15 +220,15 @@ No se definen parámetros para este módulo
 
 #### 3.6.3. Entradas y salidas:
 
-1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
-2. `rst_i`: Señal de reinicio para inicializar los registros.
-3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
-4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
-5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
-6. `cuenta_salida`: Contador de refresco para el display.
-7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
-8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
-9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
+1. `clk`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst`: Señal de reinicio para inicializar los registros.
+3. `key_pressed`: .
+4. `is_sign_key [2:0]`: .
+5. `enable_A`: .
+6. `enable_B`: .
+7. `enable_sign`: .
+8. `enable_sign`: .
+9. `enable_operacion`: .
     
 ##### Descripción del módulo:
 
@@ -256,15 +256,10 @@ No se definen parámetros para este módulo
 
 #### 3.7.3. Entradas y salidas:
 
-1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
-2. `rst_i`: Señal de reinicio para inicializar los registros.
-3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
-4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
-5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
-6. `cuenta_salida`: Contador de refresco para el display.
-7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
-8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
-9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
+1. `clk`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst`: Señal de reinicio para inicializar los registros.
+3. `slow_clk`:.
+
     
 ##### Descripción del módulo:
 
@@ -301,15 +296,20 @@ No se definen parámetros para este módulo
 
 #### 3.8.3. Entradas y salidas:
 
-1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
-2. `rst_i`: Señal de reinicio para inicializar los registros.
-3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
-4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
-5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
-6. `cuenta_salida`: Contador de refresco para el display.
-7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
-8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
-9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
+1. `clk`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst`: Señal de reinicio para inicializar los registros.
+3. `key_value [3:0]`: .
+4. `key_pressed`: .
+5. `is_sign_key [2:0]`: .
+6. `signo`: .
+7. `enable_A`: .
+8. `enable_B`: .
+9. `enable_sign`: .
+10. `A [7:0]`: .
+11. `B [7:0]`: .
+12. `temp_value [7:0]`: .
+13. `mul_result [15:0]`: .
+14. `mul_valid`: .
     
 ##### Descripción del módulo:
 
