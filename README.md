@@ -810,7 +810,15 @@ Con los modulos listos, se trabajo en un testbench para poder ejecutar todo de l
 ### Otros modulos
 En este apartado, se colocará el ultimo modulo, el cual corresponde a la unión de los 4 modulos para poder ejecutar un Makefile de manera correcta y su respectiva sincronización.
 ```SystemVerilog
-
+module module_top (
+    input logic clk,
+    input logic rst,
+    input logic [3:0] row_in,        // Entrada de las filas del teclado
+    output logic [3:0] col_out,       // Salida de las columnas del teclado
+    output logic [6:0] catodo_po,     // Señales para el catodo del display de 7 segmentos
+    output logic [3:0] anodo_po,       // Señales para el ánodo del display de 7 segmentos
+    output logic enable_operacion     // Señal que indica si se debe realizar la operación
+);
 ```
 #### Parámetros
 
