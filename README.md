@@ -97,6 +97,12 @@ No se definen parámetros para este módulo
 
 #### 3.2.4. Criterios de diseño
 
+![module_bintobcd](https://github.com/user-attachments/assets/d72dae75-4d0e-41e7-9d13-168f48319ee5)
+
+
+
+![bin2bcd](https://github.com/user-attachments/assets/5923631f-9497-4010-9d2d-51d0df2b031a)
+
 
 
 
