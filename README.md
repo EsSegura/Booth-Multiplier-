@@ -166,17 +166,21 @@ module debouncer (
 
 
 ```
-#### 3.2.2. Parámetros
+#### 3.3.2. Parámetros
 
+1. `DEBOUNCE_TIME` : Tiempo de filtro para eliminar rebotes.
 
+#### 3.3.3. Entradas y salidas:
+##### Descripción de la entrada:
 
-#### 3.2.3. Entradas y salidas:
+1. `clk` : Esta es la señal de reloj principal que sincroniza el funcionamiento del módulo.
+2. `rst`: Esta es la señal de reinicio que, al ser activada, restablece el módulo a su estado inicial.
+3. `noisy_signal`: Esta entrada representa la señal que puede contener rebotes, como un botón mecánico o un interruptor.
+4. `clean_signal`: Esta es la salida de la señal limpia, que se produce sin rebotes, proporcionando una señal estable a la salida.
 
-
-    
 ##### Descripción del módulo:
 
-
+El módulo `debouncer` está diseñado para eliminar el efecto de rebote en señales digitales, como las que provienen de botones. Utiliza un contador que se incrementa en cada ciclo de reloj mientras la señal de entrada `noisy_signal` varía de manera diferente a la última señal limpia. Si la señal es constante y coincide con `clean_signal`, el contador se reinicia a cero. En caso de que se detecte un cambio en la señal ruidosa, el contador comienza a contar. Una vez que el contador alcanza el tiempo definido por `DEBOUNCE_TIME`, se actualiza `clean_signal` con el valor actual de `noisy_signal`, garantizando que cualquier cambio en la señal de entrada sea estable antes de que se refleje en la salida
 
 #### 3.2.4. Criterios de diseño
 
@@ -312,6 +316,73 @@ module row_scanner (
 ### 4. Testbench
 Con los modulos listos, se trabajo en un testbench para poder ejecutar todo de la misma forma y al mismo tiempo, y con ello, poder observar las simulaciones y obtener una mejor visualización de como funciona todo el código. 
 ```SystemVerilog
+`timescale 1ns / 1ps
+
+module tb_module_top;
+
+    // Señales de entrada
+    logic clk;
+    logic rst;
+    logic [3:0] row_in;
+
+    // Señales de salida
+    logic [3:0] col_out;
+    logic [6:0] catodo_po;
+    logic [3:0] anodo_po;
+    logic enable_operacion;
+
+    // Instancia del módulo a probar
+    module_top uut (
+        .clk(clk),
+        .rst(rst),
+        .row_in(row_in),
+        .col_out(col_out),
+        .catodo_po(catodo_po),
+        .anodo_po(anodo_po),
+        .enable_operacion(enable_operacion)
+    );
+
+    // Generación de reloj
+    always #5 clk = ~clk; // Periodo del reloj = 10 ns (100 MHz)
+
+    // Procedimiento inicial
+    initial begin
+        // Inicialización
+        clk = 0;
+        rst = 0;
+        row_in = 4'b0000;
+
+        // Reinicio
+        #10 rst = 1;
+        #10 rst = 0;
+        #20 rst = 1;
+
+        // Simular entrada de teclas
+        @(posedge clk);
+        row_in = 4'b1000; // Simula la pulsación de la primera fila
+        #20 row_in = 4'b0100; // Simula la pulsación de la segunda fila
+        #20 row_in = 4'b0010; // Simula la pulsación de la tercera fila
+        #20 row_in = 4'b0001; // Simula la pulsación de la cuarta fila
+        #20 row_in = 4'b0000; // Ninguna tecla presionada
+
+        // Simular operaciones específicas
+        @(posedge clk);
+        row_in = 4'b1101; // Presionar tecla D para activar operación
+        #40 row_in = 4'b0000; // Soltar la tecla
+
+        // Esperar algunos ciclos para observar la salida
+        #100;
+
+        // Finalizar la simulación
+        $stop;
+    end
+
+    // Monitoreo de señales
+    initial begin
+        $monitor("Time=%0t | clk=%b | rst=%b | row_in=%b | col_out=%b | catodo_po=%b | anodo_po=%b | enable_operacion=%b",
+                 $time, clk, rst, row_in, col_out, catodo_po, anodo_po, enable_operacion);
+    end
+endmodule
 
 ```
 #### Descripción del testbench 
