@@ -516,12 +516,13 @@ No se definen parámetros para este módulo.
 
 #### Entradas y salidas:
 ##### Descripción de la entrada:
-1. `clk_i `: Señal de reloj que sincroniza todo el módulo. Esta señal es utilizada para que todos los submódulos puedan operar de manera sincronizada y coordinar el flujo de datos a través del sistema.
-2. `rst_i`: Señal de reset asíncrona. Cuando se activa, todos los submódulos internos y el módulo principal se reinician, asegurando que el sistema regrese a un estado conocido antes de iniciar cualquier operación.
-3. `dipswitch [3 : 0]` : Señal de entrada de 4 bits proveniente de un conjunto de interruptores, que se utilizará para el control de la operación.
-4. `suma_btn` : Botón para activar la suma de los valores del conjunto de interruptores.
+1. `clk`: Señal de reloj que sincroniza todo el módulo. Esta señal es utilizada para que todos los submódulos puedan operar de manera sincronizada y coordinar el flujo de datos a través del sistema.
+2. `rst`: Señal de reset asíncrona. Cuando se activa, todos los submódulos internos y el módulo principal se reinician, asegurando que el sistema regrese a un estado conocido antes de iniciar cualquier operación.
+3. `row_in [3 : 0]` : .
+4. `col_out [3:0]` : .
 5. `anodo_po`: Señal de salida para los pines de anodo del display de 7 segmentos.
 6. `catodo_po`: Señal de salida para los pines de cátodo del display de 7 segmentos.
+7. `enable_operacion` : .
 
 ##### Descripción del módulo:
 
