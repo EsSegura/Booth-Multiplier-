@@ -60,6 +60,14 @@ El módulo `module_7_segments` está diseñado para controlar un display de 7 se
 
 #### 3.1.4. Criterios de diseño
 
+![module_7seg](https://github.com/user-attachments/assets/4ce7d2ca-9f3a-40e8-9b7b-b2de8b627ef8)
+
+
+
+![7seg](https://github.com/user-attachments/assets/61968f63-cb46-4d7c-aec9-9bbaa2c311be)
+
+
+
 
 
 
