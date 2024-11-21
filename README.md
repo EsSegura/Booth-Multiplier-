@@ -475,7 +475,7 @@ endmodule
 ```
 #### Descripción del testbench 
 
-
+No se definen parámetros para este testbench
 
 #### 4.1.1. Parámetros
 
