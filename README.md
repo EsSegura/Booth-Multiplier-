@@ -114,15 +114,14 @@ No se definen parámetros para este módulo
 #### 3.3.3. Entradas y salidas:
 ##### Descripción de la entrada:
 
-1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
-2. `rst_i`: Señal de reinicio para inicializar los registros.
-3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
-4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
-5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
-6. `cuenta_salida`: Contador de refresco para el display.
-7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
-8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
-9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
+1. `clk`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst`: Señal de reinicio para inicializar los registros.
+3. `start`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
+4. `A [7:0]`: Controla qué dígito del display está activo.
+5. `B [7:0]`: Controla los segmentos del display para representar el dígito en BCD.
+6. `Y [15:0]`: .
+7. `valid`: .
+
 
 ##### Descripción del módulo:
 
@@ -147,20 +146,17 @@ module col_shift_register (
 ```
 #### 3.4.2. Parámetros
 
-
+No se definen parámetros para este módulo
 
 #### 3.4.3. Entradas y salidas:
 ##### Descripción de la entrada:
 
-1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
-2. `rst_i`: Señal de reinicio para inicializar los registros.
-3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
-4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
-5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
-6. `cuenta_salida`: Contador de refresco para el display.
-7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
-8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
-9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
+1. `slow_clk`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst`: Señal de reinicio para inicializar los registros.
+3. `key_pressed`: .
+4. `col_shift_reg [3:0]`: Controla qué dígito del display está activo.
+5. `column_index [1:0]`: Controla los segmentos del display para representar el dígito en BCD.
+
 
 ##### Descripción del módulo:
 
@@ -220,7 +216,7 @@ module fsm_control(
 ```
 #### 3.6.2. Parámetros
 
-
+No se definen parámetros para este módulo
 
 #### 3.6.3. Entradas y salidas:
 
@@ -256,7 +252,7 @@ module freq_divider (
 ```
 #### 3.7.2. Parámetros
 
-
+No se definen parámetros para este módulo
 
 #### 3.7.3. Entradas y salidas:
 
@@ -301,7 +297,7 @@ module number_storage(
 ```
 #### 3.8.2. Parámetros
 
-
+No se definen parámetros para este módulo
 
 #### 3.8.3. Entradas y salidas:
 
@@ -339,7 +335,7 @@ module row_scanner (
 ```
 #### 3.9.2. Parámetros
 
-
+No se definen parámetros para este módulo
 
 #### 3.9.3. Entradas y salidas:
 
