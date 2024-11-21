@@ -299,6 +299,9 @@ No se definen parámetros para este módulo
 
 
 #### 3.7.4. Criterios de diseño
+![module freq_div](https://github.com/user-attachments/assets/2b7fdc88-01f0-4fb8-ae14-7a41d76e836f)
+
+
 
 ![freq_div](https://github.com/user-attachments/assets/3de77942-048f-41ee-9b99-5cde4f48d928)
 
