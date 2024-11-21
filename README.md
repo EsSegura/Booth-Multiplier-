@@ -70,7 +70,6 @@ El módulo `module_7_segments` está diseñado para controlar un display de 7 se
 
 
 
-
 ### 3.2 Módulo 2
 #### 3.2.1 Module_bin_to_bcd
 ```SystemVerilog
@@ -142,6 +141,13 @@ No se definen parámetros para este módulo
 
 
 #### 3.3.4. Criterios de diseño
+
+![module_Booth](https://github.com/user-attachments/assets/d0ab579b-b66f-4dfa-9913-4dbee7f8d1b2)
+
+
+
+![BoothMulFSM](https://github.com/user-attachments/assets/4467dd90-5121-43b1-9aa5-3231d2396e2f)
+
 
 
 
