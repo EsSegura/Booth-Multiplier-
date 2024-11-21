@@ -223,6 +223,8 @@ El módulo `debouncer` está diseñado para eliminar el efecto de rebote en señ
 #### 3.5.4. Criterios de diseño
 
 
+![debouncer](https://github.com/user-attachments/assets/6792a177-09d8-4d76-bfc9-c888ad45f963)
+
 
 ### 3.6 Módulo 6
 #### 3.6.1 Module_FSM_input_control
@@ -262,6 +264,8 @@ No se definen parámetros para este módulo
 
 #### 3.6.4. Criterios de diseño
 
+![FSM_control](https://github.com/user-attachments/assets/31398c0d-d855-424d-b61f-8f753450d47a)
+
 
 
 ### 3.7 Módulo 7
@@ -292,6 +296,8 @@ No se definen parámetros para este módulo
 
 
 #### 3.7.4. Criterios de diseño
+
+![freq_div](https://github.com/user-attachments/assets/3de77942-048f-41ee-9b99-5cde4f48d928)
 
 
 
@@ -343,6 +349,13 @@ No se definen parámetros para este módulo
 
 #### 3.2.4. Criterios de diseño
 
+![module_num_stor](https://github.com/user-attachments/assets/cfc7963f-8d47-4b11-bd46-7d5c6250b8b6)
+
+
+
+![numstorage](https://github.com/user-attachments/assets/78e6abee-ebaa-426c-8af3-6511472e1dc2)
+
+
 
 ### 3.9 Módulo 9
 #### 3.9.1 Module_row_scanner
@@ -379,6 +392,12 @@ No se definen parámetros para este módulo
 
 
 #### 3.9.4. Criterios de diseño
+
+
+![module_row_scan](https://github.com/user-attachments/assets/d8a335f8-eae7-409c-ba15-21f292c43b19)
+
+
+![row_scan](https://github.com/user-attachments/assets/4893b8c0-4ae9-4c14-bb70-de9dc4371811)
 
 
 
@@ -499,6 +518,8 @@ No se definen parámetros para este módulo.
 
 #### Criterios de diseño
 
+
+![top](https://github.com/user-attachments/assets/dbc5a156-71f2-4414-a0e7-bc9696ad6590)
 
 
 ## 5. Consumo de recursos
