@@ -184,6 +184,12 @@ No se definen parámetros para este módulo
 
 #### 3.4.4. Criterios de diseño 
 
+![module_col_shift_reg](https://github.com/user-attachments/assets/78454ff6-086c-46a0-88a8-3456abd9d806)
+
+
+
+![col_shift_reg](https://github.com/user-attachments/assets/e68ecc15-8137-457a-af1c-431005b8bf29)
+
 
 
 ### 3.5 Módulo 5
