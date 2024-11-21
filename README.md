@@ -38,11 +38,11 @@ module module_7_segments # (
 );
 
 ```
-#### 3.2.2. Parámetros
+#### 3.1.2. Parámetros
 
 1. `DISPLAY_REFRESH`: Define la cantidad de ciclos de reloj para refrescar el display, para este caso, a 27000Hz.
 
-#### 3.2.3. Entradas y salidas:
+#### 3.1.3. Entradas y salidas:
 
 1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
 2. `rst_i`: Señal de reinicio para inicializar los registros.
@@ -73,11 +73,11 @@ module bin_to_bcd (
 
 
 ```
-#### 3.3.2. Parámetros
+#### 3.2.2. Parámetros
 
 No se definen parámetros para este módulo
 
-#### 3.3.3. Entradas y salidas:
+#### 3.2.3. Entradas y salidas:
 ##### Descripción de la entrada:
 
 1. `binario [11:0]` : Esta es una entrada de 12 bits que representa un número en formato binario. El rango de valores que puede aceptar va de 0 a 4095 (en decimal).
@@ -85,7 +85,7 @@ No se definen parámetros para este módulo
 
 ##### Descripción del módulo:
 
-El módulo `bin_decimal` está diseñado para convertir un número binario de 12 bits en su equivalente en BCD de 16 bits. El proceso de conversión se realiza mediante un algoritmo de desplazamiento que itera a través de cada bit de la entrada binaria. En cada iteración, se verifica si alguno de los grupos de 4 bits en la salida BCD es mayor o igual a 5; si es así, se le suma 3 a ese grupo, siguiendo el método de corrección de BCD. Luego, el módulo desplaza el valor actual de BCD hacia la izquierda, incorporando el siguiente bit de la entrada binaria en la posición menos significativa. Este proceso se repite durante 12 ciclos, asegurando que todos los bits del número binario se conviertan adecuadamente en su representación BCD.
+
 
 #### 3.2.4. Criterios de diseño
 
@@ -114,7 +114,15 @@ No se definen parámetros para este módulo
 #### 3.3.3. Entradas y salidas:
 ##### Descripción de la entrada:
 
-
+1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst_i`: Señal de reinicio para inicializar los registros.
+3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
+4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
+5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
+6. `cuenta_salida`: Contador de refresco para el display.
+7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
+8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
+9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
 
 ##### Descripción del módulo:
 
@@ -125,7 +133,7 @@ No se definen parámetros para este módulo
 
 
 ### 3.4 Módulo 4
-#### 3.3.1. Module_col_shift_register
+#### 3.4.1. Module_col_shift_register
 ```SystemVerilog
 module col_shift_register (
     input logic slow_clk,          // Entrada del reloj lento (1 KHz)
@@ -137,25 +145,33 @@ module col_shift_register (
 
 
 ```
-#### 3.3.2. Parámetros
+#### 3.4.2. Parámetros
 
 
 
-#### 3.3.3. Entradas y salidas:
+#### 3.4.3. Entradas y salidas:
 ##### Descripción de la entrada:
 
-
+1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst_i`: Señal de reinicio para inicializar los registros.
+3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
+4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
+5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
+6. `cuenta_salida`: Contador de refresco para el display.
+7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
+8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
+9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
 
 ##### Descripción del módulo:
 
 
 
-#### 3.3.4. Criterios de diseño 
+#### 3.4.4. Criterios de diseño 
 
 
 
-### 3.2 Módulo 5
-#### 3.2.1 Module_debouncer
+### 3.5 Módulo 5
+#### 3.5.1 Module_debouncer
 ```SystemVerilog
 module debouncer (
     input clk,             // Reloj del sistema
@@ -166,11 +182,11 @@ module debouncer (
 
 
 ```
-#### 3.3.2. Parámetros
+#### 3.5.2. Parámetros
 
 1. `DEBOUNCE_TIME` : Tiempo de filtro para eliminar rebotes.
 
-#### 3.3.3. Entradas y salidas:
+#### 3.5.3. Entradas y salidas:
 ##### Descripción de la entrada:
 
 1. `clk` : Esta es la señal de reloj principal que sincroniza el funcionamiento del módulo.
@@ -182,12 +198,12 @@ module debouncer (
 
 El módulo `debouncer` está diseñado para eliminar el efecto de rebote en señales digitales, como las que provienen de botones. Utiliza un contador que se incrementa en cada ciclo de reloj mientras la señal de entrada `noisy_signal` varía de manera diferente a la última señal limpia. Si la señal es constante y coincide con `clean_signal`, el contador se reinicia a cero. En caso de que se detecte un cambio en la señal ruidosa, el contador comienza a contar. Una vez que el contador alcanza el tiempo definido por `DEBOUNCE_TIME`, se actualiza `clean_signal` con el valor actual de `noisy_signal`, garantizando que cualquier cambio en la señal de entrada sea estable antes de que se refleje en la salida
 
-#### 3.2.4. Criterios de diseño
+#### 3.5.4. Criterios de diseño
 
 
 
-### 3.2 Módulo 6
-#### 3.2.1 Module_FSM_input_control
+### 3.6 Módulo 6
+#### 3.6.1 Module_FSM_input_control
 ```SystemVerilog
 module fsm_control(
     input logic clk,
@@ -202,24 +218,32 @@ module fsm_control(
 
 
 ```
-#### 3.2.2. Parámetros
+#### 3.6.2. Parámetros
 
 
 
-#### 3.2.3. Entradas y salidas:
+#### 3.6.3. Entradas y salidas:
 
-
+1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst_i`: Señal de reinicio para inicializar los registros.
+3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
+4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
+5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
+6. `cuenta_salida`: Contador de refresco para el display.
+7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
+8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
+9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
     
 ##### Descripción del módulo:
 
 
 
-#### 3.2.4. Criterios de diseño
+#### 3.6.4. Criterios de diseño
 
 
 
-### 3.2 Módulo 7
-#### 3.2.1 Module_freq_divider
+### 3.7 Módulo 7
+#### 3.7.1 Module_freq_divider
 ```SystemVerilog
 // Módulo divisor de frecuencia que divide un reloj de 27 MHz para generar un reloj lento (1 KHz)
 module freq_divider (
@@ -230,24 +254,32 @@ module freq_divider (
 
 
 ```
-#### 3.2.2. Parámetros
+#### 3.7.2. Parámetros
 
 
 
-#### 3.2.3. Entradas y salidas:
+#### 3.7.3. Entradas y salidas:
 
-
+1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst_i`: Señal de reinicio para inicializar los registros.
+3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
+4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
+5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
+6. `cuenta_salida`: Contador de refresco para el display.
+7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
+8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
+9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
     
 ##### Descripción del módulo:
 
 
 
-#### 3.2.4. Criterios de diseño
+#### 3.7.4. Criterios de diseño
 
 
 
-### 3.2 Módulo 8
-#### 3.2.1 Module_number_storage
+### 3.8 Módulo 8
+#### 3.8.1 Module_number_storage
 ```SystemVerilog
 module number_storage(
     input logic clk,
@@ -267,13 +299,21 @@ module number_storage(
 );
 
 ```
-#### 3.2.2. Parámetros
+#### 3.8.2. Parámetros
 
 
 
-#### 3.2.3. Entradas y salidas:
+#### 3.8.3. Entradas y salidas:
 
-
+1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst_i`: Señal de reinicio para inicializar los registros.
+3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
+4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
+5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
+6. `cuenta_salida`: Contador de refresco para el display.
+7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
+8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
+9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
     
 ##### Descripción del módulo:
 
@@ -282,8 +322,8 @@ module number_storage(
 #### 3.2.4. Criterios de diseño
 
 
-### 3.2 Módulo 9
-#### 3.2.1 Module_row_scanner
+### 3.9 Módulo 9
+#### 3.9.1 Module_row_scanner
 ```SystemVerilog
 module row_scanner (
     input logic slow_clk,
@@ -297,19 +337,27 @@ module row_scanner (
 
 
 ```
-#### 3.2.2. Parámetros
+#### 3.9.2. Parámetros
 
 
 
-#### 3.2.3. Entradas y salidas:
+#### 3.9.3. Entradas y salidas:
 
-
+1. `clk_i`: Señal de reloj que sincroniza las operaciones del módulo.
+2. `rst_i`: Señal de reinicio para inicializar los registros.
+3. `bcd_i [15:0]`: Entrada de 16 bits que contiene el valor en BCD a mostrar (4 dígitos).
+4. `anodo_o [1:0]`: Controla qué dígito del display está activo.
+5. `catodo_o [6:0]`: Controla los segmentos del display para representar el dígito en BCD.
+6. `cuenta_salida`: Contador de refresco para el display.
+7. `digito_o [3:0]`: Registro que almacena el dígito actual a mostrar en el display.
+8. `en_conmutador`: Señal que indica cuándo cambiar entre dígitos.
+9. `contador_digitos [1:0]`: Registro que indica si se está mostrando la unidad, decena, centena o millar.
     
 ##### Descripción del módulo:
 
 
 
-#### 3.2.4. Criterios de diseño
+#### 3.9.4. Criterios de diseño
 
 
 
