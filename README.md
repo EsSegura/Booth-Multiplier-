@@ -511,7 +511,7 @@ Se utilizan las mismas entradas y salida que en el modulo top del diseño, y se 
 
 
 ### Otros modulos
-En este apartado, se colocará el ultimo modulo, el cual corresponde a la unión de los 4 modulos para poder ejecutar un Makefile de manera correcta y su respectiva sincronización.
+En este apartado, se colocará el ultimo modulo, el cual corresponde a la unión de los 8 modulos para poder ejecutar un Makefile de manera correcta y su respectiva sincronización.
 ```SystemVerilog
 module module_top (
     input logic clk,
@@ -520,7 +520,6 @@ module module_top (
     output logic [3:0] col_out,       // Salida de las columnas del teclado
     output logic [6:0] catodo_po,     // Señales para el catodo del display de 7 segmentos
     output logic [3:0] anodo_po,       // Señales para el ánodo del display de 7 segmentos
-    output logic enable_operacion     // Señal que indica si se debe realizar la operación
 );
 ```
 #### Parámetros
@@ -540,6 +539,7 @@ No se definen parámetros para este módulo.
 
 ##### Descripción del módulo:
 
+Este módulo se encarga de instanciar los distintos módulos trabajados para su respectivo funcionamiento colectivo.
 
 
 #### Criterios de diseño
