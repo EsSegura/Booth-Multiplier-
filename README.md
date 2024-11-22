@@ -551,60 +551,18 @@ No se definen parámetros para este módulo.
 ## 5. Consumo de recursos
 
 Sobre el archivo synthesis_tangnano9k.log se obtuvieron las siguientes características:
-=== module_top ===
 
-   Number of wires:               2211
-   Number of wire bits:           4989
-   Number of public wires:        2211
-   Number of public wire bits:    4989
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:               2966
-     ALU                           599
-     DFFC                           65
-     DFFCE                         186
-     DFFR                           31
-     DFFRE                           6
-     DFFS                           10
-     DFFSE                           1
-     GND                             1
-     IBUF                            6
-     LUT1                          825
-     LUT2                          252
-     LUT3                           94
-     LUT4                          263
-     MUX2_LUT5                     388
-     MUX2_LUT6                     175
-     MUX2_LUT7                      42
-     MUX2_LUT8                       6
-     OBUF                           15
-     VCC                             1
+![image](https://github.com/user-attachments/assets/b02c6694-0f76-4cfe-a8bb-d0b91c84eebe)
+
 
 Seguidamente, sobre el archivo pnr_tangnano9k.log se obtuvieron las siguientes características:
-Info: Device utilisation:
-Info: 	                 VCC:     1/    1   100%
-Info: 	               SLICE:  2336/ 8640    27%
-Info: 	                 IOB:    21/  274     7%
-Info: 	                ODDR:     0/  274     0%
-Info: 	           MUX2_LUT5:   388/ 4320     8%
-Info: 	           MUX2_LUT6:   175/ 2160     8%
-Info: 	           MUX2_LUT7:    42/ 1080     3%
-Info: 	           MUX2_LUT8:     6/ 1056     0%
-Info: 	                 GND:     1/    1   100%
-Info: 	                RAMW:     0/  270     0%
-Info: 	                 GSR:     1/    1   100%
-Info: 	                 OSC:     0/    1     0%
-Info: 	                rPLL:     0/    2     0%
 
-Info: Max frequency for clock 'display_inst.clk_i': 70.14 MHz (PASS at 27.00 MHz)
-Info: Max frequency for clock           'slow_clk': 1149.43 MHz (PASS at 27.00 MHz)
+![image](https://github.com/user-attachments/assets/da61c9c5-446e-4d83-a6bb-2902e0cfc91c)
 
-Info: Max delay <async>                    -> <async>                   : 16.13 ns
-Info: Max delay <async>                    -> posedge display_inst.clk_i: 15.40 ns
-Info: Max delay posedge display_inst.clk_i -> <async>                   : 78.87 ns
-Info: Max delay posedge slow_clk           -> <async>                   : 10.56 ns
-Info: Max delay posedge slow_clk           -> posedge display_inst.clk_i: 12.58 ns
+
+![image](https://github.com/user-attachments/assets/d2ca12c1-81d6-4eea-a843-4c76f3ce888c)
+
+
 
 ## 6. Observaciones/Aclaraciones
 
