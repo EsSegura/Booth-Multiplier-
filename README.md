@@ -529,13 +529,14 @@ No se definen parámetros para este módulo.
 
 #### Entradas y salidas:
 ##### Descripción de la entrada:
+###### Entradas:
 1. `clk`: Señal de reloj que sincroniza todo el módulo. Esta señal es utilizada para que todos los submódulos puedan operar de manera sincronizada y coordinar el flujo de datos a través del sistema.
 2. `rst`: Señal de reset asíncrona. Cuando se activa, todos los submódulos internos y el módulo principal se reinician, asegurando que el sistema regrese a un estado conocido antes de iniciar cualquier operación.
 3. `row_in [3 : 0]` : .
-4. `col_out [3:0]` : .
-5. `anodo_po`: Señal de salida para los pines de anodo del display de 7 segmentos.
-6. `catodo_po`: Señal de salida para los pines de cátodo del display de 7 segmentos.
-7. `enable_operacion` : .
+###### Salidas:
+1. `col_out [3:0]` : .
+2. `anodo_po`: Señal de salida para los pines de anodo del display de 7 segmentos.
+3. `catodo_po`: Señal de salida para los pines de cátodo del display de 7 segmentos.
 
 ##### Descripción del módulo:
 
@@ -549,14 +550,68 @@ No se definen parámetros para este módulo.
 
 ## 5. Consumo de recursos
 
+Sobre el archivo synthesis_tangnano9k.log se obtuvieron las siguientes características:
+=== module_top ===
 
-   
+   Number of wires:               2211
+   Number of wire bits:           4989
+   Number of public wires:        2211
+   Number of public wire bits:    4989
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2966
+     ALU                           599
+     DFFC                           65
+     DFFCE                         186
+     DFFR                           31
+     DFFRE                           6
+     DFFS                           10
+     DFFSE                           1
+     GND                             1
+     IBUF                            6
+     LUT1                          825
+     LUT2                          252
+     LUT3                           94
+     LUT4                          263
+     MUX2_LUT5                     388
+     MUX2_LUT6                     175
+     MUX2_LUT7                      42
+     MUX2_LUT8                       6
+     OBUF                           15
+     VCC                             1
+
+Seguidamente, sobre el archivo pnr_tangnano9k.log se obtuvieron las siguientes características:
+Info: Device utilisation:
+Info: 	                 VCC:     1/    1   100%
+Info: 	               SLICE:  2336/ 8640    27%
+Info: 	                 IOB:    21/  274     7%
+Info: 	                ODDR:     0/  274     0%
+Info: 	           MUX2_LUT5:   388/ 4320     8%
+Info: 	           MUX2_LUT6:   175/ 2160     8%
+Info: 	           MUX2_LUT7:    42/ 1080     3%
+Info: 	           MUX2_LUT8:     6/ 1056     0%
+Info: 	                 GND:     1/    1   100%
+Info: 	                RAMW:     0/  270     0%
+Info: 	                 GSR:     1/    1   100%
+Info: 	                 OSC:     0/    1     0%
+Info: 	                rPLL:     0/    2     0%
+
+Info: Max frequency for clock 'display_inst.clk_i': 70.14 MHz (PASS at 27.00 MHz)
+Info: Max frequency for clock           'slow_clk': 1149.43 MHz (PASS at 27.00 MHz)
+
+Info: Max delay <async>                    -> <async>                   : 16.13 ns
+Info: Max delay <async>                    -> posedge display_inst.clk_i: 15.40 ns
+Info: Max delay posedge display_inst.clk_i -> <async>                   : 78.87 ns
+Info: Max delay posedge slow_clk           -> <async>                   : 10.56 ns
+Info: Max delay posedge slow_clk           -> posedge display_inst.clk_i: 12.58 ns
 
 ## 6. Observaciones/Aclaraciones
 
+Como principal observación, el módulo de Booth se obtuvo de la siguiente página: "https://electrobinary.blogspot.com/2020/08/booth-multiplier-verilog-code.html?m=1". Como tal, se estudió como funcionaba el código y se realizaron cambios para adaptarlo a nuestras necesidades.
 
 
 ## 7. Problemas encontrados durante el proyecto
 
-
+Durante el desarrollo del proyecto se enfrentaron varios problemas. Uno de los principales fue la imposibilidad de incluir el signo físico en la calculadora debido a complicaciones en su conversión, lo que llevó a la decisión de omitir el manejo del signo y enfocarse en mostrar el funcionamiento básico del proyecto. En simulación, el testbench presentaba un error al realizar la multiplicación, generando un resultado incorrecto al multiplicar el valor esperado por 2; sin embargo, este problema no se manifestaba en el circuito físico. Adicionalmente, al trabajar con la máquina de estados e integrar los módulos de almacenamiento de números y multiplicación, se detectaron fallos en su funcionamiento conjunto. Para resolver este inconveniente, se optó por instanciar el módulo de multiplicación dentro del módulo de almacenamiento de números, logrando así un comportamiento adecuado.
 
